@@ -111,3 +111,6 @@ set tabstop=4
 set shiftwidth=4
 
 set smartcase		" Do smart case matching
+set scrolloff=5
+set showcmd
+set statusline=%F%m%r,%Y,%{&fileformat}\ \ \ ASCII=\%b,HEX=\%B\ \ \ %l,%c%V\ %p%%\ \ \ [\ %L\ lines\ in\ all\ ]
