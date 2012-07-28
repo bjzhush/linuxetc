@@ -110,3 +110,4 @@ set rulerformat=%20(%2*%<%f%=\ %m%r\ %3l\ %c\ %p%%%))
 set tabstop=4
 set shiftwidth=4
 
+set smartcase		" Do smart case matching
