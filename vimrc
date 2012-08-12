@@ -55,7 +55,7 @@ endif
 "added by zs
 ""{{{
 map <F8> :NERDTreeToggle<CR>.
-map <F12> :!ctags -R --c++-kinds=+p --fields=+ialS --extra=+q .<CR>
+""map <F12> :!ctags -R --c++-kinds=+p --fields=+ialS --extra=+q .<CR>
 ""}}}
 set runtimepath +=/usr/share/vim/vim72/phpman
 autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
@@ -114,3 +114,10 @@ set smartcase		" Do smart case matching
 set scrolloff=5
 set showcmd
 set statusline=%F%m%r,%Y,%{&fileformat}\ \ \ ASCII=\%b,HEX=\%B\ \ \ %l,%c%V\ %p%%\ \ \ [\ %L\ lines\ in\ all\ ]
+""新增Tab栏几相关操作配置 
+"" F8 上一个标签，F9下一个标签，F12关闭当前标签
+nnoremap <silent> <F8> :tabp<CR>
+nnoremap <silent> <F9> :tabn<CR>
+nnoremap <silent> <F12> :tabc<CR>
+"" Ctrl+W 执行 ：w 操作，保存当前文件
+nmap <C-W> :w<cr>
