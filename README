@@ -1,0 +1,5 @@
+1. Bash
+/etc/bash.bashrc -> /home/zs/linuetc/bash.bashrc -> /etc/bashrc.local
+  system         ->         git managed          -> special config for currecnt machine
+
+

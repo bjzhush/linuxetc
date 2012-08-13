@@ -121,3 +121,4 @@ nnoremap <silent> <F9> :tabn<CR>
 nnoremap <silent> <F12> :tabc<CR>
 "" Ctrl+W 执行 ：w 操作，保存当前文件
 nmap <C-W> :w<cr>
+nmap <C-Q> :wq<cr>
