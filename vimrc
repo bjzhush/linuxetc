@@ -62,6 +62,7 @@ autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
 " autoload _vimrc
 autocmd! bufwritepost vimrc source %
 map <special> <F6> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/php" %<cr>
+map <special> <F7> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/python" %<cr>
 :inoremap ( ()<Esc>i
 :inoremap [ []<Esc>i
 :inoremap { {}<Esc>i
