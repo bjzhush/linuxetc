@@ -106,4 +106,12 @@ fi
    alias cdc='cd ../../..'
    alias cdd='cd ../../../..'
    alias cde='cd ../../../../..'
-
+# kill process by grep name
+function gkill(){
+echo "Input a word to grep and kill"
+read process
+echo $process
+ ps -ef|grep $process
+ ps -ef|grep chrome|awk '{print$2""}'|xargs kill -9
+ 
+}
