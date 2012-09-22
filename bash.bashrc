@@ -115,3 +115,17 @@ echo $process
  ps -ef|grep chrome|awk '{print$2""}'|xargs kill -9
  
 }
+#script to switch apache to nginx
+function a2n(){
+sudo pkill -9 apache2
+sudo /usr/bin/spawn-fcgi -a 127.0.0.1 -p 9000 -C 8 -u www-data -g www-data -f "/usr/bin/php5-cgi -d /var/www"
+sudo /usr/local/nginx/sbin/nginx 
+sudo netstat -ntpl|grep 0.0.0.0:80
+}
+#script to switch nginx to apache 
+function n2a(){
+sudo pkill -9 nginx
+sudo pkill -9 php5-cgi
+sudo /etc/init.d/apache2 start
+sudo netstat -ntpl|grep 0.0.0.0:80
+}
