@@ -1,0 +1,7915 @@
+# 这个 viminfo 文件是由 Vim 7.2 所产生。
+# 如果想要自行修改请特别小心！
+
+# 文件被写的时候 ‘encoding’ 的值
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~H
+# 上个 Search 图案：
+~MSle0~/default_n
+
+# 上个 替换 Search 图案：
+~MSle0&start
+
+# 最后替换的字符串
+$
+
+# 命令行 历史记录 (从新到旧)：
+:q
+:w
+:set ft=html
+:qa
+:scriptnames
+:e /tmp/1.js
+:set ft=javascript
+:e qunar.cwiki
+:tabe
+:jo
+:sp application/models/db_model.php
+:e application/controllers/note.php
+:e a
+:e application/controllers/node.php
+:e application/models/db_model.php
+:vs
+:e application/controllers/trip.php
+:s/start/end/g
+:b12
+:ls
+:e application/
+:e
+:vs application/models/db_model.php
+:sp application/config/routes.php
+:vs test.php
+:e application/controllers/chanyouji.php
+:e application/controllers/day.php
+:e application/views/trip_days.tpl
+:e application/index.htmltr
+:bw!
+:bw
+:e application/views/trip2.tpl
+:sp application/controllers/trip.php
+:set nopaste
+:set paste
+:set ft=xml
+:e http://chanyouji.com/trips/1431
+:e http://chanyouji.com/trips/233
+:e chanyouji.com/trips/233
+:e application/views/trip.tpl
+:vs application/views/note.tpl
+:'<,'>s/start/end/g
+:'<,'>
+:sp application/controllers/chanyouji.php
+:e application/views/note.tpl
+:vs application/views/trip2.tpl
+:sp
+:s/node/note/g
+:'<,'>s/day/node/g
+:'<,'>s/note/node/g
+:'<,'>s/note/day/g
+:'<,'>s/node_item/note_item/g
+:'<,'>s/$node/$note/g
+:'<,'>s/note/row/g
+:'<,'>s/node/note/g
+:vs application/controllers/trip.php
+:e application/config/routes.php
+:e 
+:e application/controllers/base_controller.php
+:%s/\<2897\>/{$day_id}/g
+:%s/\<233\>/{$trip_id}/g
+:s/zh_cn/en/g
+:vs application/config/autoload.php
+:e ap
+:s/action/op/g
+:g/action
+:'<,'>s/action/op/g
+:%s/note
+:s/new_photos/photo_upload/g
+:s/note/upload/g
+:'<,'>s/PUT/GET/g
+:s/bind_notes/nearby_entry/g
+:s/bind_notes/search_entry/g
+:s/bind_notes/search_ent
+:s/post/put/g
+:s/trip/day/g
+:set ft=x
+:J
+:e application/views/new_node.tpl
+:e http://chanyouji.com/trips/233/trip_days/2897/nodes/new
+:b17
+:sp application/
+:e application/config/config.php
+:e application/views/photo_upload.tpl
+:sp index.php
+:e application/config/database.php
+:Rename application/models/db_model.php
+:w application/models/day.php
+:e application/models/mq.php
+:%s/node/note/g
+:w application/controllers/note.php
+:e data.cwiki
+:'<,'>s/result/adds/g
+:%s/DAY/NODE/g
+:%s/day/node/g
+:w application/controllers/node.php
+:e application/config/autoload.php
+:%s/trip/day/g
+:w application/controllers/day.php
+:e application/controllers/
+:%s/tips2/tips/g
+:sp application/config/constants.php
+:sp application/controllers/base_controller.php
+:vs application/controllers/chanyouji.php
+:set fdl=1
+:h fold
+:set foldexpr=getline(v:lnum)=~'^h[1-5]\.'?'>'.getline(v:lnum)[1]:'='
+:set fdm=expr
+:set foldexpr?
+:set foldexpr=getline(v:lnum)=~'^h[1-5]\.'?'>'.getline(v:lnum)[1]:-1
+::set foldexpr=getline(v:lnum)=~'^h[1-5]\.'?'>'.getline(v:lnum)[1]:-1
+:h if
+:set foldexpr=
+:Rename data.cwiki
+:mv
+:'<,'>s/bottom/top/g
+:g/day
+:e data.txt
+:vs application/helpers/encoding.php
+:sp decode.php
+:set fdm=marker
+:b4
+:e sta/assets/application.js
+:'<,'>s/trip_days/photo_upload/g
+:sp application/views/photo_upload.tpl
+:g/\.js
+:'<,'>s/8908/9908/g
+:'<,'>s/2162/3162/g
+:'<,'>s/8909/8910/g
+:'<,'>s/100/101/g
+:'<,'>s/8909/100/g
+:sp application/views/note.tpl
+:e!
+:set nolist
+:set list
+:sp application/views/trip2.tpl
+:set nowrap
+:diffthis
+:e http://chanyouji2.com/trips/233
+:w /tmp/trip2.htm
+:sp 
+:vs application/views/trip.tpl
+:e /tmp/trip1.htm
+:w /tmp/trip1.htm
+:e ! http://chanyouji2.com/trips/234
+:e ! http://chanyouji2.com/trips/233
+:set 
+:b5
+:btrip2
+:%s/$node/$note/g
+:diffoff
+:%s/trip.name/trip.title/g
+:e .htaccess
+:%s/p.chanyouji.cn/p.chanyouji2.cn/g
+:'<,'>s/ping.chanyouji.com/p.chanyouji2.cn/g
+:'<,'>s/ping.chanyouji/chanyouji2/g
+:g/alt
+:vs 1.json
+:'<,'>s/api/chanyouji/g
+:'<,'>s/ping.api.in/ping.chanyouji.in/g
+:sp .htaccess
+:w application/controllers/chanyouji.php
+:e application/controllers/main.php
+:w application/controllers/
+:w application/controllers/main.php
+:'<,'>s/$/ \\/g
+:'<,'>s/\.jpg/.jpg-thumb/g
+:'<,'>s/\.jpg/-thumb.jpg/g
+:'<,'>s/",//g
+:g/jpg
+:set
+:qjjjjjjj
+:sp sheng_list
+:set fenc?
+:set enc?
+:s/hda1/sdb1/g
+:s/  / /g
+:e cdn.md
+:e blog-with-vim-and-markdown.md
+:e band-monitor.md
+:e architecture.md
+:e helpers/api_helper.php
+:sp log.py
+:sp info/sendmail.py
+:qa!
+:'<,'>s/form //g
+:'<,'>s/\.main //g
+:'<,'>s/.*,//g
+:'<,'>s/&\.login //g
+:'<,'>s/&\.reg //g
+:'<,'>s/\.dialog\./\&./g
+:'<,'>s/\.dialog\./&./g
+:sp styles/main.scss
+:e styles/global.css
+:'<,'>s/yjiang/ping/g
+:sp /etc/apache2/sites-enabled/in1001.com
+:%s/api.in/ping.api.in/g
+:%s#/srv#/home/ping#g
+:w /etc/apache2/sites-available/ping
+:'<,'>s/api.in/www.in/g
+:%s/www.in/api.in/g
+:'<,'>s/360.wowpad.cn/www.in1001.com/g
+:%s/360.wowpad.cn/
+:sp /etc/apache2/sites-enabled/wowpad.cn
+:'<,'>s/api\./api2./g
+:'<,'>s/s.wowpad.cn/www.wowsearch.cn/g
+:set fdm=indent
+:sp wowpad.cn
+:%s/m.ee168.cn/hongyun.wowpad.cn/g
+:sp /etc/apache2/sites-enabled/hongyun
+:'<,'>s/service.w/thumb.w/g
+:b3
+:3
+:%s/combined/combined-time/g
+:g/combined
+:sp /etc/apache2/conf.d/local
+:g/LogFo
+:sp /etc/apache2/apache2.conf
+:'<,'>s/api2/api3/g
+:'<,'>s/facade2/facade3/g
+:'<,'>s/padpad/pad/g
+:'<,'>s/facade/search/g
+:'<,'>s/api.wow/api-s.wowpad/g
+:'<,'>s/api
+:'<,'>s/service/service2/g
+:'<,'>s/backend-search/analytics/g
+:'<,'>s/b-s/a/g
+:'<,'>s/api-facade/backend-search/g
+:'<,'>s/api.wow/b-s.wow/g
+:'<,'>s/service.wow/api.wow/g
+:'<,'>s/api-service/api-facade/g
+:vs nipad.cn
+:vs 
+:sp ee168.cn
+:w!
+:%s#searchapi/search#api/api-service#g
+:%s/m.ee168.cn/service.wowpad.cn/g
+:sp /etc/apache2/sites-enabled/ee168.cn
+:g/M\>
+:g/G\>
+:'<,'>s/eth0/eth1/g
+:'<,'>s/eth1/eth0/g
+:'<,'>s/pm.ee168.cn/s.wowpad.cn/g
+:'<,'>s/pseudo/wandoujia/g
+:'<,'>s/searchapi/searchapi2/g
+:'<,'>s/search\>/search2/g
+:e gg.go
+:'<,'>s/outch/out/g
+:e prime.go
+:s/'/"/g
+:e hello.go
+:sp ~/.gitconfig
+:'<,'>s/_wandoujia/_wdj2/g
+:'<,'>s/_wandoujia/wdj2/g
+:sp application/views/user/signin.tpl
+:sp /etc/mysql/conf.d/local.cnf
+:set ft=apache
+:sp application/config/local.config.php
+:b2
+:pwd
+:e index.php
+:vs application/models/mag_db.php
+:vs application/models/user_comment_model.php
+:sp application/controllers/comment.php
+:e application/views/magazine/magazine_detail.tpl
+:sp application/views/magazine/magazine_
+:e application/views/user/sidebar_left.tpl
+:e application/views/user/user_center_main.tpl
+:vs application/config/routes.php
+:'<,'>s/wee/wer/g
+:sp application/models/user_loved_model.php
+:vs application/views/user/followees.tpl
+:s/wee/wer/g
+:sp application/views/user/user_center_main.tpl
+:e application/controllers/user.php
+:%s/user_info/myinfo/g
+:e application/views/header.tpl
+:e application/models/auth.php
+:e application/models/user_info_model.php
+:e application/views/magazine/lib/nav.tpl
+:e application/views/user/magazine.tpl
+:tab
+:vs application/controllers/magazine.php
+:vs application/views/magazine/magazine_detail.tpl
+:e application/config/constants.php
+:e application/controllers/magazine.php
+:g/smarty
+:%s#$this->smarty->view('sns/login.tpl',$renderData);#$this->_show_bind($renderData);#g
+:%s#$this->smarty->view('sns/register.tpl',$renderData);#$this->_show_signup($renderData);#g
+:%s#$this->smarty->view('sns/register.tpl',$renderData);#$this->_show_signup($renderData)#g
+:sp application/views/sns/register.tpl
+:e application/views/sns/login.tpl
+:s/smarty
+:v
+:sp application/views/sns/login.tpl
+:e application/controllers/sns.php
+:e application/models/login_model.php
+:vs application/views/user/signupbox.tpl
+:e application/views/footer.tpl
+:vs application/views/header.tpl
+:sp application/views/magazine/lib/magcover.tpl
+:vs application/views/user/element.tpl
+:vs application/views/magazine/lib/magcover.tpl
+:sp application/views/user/magazine.tpl
+:e application/views/magazine/lib/elemcover.tpl
+:e application/views/user/signupbox.tpl
+:e application/views/user/signup
+:sp application/views/user/sidebar_left.tpl
+:e application/views/user/followees.tpl
+:sp application/views/magazine/magazine_detail.tpl
+:e application/views/magazine/lib/magcover.tpl
+:e application/views/magazine/down.tpl
+:vs application/views/magazine/lib/comments.tpl
+:e application/views/magazine/lib/main-comments.tpl
+:sp application/controllers/magazine.php
+:e application/models/page_model.php
+:e application/views/search.tpl
+:sp application/views/header.tpl
+:sp application/views/magazine/lib/comments.tpl
+:sp application/models/comment_model.php
+:sp application/views/magazine/comment_list.tpl
+:vs application/
+:sp application/controllers/user.php
+:s/signin/signup/g
+:w application/views/user/signup.tpl
+:vs application/views/magazine/magazines.tpl
+:w application/views/user/signin.tpl
+:e application/views/user/signinbox.tpl
+:sp application/models/login_model.php
+:e application/libraries/MY_Session.php
+:e application/models/
+:e application/models/user_model.php
+:e application/controllers/stats.php
+:sp application/core/MY_Controller.php
+:e application/controllers/person.php
+:sp application/models/mag_model.php
+:w application/controllers/stat.php
+:e application/controllers/auth.php
+:sp application/config/config.php
+:sp application/models/ad_model.php
+:e application/models/mag_model.php
+:e application/controllers/mag.php
+:jj
+:ta
+:sp application/models/msg_model.php
+:e js/main.coffee
+:e js/gallery.js
+:set fdm?
+:'<,'>s/.header .self_info .user_info//g
+:'<,'>s/.header .log_reg//g
+:'<,'>s/.header .log_reg form//g
+:'<,'>s/.header
+:%s/\([a-z]\){/\1 {/g
+:'<,'>s/.header .menu//g
+:%s/; /;/g
+:%s/{ *\([a-z]\)/{\1/g
+:%s/; *}/;}/g
+:vs styles/global.css
+:%s/{ /{/g
+:%s/;}/;}/g
+:%s/;}/:}/g
+:'<,'>s/; /;/g
+:e styles/main.scss
+:e js/magazine.js
+:sp js/magazine.js
+:'<,'>s/;/;/g
+:g/signin
+:sp js/like.js
+:e js/like.js
+:vs jkk
+:'<,'>s/magazine/person/g
+:'<,'>s/element/magazine/g
+:set wrap
+:vs js/main.coffee
+:%s/init_user_info/load_user_info/g
+:sp styles/global.css
+:'<,'>s/black/red/g
+:vs colorbox/colorbox.css
+:sp js/gallery.js
+:'<,'>s/; //g
+:'<,'>s/\.client_down//g
+:s/width/height/g
+:'<,'>s/$/;/g
+:'<,'>s/,[^{]*{/ {/g
+:e styles/main.css
+:'<,'>s/&.regok .main//g
+:'<,'>s/&.reg 
+:'<,'>s/
+:g/overflow
+:g/auto
+:sp application/config/autoload.php
+:sp application/controllers/mag.php
+:e application/controllers/comment.php
+:s
+:sp application/controllers/maga
+:sp application/models/ads_model.php
+:sp application/views/magazine/lib/main-comments.tpl
+:sp application/views/user/signupbox.tpl
+:e application/views/magazine/index.tpl
+:e application/controllers/search.php
+:sp application/models/auth.php
+:sp application/views/user/signinbox.tpl
+:sp application/views/magazine/down.tpl
+:sp application/helpers/
+:sp application/views/share.tpl
+:sp application/views/footer.tpl
+:sp application/mag
+:e application/models/comment_model.php
+:g/pub
+:'<,'>s/msgjson/msg/g
+:sp sendmail.py
+:e application/views/magazine/lib/ad-gallery.tpl
+:%s/
+:vs js/magazine.js
+:e js/element.js
+:'<,'>s/;$//g
+:g/colorbox
+:sp initH
+:e styles/main.co
+:e views/user/element.tpl
+:e views/magazine/element.tpl
+:e ../sta/styles/global.css
+:sp views/magazine/lib/magcover.tpl
+:sp views/magazine/lib/elemcover.tpl
+:vs views/magazine/element.tpl
+:e views/magazine/index.tpl
+:e views/share.tpl
+:e app
+:vs application/views/magazine/index.tpl
+:sp application/views/user/element.tpl
+:e application/views/magazine/element.tpl
+:e application/controllers/about.php
+:e application/views/user/set_main.tpl
+:s/user_id/session_id/g
+:vs application/models/user_info_model.php
+:vs application/controllers/user.php
+:e application/views/magazine/comment_list.tpl
+:vs a
+:vs application/libraries/MY_Session.php
+:sp application/libraries/MY_Session.php
+:e application/models/api_model.php
+:'<,'>s/user_short/signdata/g
+:'<,'>s/$data/$signdata/g
+:'<,'>s/$data/$signup_data/g
+:s/expire/secure/g
+:s/path/prefix/g
+:s/domain/path/g
+:sp application/models/api_model.php
+:vs application/views/user/set_base.tpl
+:vs application/models/api_model.php
+:e application/models/reg_model.php
+:e application/models/mag_element_model.php
+:e /etc/apache2/conf.d/security
+:sp /etc/apache2/sites-available/default
+:qqa
+:sp vm.md
+:set fdl=10
+:set fdm
+:set filetype?
+:set foldmethod=marker
+:set foldmethod?
+:set fold
+:set fdl=0
+:se
+:h tabp
+:h tab
+:e 2.txt
+:e 1.txt
+:e test.txt
+:sp baidu.htm
+:qagg
+:%s/ping.dev/ping.dev.eee168.com/g
+: d,
+: c - l,
+:h <sfile>
+:tabe /tmp/plupload.js
+:g/uploader
+:sp confluencewiki.vim
+:jkkkkkk
+:g/p.chanyouji.cn
+:BlogSave publish
+:e ssh-agent-forwarding-guide.md
+:BlogList
+:vs mysql-encoding.md
+:w atlassian-crack.md
+:vs at
+:b
+:Blog
+:vs php-img-resize-add-logo.md
+:diff
+:e use-apache-rewrite-serve-friendly-download-filename.md
+:e ur
+:e setup-gateway-with-iptables.md
+:e gateway.md
+:e ss
+:vs setup-gateway-with-iptables.md
+:vs manage-vim-conf-plugin-with-git-and-github.md
+:e using-ssh-agent.md
+:e! ssh-agent-forwarding-guide.md
+:w multiple-task-switch-with-securecrt-and-screen.md
+:e ubu/
+:sp blog-with-vim-and-markdown.md
+:BlogSave
+:h vimrepress
+:h VimRepress
+:BlogNew
+:BlogSave draft
+:B
+:BlogOpen http://blog.pkufranky.com/2012/08/ssh-agent-forwarding-guide/
+:gt
+:w using-ssh-agent.md
+:sp ssh-agent.
+:sp ssh-agent
+:'<,'>s/-/--/g
+:tabe blog-with-vim-and-markdown.md
+:e ssh-agent-ppt.md
+:sp ssh-agent-ppt.md
+:sp vi
+:%s/localpc/homepc/g
+:e ~/.ssh/EN
+:e ~/.rc/bashrc.common
+:e ~/.bashrc
+:'<,'>s/-/1./g
+:e test.md
+: test.
+:a
+:sp ssl.md
+:ver
+:ww
+:sp ssh-agent.md
+:sp application/controllers/stats.php
+:vs /etc/apt/sources.list.back
+:vs /etc/apt/sources.list.d/chris-lea-node_js-natty.list
+:sp /etc/apt/sources.list.back
+:s/	/    /g
+:sp vimrc
+:sp .hg/branch
+:b1
+:BlogOpen 173
+:g/vim
+:set ft=
+:e 01_security.md
+:'<,'>s/1\./*/g
+:e 02_ssh.md
+:e 03_ssh-agent.md
+:Rename 02_ssh.md
+:sp 01_security.md
+:vs 01_slide.md
+:vs ~/ping/wpblog/ssh-agent-forwarding-guide.md
+:sp helpers/array_dot_helper.php
+:!bash %
+:'<,'>s/ /\&/g
+:'<,'>s/ /\&
+:'<,'>s/ /&/g
+:'<,'>s/:/=/g
+:h !
+:sp application/controllers/note.php
+:e application/controllers/place.php
+:e application/libraries/SnsOAuth.php
+:e application/libraries/sns/SinaOAuth.php
+:e application/libraries/sns/SinaApi.php
+:e place.php
+:e chanyouji.php
+:CD
+:e base_controller.php
+:e ~/letou/chanyouji/web/application/controllers/note.php
+:e controllers/trail.php
+:e controllers/note.php
+:'<,'>s/row/trail/g
+:'<,'>s/note/trail/g
+:sp config/database.php
+:e config/constants.php
+:s/created/updated/g
+:e ../schema/triplogs/000-init.sql
+:vs controllers/trail.php
+:v app	
+:%s/chanyouji/triplogs/g
+:e ../test/test.sh
+:e third_party/
+:s/trail/place/g
+:%s/trip/trail/g
+:e config/routes.php
+:Rename controllers/place.php
+:s/name/lat/g
+:s/name/lon/g
+:e controllers/day.php
+:e models/db_model.php
+:'<,'>s/'pos'/$k/g
+:e controllers/base_controller.php
+:e/
+:vs controllers/note.php
+:sp controllers/chanyouji.php
+:'<,'>s/name/title/g
+:sp config/constants.php
+:'<,'>s/web/api/g
+:'<,'>s/triplogs.com/api.triplogs.com/g
+:'<,'>s/chanyouji/triplogs/g
+:'<,'>s/chanyouji2/triplogs/g
+:sp /et
+:w /tmp/chanyouji.cwiki
+:Rename triplogs.cwiki
+:e sta/js/q_map-2012090618202302.js
+:sp sta/js/index_layout-2012090618202302.js
+:%s/{\/literal}//g
+:%s/{literal}//g
+:e application/views/detail.tpl
+:e application/views/plan/index.tpl
+:sp application/views/lib/header.tpl
+:e application/views/list.tpl
+:sp sta/css/common.css
+:sp sta/css/index.css
+:e sta/css/plans.css
+:set ts=4
+:vs /tmp/1.js
+:sp sta/js/plan-2012090618202302.js
+:'<,'>s/.b_header //g
+:sp application/views/index.html
+:b8
+:w sta/css/plans.css
+:w sta/css/planlist.css
+:!pwd
+:e http://qunarzz.com/travel/prd/styles/more_straList-2012091716094502.css
+:'<,'>s/0px/-120px/g
+:'<,'>s/-30/-180/g
+:'<,'>s/-30/-120/g
+:'<,'>s/5px/2px/g
+:g/left
+:'<,'>s/menu_exp/menu/g
+:'<,'>s/0px/-30px/g
+:'<,'>s/-57/0/g
+:'<,'>s/-30px/-31px/g
+:'<,'>s/704/707/g
+:sp sta/js/index.js
+:'<,'>s/4px/6px/g
+:g/js_i_day
+:e sta/js/book-2012090618202302.js
+:e todo.md
+:e sta/js/index_layout-2012090618202302.js
+:%s/	/    /
+:set ff=dos
+:set ff=unix
+:set ff?
+:tabe /tmp/1.html
+:j
+:cd ..
+:%s#http://qunarzz.com/travel/prd/scripts/travelbook/script/module/#/sta/js/#g
+:%s#http://qunarzz.com/travel/prd/scripts/travelbook/script/module/#
+:e sta/js/index.js
+:%s/xianlu.tra/ping.tra/g
+:e! qunar-index.js
+:w qunar-index.js
+:%s/local.travel.qunar.com/xianlu.in1001.com/g
+:%s/ping.travel.qunar.com/ping.xianlu.in1001.com/g
+:'<,'>s/www.in10/triplogs.in10/g
+:g/triplogs.in1001
+:%s/www.in1001.com/triplogs.in1001.com/g
+:sp /etc/apache2/sites-enabled/ping
+:q!
+:x
+
+# 查找字符串 历史记录 (从新到旧)：
+? @JAVA_PACKAGE@
+? .*
+? ^\([ 	]*Last modified: \)
+?/default_n
+?/tips
+? start
+?/day_one
+?/photo_num
+?/section-con
+?/start_day
+?/我的评价
+?/node
+?/day_nu
+? \<node_name\>
+?/default_node_id
+? \<_row_to_day\>
+?/add_day
+? p.chanyouji.cn
+?/xxx
+?/1344499981561p17457373r18rbn9v1ja81g8e10cb2
+?/1344499981561p17457373r18rbn9v1ja81g8e10cb2.jpg 
+?/H:M
+?/datetime
+?/date_for
+?/print_r
+? \<get_nodes\>
+? \<get_day_default_node\>
+? \<_row2node\>
+? \<_row2day\>
+? \<get_trip\>
+?/items
+? \<_row_to_trip\>
+? day
+?/note
+?/entry
+? node_item
+? $node
+?/_display
+?/get_node_notes
+?/photo_tim
+?/trip_pho
+?/p.chan
+?/trip.op
+?/get_node_last_no
+? \<max_note\>
+?/node_o
+? \<2897\>
+? \<233\>
+?/233
+? zh_cn
+?/add_note
+?/helpers
+?/add_nod
+? \<get_node_last_note_pos\>
+? action
+? new_photos
+? PUT
+?/bind_notes
+? post
+?/trip
+?/container clear
+?/photos
+?/phto-li
+?/smar
+?/get_day_ph
+?/Fail to find default nod
+? \<trip_day_id\>
+?/time
+?/Fail to find d
+?/upload
+?/search_en
+?/xx
+?/hotel
+?/Hotel
+?/->get
+?/note_ids
+?/node_ids
+? result
+? DAY
+?/helper
+? tips2
+?/www-
+?/CONT
+?/content-t
+?/new
+?/photo\/new
+? \<trip_days\>
+?/fold-expr
+?/fo
+? bottom
+? \<urlsafe_base64_decode\>
+?/encodings
+? \<x\>
+? \<l\>
+? \<formUrl\>
+?/form
+?/url
+? \<p\>
+? \<uploader\>
+?/FileU
+?/FileUPloa
+? \<UploadComplete\>
+?/UploadCom
+?/add-trip
+?/add_trip_u
+?/Uploader
+? \<_G_qiniu_callback\>
+?/fn.upload
+?/plupload
+?/guid
+?/uuid
+? \<generate_rs_put_path\>
+?/_G_qiniu_key
+?/sw
+?/swfup
+?/swfuploadI
+? \<swfuploadInit\>
+?/notes
+?/move
+?/add-tr
+? trip_days
+? \.js
+?/8908
+?/2162
+? 8909
+?/8902
+? 100
+?/tip
+?/weat
+?/weather
+?/do_e
+?/text
+?/do_ed
+?/forea
+?/<script
+? \<EOF\>
+?/trip-tips
+?/trip-ti
+? \<PhotoNote\>
+? \<FullDay\>
+?/day_of_week
+? trip.name
+?/mode
+?/12738
+?/12716
+?/修改标题
+? ping.chanyouji.com
+? ping.chanyouji
+?/chanyou
+?/trip_id
+? alt
+?/木遥
+?/哈瓦
+??[
+? api
+? ping.api.in
+? $
+? \<1344913680447p174hhitd61kpfdbq18da1g6aigna\>
+? \.jpg
+? \<1344913634803p174hhitd6h7i93l190uqnc6ln2\>
+? ",
+?/jpg
+?/310\/
+? hda1
+?   
+?/cowap
+?/downloadUrl
+?/to
+? \<build_mail\>
+? \<content\>
+? \<consume_one\>
+?/filepath
+?/redirect
+? form 
+? \.main 
+? .*,
+? &\.login 
+? &\.reg 
+? \.dialog\.
+?/dialog
+?/signin(
+? yjiang
+? api.in
+? /srv
+?/www.
+? www.in
+? 360.wowpad.cn
+? api\.
+? api.wow
+?/api2.wow
+?/api.wowpad
+?/sta.wowpad.cn
+?/s.wowpad.cn
+?/www.wow
+?/wowsearch.cn
+?/data1
+?/m.wowpad.cn
+?/m.
+?/b-s.w
+?/thumb
+? \<thumb\>
+?/s.wowpa
+?/ s.wo
+?/s.wowpad
+?/m.wow
+? \<mqhost\>
+? m.ee168.cn
+? searchapi
+?/thumb.wow
+? service.w
+? combined
+?/-time
+?/ia32
+?/LogFo
+? api2
+? facade2
+?/defla
+?/api.wo
+? padpad
+? facade
+? service
+?/api-ser
+? backend-search
+? b-s
+?/xxxx
+? api-facade
+? service.wow
+? api-service
+?/wowpad
+?/wowpad.
+? searchapi/search
+?/www-data
+?/nipad
+?/bs
+?/d.ee
+? M\>
+?/G\>
+??G
+?/d2.ee
+? eth0
+? eth1
+?/211.103.252.* 500
+?/Siege
+?/sieg
+??siege
+? pm.ee168.cn
+? pseudo
+?/pseu
+? \<ServerAlias\>
+?/pm.ee
+?/jlgeng
+? search\>
+? outch
+?/range
+? '
+? _wandoujia
+?/pb
+?/s.wow
+?/apk.
+?/modal
+?/mo
+?/signup
+?/user
+?/signin
+?/smarty->
+?/<<<<
+?/<<<
+?/messages
+?/bookstore
+?/followee
+? wee
+?/get_lov
+? \<followees\>
+?/bookstore(
+?/myinfo
+?/user_info
+?/get_user(
+?/get_user_info
+?/followees
+?/navs
+?/get_user
+?/msglist
+? \<index\>
+?/index
+?/_api_post
+?/signup(
+? smarty
+? $this->smarty->view('sns/login.tpl',$renderData);
+? $this->smarty->view('sns/register.tpl',$renderData);
+?/login.tpl
+?/register.tpl
+?/callback(
+?/cookie_ex
+?/set_coo
+?/session
+?/signout
+?/like.js
+?/like
+?/info
+?/作者
+?/set_signin
+?/auth_usesr
+?/auth_user
+? \<user_info_model\>
+?/magazine_de
+?/id=
+?/_
+?/id_
+?/cancelL
+?/杂志
+?/magazine_detail
+?/intro_txt
+?/shareTo
+?/shareto
+?/refresh_comm
+?/hasMo
+?/.image
+?/\.image
+?/image
+? \<user_info\>
+?/comment_li
+?/refresh_
+?/comment
+?/soft (
+?/soft
+?/down (
+?/down(
+? \<check_signin\>
+?/_auth_ch
+?/auth->ch
+?/check_signin
+? \<auth\>
+?/$return
+?/signin p
+?/apply
+?/thickbox
+?/thickb
+? \<checkAndRead\>
+?/checkA
+? \<_set_session_id\>
+?/_set_session_id
+? \<sess_create\>
+? \<sess_update\>
+? \<initSession\>
+? \<sess_read\>
+?/full
+?/persons
+?/callback
+? \<_set_content_type\>
+? \<mapping_user_info\>
+? \<get_user_info\>
+?/img
+?/avatar
+?/element_ro
+? \<element_rows2resource\>
+? \<element_row2resource\>
+?/get_elem
+?/elemen
+? \<get_unread\>
+?/unread
+?/fuller
+?/account_name
+?/ACCOUNT
+?/user_id
+?/set_userdata
+?/bin
+?/session_id
+?/===
+?/log_reg
+?/680px
+?/self_info
+?/user_
+? .header .self_info .user_info
+? .header .log_reg
+? .header .log_reg form
+? \([a-z]\){
+? .header .menu
+? ; 
+? { *\([a-z]\)
+? ; *}
+?/styl
+? { 
+? ;}
+?/colorbox
+? \<colorbox\>
+?/document
+?/22px
+?/66px
+?/18px 0
+?/agreeme
+?/.header .sef
+? \<detail_resize\>
+?/share
+?/mouse
+? \<signup\>
+?/cbox
+? ;
+?/userinfo
+?/userinfo p
+? \<align_height\>
+? \<init_user_center\>
+?/align
+?/resize
+? \<signin\>
+?/_clos
+?/close
+?/person
+?/followed
+? magazine
+? element
+?/{
+? init_user_info
+?/dd h3
+?/0.5
+?/opaci
+? black
+?/agreem
+?/a.author
+?/lik
+?/text-in
+?/dd.pc
+? \<downbtn\>
+?/downbtn
+? \.client_down
+?/p.shareto
+?/p.
+?/init_comm
+?/\.follows
+? width
+?/init_user_c
+?/follows
+? \<resize\>
+?/break
+?/break-
+?/break-wo
+?/reply-com
+?/comment-con
+?/comment-rep
+?/a.userna
+? \<refresh_comments\>
+?/ojjk
+?/reply
+? \<init_comment\>
+??h2
+? ,[^{]*{
+? &.regok .main
+? overflow
+? auto
+?/overflow:auto
+?/LoadedC
+?/cboxLoadedContent
+?/clearfix
+?/help
+? \<comment_json\>
+?/ma
+? \<love_types\>
+?/love_types
+?/mapping_user
+?/love
+? \<_get_download_url\>
+? \<_get_more\>
+? \<_get_more_non_empty\>
+?/ads_mo
+?/conment
+?/current_url
+?/>>>
+? \<ul\>
+? \<a\>
+?/cookie_doma
+?/detail(
+?/mouseo
+?/pub_mag
+?/pub
+?/pub\>
+?/edit
+?/comments
+?/utils
+? \<my_queue_declare\>
+? \<cmd_consume\>
+? msgjson
+?/-33px
+?/hover
+?/mou
+?/mouseov
+?/ping.ap
+?/match
+?/math
+?/initCo
+? ;$
+? \<applyAuthor\>
+?/setTime
+?/setTim
+? \<handleSigninOk\>
+?/msgbox
+?/init_co
+? \<init_colorbox\>
+?/onClo
+?/cobx
+?/cbox_c
+?/initH
+?/unreads
+?/g1001.user
+?/loadU
+? \<initFav\>
+?/initUser
+?/msg_tip
+?/initHe
+?/initFa
+?/align_he
+?/is_logg
+?/auth_us
+?/set_pwd
+?/get_user_in
+? \<_get_current_user\>
+?/_get_current_u
+?/sess_
+?/sess_ur
+?/sess_url_n
+? \<sess_url_name\>
+?/sess_url_nam
+?/sess_url_name
+??_auth_check_w
+?/_auth
+?/set_base
+?/setting
+?/124
+?/delete
+?/delete_si
+?/reset_pa
+?/account_n
+?/getsess
+? \<_delete_signin_cookies\>
+?/delete_sign
+?/delete_sin
+?/auth_check_api
+?/delete_cooki
+? \<set_cookies\>
+?/set_co
+?/set_cookie
+? user_short
+?/signdata
+? $data
+?/set_signin_c
+?/set_signin_s
+?/set_signin_se
+? \<sessionData\>
+? \<__finish\>
+?/data
+?/set_signin_co
+?/_set_signin_se
+?/session_d
+?/sessio
+?/cookie
+? expire
+? path
+? domain
+?/cookie_
+?/function _set_sess
+?/function _set_sse
+?/function sess_d
+?/sess_des
+?/sess_table_n
+?/se
+?/checkAn
+? \<set_signin_cookie\>
+?/delete_co
+?/fu
+??_auth_check_web
+? \<session\>
+? \<_validate_api\>
+? \<print_msg\>
+? \<send_email_model\>
+? \<user_loved_model\>
+? \<Login_Model\>
+? \<comment_model\>
+?/reg_mo
+? \<reg_model\>
+?/6d64
+??pkufranky
+?/function _set_co
+? \<sess_write\>
+?/_set_cookie
+? \<_set_cookie\>
+?/function sess_wri
+?/sess
+?/session_wr
+?/sess_use_da
+?/virt
+?/virtuio
+?/virtio
+? ping.dev
+?/chany
+?/plugi
+? \<WindowResizeListener\>
+?/Gmap
+? \<bubbletip\>
+??positionAtElement
+?/No conv
+?/timeago
+?/^})
+?/inWords
+?/abbr
+?/})
+?/plup
+?/msword
+?/getFeatures:
+?/getFlashV
+?/StateChanged
+?/max_file_si
+? \<plupload\>
+? \<flash_swf_url\>
+?/defergg
+? uploader
+?/fold
+?/password
+?/public
+?/publicke
+?/pubkey
+?/png
+?/@@
+?/\@
+?/@
+?/@@@
+?/route
+?/路由
+?/ip route
+?/more
+?/选中的
+? -
+?/路径
+?/py
+?/markdown
+?/server:
+?/遍历
+?/fis
+?/Fis
+?/fish
+? localpc
+?/homepc
+?/id_rsa
+?/codehilite_conf =
+?/read
+?/VIMPRE
+? 	
+?/VIMP
+?/blog_update_config
+?/_check
+?/blog_update_con
+?/blog_u
+? \<blog_get_mkd_attachment\>
+?/with status
+?/echomsg
+? vim
+?/print
+? \<save_post\>
+?/publish
+?/GLI
+? 1\.
+?  
+? :
+?/_get_ima
+?/_get_imag
+? \<_get_image_time\>
+?/_get_image
+?/TRAIL
+?/TRIPS
+? row
+?/triplogs
+? created
+?/trails
+? chanyouji
+? trail
+? name
+?/_row
+? \<_rows2notes\>
+?/get_note
+? 'pos'
+? \<_add_day_node_note\>
+?/_add_day_node_note
+?/trail_ge
+? web
+? triplogs.com
+?/chanyouji2
+?/m_d_title_gw
+? \<switch_map_panel\>
+?/SwtichMapM
+? \<SwtichMapMenu\>
+?/imgs_world
+?/世界地图
+? {\/literal}
+? {literal}
+?/literal
+?/i
+?/header_top h1.logo
+?/e_header_
+?/国际热门
+?/m_over
+?/m_mark.type
+?/type_1
+? \<m_overing\>
+?/must
+?/fulltitle
+?/旅行首页
+? \<script\>
+? \<style\>
+?/功能很好
+? \<d\>
+?/国际
+?/切换到国际
+?/pageli
+?/pagejk
+? .b_header 
+?/m_tr_list
+?/liter
+? \<literal\>
+?/book.tt
+? \<menuPanel\>
+?/View
+?/b_map
+?/创建攻略
+? 0px
+? -30
+? 5px
+?/opa
+?/onOutRe
+?/_math_layout
+? \<b\>
+? \<onOutResize\>
+?/on
+? \<y_layout\>
+? left
+? \<left\>
+?/Layout_Cell
+? \<_dom\>
+? \<c\>
+?/ViewM
+?/ViewMe
+? \<RCL\>
+?/panel_city_
+? \<s\>
+?/panel_city_me
+? menu_exp
+?/meu1464
+??opacity
+?/-75px
+? -57
+?/-80px
+?/-40px
+?/<i>
+?/panel_city_menu
+?/btns.ops3
+?/btns_ops3
+? -30px
+?/icons_type.png
+?/-31px
+?/-60px
+?/\/icons.png
+?/\<icons.png
+?/icons.png
+? 704
+?/ScrollBar
+? \<_initScrollBar\>
+?/scrollbar
+?/m_tr_nav
+?/.selected .calendar_day_body
+?/calendar_day_body
+? 4px
+?/first_tip
+?/add_day_icon.png
+?/js_i_day
+?/FFEFCB
+?/add_day_i
+? \<FCF5E5\>
+??content
+?/l_mark_overing
+?/l_mark_o
+?/104
+?/447
+?/79
+?/headertemp
+?/editor_tpl
+? \<headertemp\>
+?/headertem
+?/qunarzz
+? http://qunarzz.com/travel/prd/scripts/travelbook/script/module/
+?/loadJs
+?/_VER
+? \<__PLAN_CONFIG__\>
+?/index-
+? xianlu.tra
+?/console.log
+?/ActivityTips
+??getData
+? local.travel.qunar.com
+? ping.travel.qunar.com
+? \<k\>
+?/map_aside
+?/加一天
+? www.in10
+? triplogs.in1001
+? www.in1001.com
+?/triplog
+
+# 表达式 历史记录 (从新到旧)：
+
+# 输入行 历史记录 (从新到旧)：
+
+# 输入行 历史记录 (从新到旧)：
+
+# 寄存器:
+""0	CHAR	0
+	</div>
+"1	LINE	0
+	
+"2	LINE	0
+											</div>
+"3	LINE	0
+		</html>
+"4	LINE	0
+			<script src="{$webhost}/sta/js/view.js"></script>
+"5	LINE	0
+			</script>
+"6	LINE	0
+				</div>
+"7	LINE	0
+					</ul>
+"8	LINE	0
+					<ul class="sidenav">
+"9	LINE	0
+					<h6>日程安排</h6>
+"a	CHAR	0
+	l
+"-	CHAR	0
+	</div>
+
+# 全局变量:
+!VIMRC_EXTRA	STR	~/.vim/local/vimrc
+!GVIMRC_EXTRA	STR	~/.vim/local/gvimrc
+
+# 文件标记:
+'0  1  0  ~/Desktop/linuxetc/vimrc
+'1  207  17  ~/Desktop/assistant.vim
+'2  1  0  ~/Desktop/NERD_tree_2
+'3  840  0  ~/.vim/plugin/a.vim
+'4  5  0  ~/linuxetc/README
+'5  1  0  ~/linuxetc/R
+'6  145  1  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+'7  199  9  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+'8  57  0  /usr/share/vim/vimrc
+'9  24  0  /usr/share/vim/vimrc
+
+# 跳转列表 (从新到旧):
+-'  1  0  ~/Desktop/linuxetc/vimrc
+-'  207  17  ~/Desktop/assistant.vim
+-'  22  17  ~/Desktop/assistant.vim
+-'  1  0  ~/Desktop/assistant.vim
+-'  128  0  ~/Desktop/assistant.vim
+-'  1  0  ~/Desktop/NERD_tree_2
+-'  8  2  ~/Desktop/NERD_tree_2
+-'  1  0  ~/Desktop/NERD_tree_1
+-'  8  2  ~/Desktop/NERD_tree_1
+-'  840  0  ~/.vim/plugin/a.vim
+-'  72  0  ~/.vim/plugin/a.vim
+-'  1  0  ~/.vim/plugin/a.vim
+-'  5  0  ~/linuxetc/README
+-'  1  0  ~/linuxetc/README
+-'  1  0  ~/linuxetc/R
+-'  145  1  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  1  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  199  9  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  169  10  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  165  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  176  13  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  198  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  33  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  248  3  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  13  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  31  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  4  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  145  1  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  1  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  199  9  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  169  10  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  165  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  176  13  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  198  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  33  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  248  3  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  13  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  31  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  4  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  1  0  ~/linuxetc/R
+-'  145  1  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  1  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  199  9  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  169  10  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  165  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  176  13  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  198  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  33  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  248  3  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  13  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  31  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  4  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  145  1  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  1  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  199  9  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  169  10  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  165  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  176  13  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  198  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  33  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  248  3  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  13  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  31  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  4  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  5  0  ~/linuxetc/README
+-'  1  0  ~/linuxetc/README
+-'  1  0  ~/linuxetc/R
+-'  145  1  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  1  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  199  9  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  169  10  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  165  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  176  13  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  198  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  33  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  248  3  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  13  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  31  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  4  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  145  1  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  1  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  199  9  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  169  10  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  165  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  176  13  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  198  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  33  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  248  3  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  13  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  31  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  4  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  1  0  ~/linuxetc/R
+-'  145  1  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  1  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  199  9  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  169  10  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  165  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  176  13  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  207  17  ~/Desktop/assistant.vim
+
+# 缓冲区列表:
+%~/Desktop/linuxetc/vimrc	1	0
+
+# 文件内的标记历史记录 (从新到旧):
+
+> ~/Desktop/linuxetc/vimrc
+	"	1	0
+
+> ~/Desktop/assistant.vim
+	"	207	17
+
+> ~/Desktop/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Desktop/NERD_tree_2
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/plugin/a.vim
+	"	840	0
+
+> ~/linuxetc/README
+	"	5	0
+
+> ~/linuxetc/R
+	"	1	0
+
+> ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+	"	145	1
+	.	199	0
+	+	4	0
+	+	277	0
+	+	73	0
+	+	199	0
+
+> /var/www/test.php
+	"	16	3
+	^	1	5
+	.	1	4
+	+	1	4
+
+> /usr/share/vim/vimrc
+	"	54	0
+	.	55	0
+	+	55	0
+
+> ~/linuxetc/vimrc
+	"	1	0
+
+> ~/letou/xianlu/web/application/views/detail.tpl
+	"	33	9
+	^	74	15
+	.	1	0
+	+	29	0
+	+	31	0
+	+	28	0
+	+	31	0
+	+	202	0
+	+	258	0
+	+	1	0
+	+	1	0
+	+	257	0
+	+	31	0
+	+	31	0
+	+	31	0
+	+	31	0
+	+	31	0
+	+	31	0
+	+	8	38
+	+	31	56
+	+	31	61
+	+	30	0
+	+	31	0
+	+	30	46
+	+	1	0
+	+	259	6
+	+	76	47
+	+	78	65
+	+	120	0
+	+	113	0
+	+	66	13
+	+	74	14
+	+	75	0
+	+	1	0
+	+	247	0
+	+	1	0
+
+> ~/letou/triplogs/api/test/test.sh
+	"	46	93
+	^	46	94
+	.	46	93
+	+	23	0
+	+	44	165
+	+	44	21
+	+	45	104
+	+	44	0
+	+	45	33
+	+	46	86
+	+	46	5
+	+	46	93
+
+> /etc/apache2/sites-enabled/online.test.in1001.com
+	"	3	31
+	^	3	32
+	.	3	31
+	+	8	45
+	+	9	44
+	+	3	31
+
+> /etc/apache2/sites-enabled/ping
+	"	181	4
+	^	166	14
+	.	179	0
+	+	38	0
+	+	39	22
+	+	40	0
+	+	44	36
+	+	45	34
+	+	52	37
+	+	53	38
+	+	39	0
+	+	38	0
+	+	37	0
+	+	38	0
+	+	38	0
+	+	38	30
+	+	38	0
+	+	38	45
+	+	38	0
+	+	56	0
+	+	57	0
+	+	75	0
+	+	74	0
+	+	63	46
+	+	64	44
+	+	76	21
+	+	58	0
+	+	89	0
+	+	76	28
+	+	81	49
+	+	82	47
+	+	92	0
+	+	81	38
+	+	82	30
+	+	93	0
+	+	94	0
+	+	99	0
+	+	135	0
+	+	94	0
+	+	111	0
+	+	110	0
+	+	112	0
+	+	117	0
+	+	147	0
+	+	148	37
+	+	153	43
+	+	154	37
+	+	161	52
+	+	162	53
+	+	148	0
+	+	165	0
+	+	165	0
+	+	166	13
+	+	167	0
+	+	164	0
+	+	166	0
+	+	167	0
+	+	179	0
+
+> ~/letou/triplogs/api/application/libraries/SnsOAuth.php
+	"	9	58
+	^	9	57
+	.	9	0
+	+	9	0
+	d	9	1
+
+> ~/letou/triplogs/api/schema/triplogs/000-init.sql
+	"	1	12
+	^	23	15
+	.	23	14
+	+	3	23
+	+	61	33
+	+	63	44
+	+	23	14
+
+> ~/letou/magazine/api-common/helpers/api_helper.php
+	"	35	4
+	.	36	0
+	+	51	17
+	+	51	16
+	+	51	0
+	+	36	0
+	d	36	4
+
+> ~/letou/triplogs/api/application/models/mag_db.php
+	"	4	0
+	.	4	0
+	+	33	0
+	+	4	0
+	d	4	1
+
+> ~/letou/triplogs/api/application/controllers/sns.php
+	"	7	3
+
+> ~/letou/triplogs/api/application/libraries/sns/SinaApi.php
+	"	1	0
+
+> ~/letou/triplogs/api/application/libraries/sns/SinaOAuth.php
+	"	15	0
+
+> ~/letou/triplogs/api/application/controllers/place.php
+	"	41	40
+	^	59	40
+	.	59	39
+	+	5	10
+	+	18	0
+	+	65	0
+	+	19	60
+	+	64	0
+	+	64	0
+	+	23	23
+	+	24	57
+	+	34	0
+	+	31	46
+	+	33	24
+	+	37	0
+	+	36	20
+	+	29	0
+	+	26	15
+	+	22	0
+	+	26	9
+	+	27	24
+	+	28	17
+	+	40	37
+	+	58	2
+	+	40	8
+	+	58	18
+	+	40	9
+	+	61	21
+	+	60	16
+	+	63	30
+	+	43	47
+	+	57	0
+	+	58	0
+	+	42	18
+	+	49	6
+	+	46	27
+	+	47	0
+	+	48	0
+	+	49	66
+	+	18	15
+	+	17	0
+	+	17	0
+	+	17	0
+	+	15	51
+	+	16	14
+	+	17	0
+	+	6	43
+	+	17	8
+	+	49	66
+	+	39	28
+	+	18	17
+	+	43	43
+	+	42	0
+	+	42	0
+	+	56	19
+	+	42	0
+	+	28	5
+	+	52	0
+	+	51	19
+	+	49	0
+	+	51	20
+	+	52	0
+	+	51	71
+	+	41	37
+	+	15	25
+	+	41	3
+	+	55	0
+	+	54	27
+	+	59	39
+	d	59	4
+
+> ~/letou/triplogs/api/application/controllers/note.php
+	"	71	23
+	^	98	65
+	.	98	64
+	+	24	19
+	+	26	0
+	+	29	16
+	+	30	0
+	+	39	0
+	+	58	14
+	+	59	21
+	+	60	30
+	+	59	24
+	+	60	10
+	+	61	33
+	+	58	30
+	+	62	38
+	+	63	19
+	+	65	0
+	+	67	29
+	+	11	0
+	+	66	37
+	+	67	0
+	+	79	31
+	+	100	24
+	+	100	36
+	+	100	0
+	+	100	6
+	+	92	30
+	+	94	0
+	+	93	32
+	+	91	48
+	+	92	0
+	+	95	0
+	+	92	0
+	+	100	0
+	+	85	0
+	+	96	27
+	+	100	0
+	+	98	64
+	+	99	33
+	+	100	0
+	+	96	13
+	+	98	48
+	+	86	12
+	+	83	11
+	+	86	27
+	+	48	0
+	+	58	0
+	+	91	38
+	+	12	61
+	+	22	0
+	+	22	0
+	+	15	0
+	+	21	9
+	+	31	27
+	+	38	0
+	+	28	20
+	+	67	29
+	+	6	0
+	+	98	64
+	d	98	3
+
+> ~/ping/work-notes/triplogs.cwiki
+	"	3	0
+	.	1	0
+	+	75	13
+	+	77	0
+	+	76	0
+	+	74	0
+	+	81	10
+	+	86	0
+	+	105	5
+	+	107	0
+	+	116	0
+	+	120	0
+	+	119	0
+	+	150	0
+	+	149	22
+	+	149	11
+	+	135	14
+	+	199	2
+	+	209	0
+	+	149	0
+	+	263	0
+	+	228	0
+	+	228	0
+	+	263	46
+	+	263	0
+	+	263	7
+	+	263	0
+	+	263	7
+	+	263	0
+	+	263	0
+	+	263	0
+	+	263	0
+	+	263	0
+	+	263	31
+	+	263	8
+	+	263	6
+	+	263	0
+	+	263	0
+	+	263	0
+	+	263	0
+	+	263	0
+	+	263	32
+	+	263	25
+	+	263	5
+	+	263	0
+	+	263	5
+	+	228	0
+	+	263	0
+	+	153	0
+	+	152	0
+	+	158	51
+	+	153	8
+	+	162	13
+	+	128	8
+	+	128	0
+	+	132	9
+	+	132	0
+	+	132	0
+	+	143	11
+	+	145	5
+	+	140	26
+	+	124	14
+	+	128	0
+	+	132	0
+	+	165	0
+	+	164	0
+	+	170	19
+	+	174	0
+	+	170	9
+	+	161	11
+	+	169	30
+	+	231	13
+	+	232	0
+	+	233	0
+	+	236	30
+	+	239	18
+	+	242	38
+	+	243	2
+	+	242	2
+	+	246	0
+	+	245	30
+	+	243	76
+	+	242	98
+	+	261	0
+	+	260	0
+	+	255	0
+	+	258	6
+	+	252	5
+	+	249	9
+	+	258	17
+	+	48	8
+	+	55	31
+	+	56	0
+	+	54	19
+	+	56	0
+	+	52	0
+	+	56	56
+	+	56	0
+	+	56	0
+	+	53	0
+	+	1	0
+	+	1	0
+
+> ~/letou/xianlu/web/sta/js/index.js
+	"	17526	9
+	^	9450	18
+	.	9450	17
+	+	18821	28
+	+	18824	33
+	+	18829	27
+	+	18832	33
+	+	18839	33
+	+	18842	33
+	+	15299	32
+	+	18836	76
+	+	15605	38
+	+	17269	62
+	+	16828	145
+	+	16844	136
+	+	16864	143
+	+	16866	134
+	+	16898	127
+	+	16912	118
+	+	16912	235
+	+	16912	352
+	+	16912	469
+	+	16912	586
+	+	16957	120
+	+	16976	142
+	+	16995	119
+	+	17269	97
+	+	17284	39
+	+	17340	15
+	+	17341	43
+	+	17361	16
+	+	17362	44
+	+	17379	16
+	+	15605	0
+	+	15606	0
+	+	16046	52
+	+	16447	13
+	+	16453	17
+	+	16456	17
+	+	16457	17
+	+	16460	17
+	+	16461	17
+	+	16465	17
+	+	16466	17
+	+	16461	16
+	+	16466	16
+	+	16450	17
+	+	16447	0
+	+	16460	16
+	+	16457	16
+	+	16460	17
+	+	9453	3
+	+	9458	1
+	+	9454	2
+	+	9458	2
+	+	9453	0
+	+	9460	36
+	+	9461	1
+	+	9532	4
+	+	9450	17
+
+> ~/letou/xianlu/web/application/views/plan/index.tpl
+	"	1	8
+	^	19	47
+	.	6	0
+	+	5	45
+	+	174	61
+	+	5	58
+	+	48	9
+	+	48	4
+	+	48	2336
+	+	48	0
+	+	20	0
+	+	47	0
+	+	20	0
+	+	20	42
+	+	20	46
+	+	20	51
+	+	20	76
+	+	20	0
+	+	20	2
+	+	20	1
+	+	20	0
+	+	20	0
+	+	20	1
+	+	45	38
+	+	42	47
+	+	45	38
+	+	41	38
+	+	20	0
+	+	20	0
+	+	20	46
+	+	20	0
+	+	19	46
+	+	6	0
+
+> /tmp/1.html
+	"	1	32
+	^	6	76
+	.	6	75
+	+	2	0
+	+	3	0
+	+	45	55
+	+	47	40
+	+	48	55
+	+	6	75
+	d	6	8
+
+> ~/letou/xianlu/web/sta/css/index.css
+	"	424	43
+	^	427	54
+	.	427	53
+	+	1333	15
+	+	1422	15
+	+	1281	0
+	+	1281	0
+	+	1272	0
+	+	1274	0
+	+	1281	0
+	+	1271	24
+	+	1280	7
+	+	1317	0
+	+	1316	22
+	+	1309	19
+	+	1267	9
+	+	1274	11
+	+	1338	11
+	+	1339	12
+	+	1338	11
+	+	1339	12
+	+	1340	46
+	+	1403	0
+	+	1425	0
+	+	1425	0
+	+	1403	0
+	+	1270	10
+	+	237	15
+	+	350	15
+	+	352	0
+	+	353	18
+	+	7562	0
+	+	7561	29
+	+	7560	37
+	+	7561	24
+	+	7560	35
+	+	7563	35
+	+	7564	25
+	+	7557	34
+	+	7558	24
+	+	7557	34
+	+	7561	24
+	+	7564	24
+	+	7843	14
+	+	241	47
+	+	241	0
+	+	248	41
+	+	250	0
+	+	248	40
+	+	249	19
+	+	248	41
+	+	324	16
+	+	356	16
+	+	356	0
+	+	4620	14
+	+	412	0
+	+	421	46
+	+	411	35
+	+	422	21
+	+	429	16
+	+	770	21
+	+	773	0
+	+	779	37
+	+	778	35
+	+	779	0
+	+	421	47
+	+	410	13
+	+	421	50
+	+	422	0
+	+	411	24
+	+	778	25
+	+	420	20
+	+	405	12
+	+	404	11
+	+	237	0
+	+	4288	0
+	+	4291	15
+	+	4282	0
+	+	4283	0
+	+	4300	9
+	+	4304	16
+	+	4285	27
+	+	4276	21
+	+	4335	0
+	+	350	14
+	+	350	0
+	+	339	15
+	+	350	0
+	+	342	0
+	+	348	12
+	+	349	17
+	+	352	14
+	+	353	34
+	+	356	0
+	+	343	18
+	+	340	13
+	+	4285	27
+	+	4276	28
+	+	4304	16
+	+	342	14
+	+	352	15
+	+	353	34
+	+	427	53
+
+> ~/letou/xianlu/web/sta/js/index_layout-2012090618202302.js
+	"	72	5
+	^	67	6
+	.	67	5
+	+	2	0
+	+	111	27
+	+	58	38
+	+	16	50
+	+	83	46
+	+	84	5
+	+	37	27
+	+	83	0
+	+	42	64
+	+	68	19
+	+	70	0
+	+	69	5
+	+	67	5
+
+> ~/letou/xianlu/web/todo.md
+	"	2	16
+	^	2	19
+	.	2	16
+	+	2	6
+	+	1	9
+	+	2	16
+
+> ~/letou/xianlu/web/sta/js/book-2012090618202302.js
+	"	4303	9
+	^	4312	32
+	.	4312	31
+	+	1	0
+	+	2	0
+	+	3417	3616
+	+	3867	120
+	+	4312	31
+
+> ~/letou/xianlu/web/application/views/list.tpl
+	"	7	8
+	^	12	49
+	.	13	0
+	+	80	0
+	+	82	6
+	+	1	0
+	+	3	0
+	+	4	0
+	+	13	0
+	+	13	0
+	+	26	59
+	+	50	56
+	+	13	37
+	+	13	37
+	+	13	78
+	+	13	88
+	+	13	0
+	+	64	0
+	+	6	72
+	+	8	0
+	+	6	72
+	+	8	47
+	+	13	0
+	+	13	0
+	+	13	7
+	+	13	0
+	+	13	60
+	+	13	49
+	+	26	43
+	+	27	0
+	+	26	31
+	+	51	20
+	+	52	0
+	+	25	0
+	+	22	0
+	+	7	0
+	+	12	48
+	+	13	0
+
+> ~/letou/xianlu/web/sta/css/plans.css
+	"	3158	22
+	^	3156	23
+	.	3881	0
+	+	3881	0
+	+	3881	0
+	+	1381	21
+	+	70	0
+	+	72	20
+	+	73	0
+	+	484	0
+	+	3156	22
+	+	3881	0
+
+> ~/letou/xianlu/web/application/views/index.html
+	"	1	0
+
+> ~/letou/xianlu/web/sta/js/plan-2012090618202302.js
+	"	76	4
+	^	83	10
+	.	83	9
+	+	2	0
+	+	86	6
+	+	96	9
+	+	80	6
+	+	83	9
+
+> /tmp/1.js
+	"	1	3
+	.	375	0
+	+	376	90
+	+	376	12683
+	+	376	0
+	+	1	0
+	+	1	0
+	+	376	0
+	+	2	0
+	+	1	0
+	+	367	0
+	+	3	0
+	+	375	0
+
+> ~/letou/xianlu/web/sta/css/common.css
+	"	1	0
+	^	39	17
+	.	39	16
+	+	1	0
+	+	34	16
+	+	39	16
+	+	39	0
+	+	41	18
+	+	36	10
+	+	40	20
+	+	38	0
+	+	35	15
+	+	9	0
+	+	7	13
+	+	5	0
+	+	8	0
+	+	7	10
+	+	35	11
+	+	36	15
+	+	13	0
+	+	10	6
+	+	11	12
+	+	12	0
+	+	44	0
+	+	39	16
+	+	33	15
+	+	39	16
+
+> ~/letou/xianlu/web/sta/js/q_map-2012090618202302.js
+	"	1416	79
+	^	1416	80
+	.	1416	79
+	+	2	0
+	+	1383	22
+	+	1402	97
+	+	1404	73
+	+	1405	66
+	+	1406	0
+	+	1406	106
+	+	1406	0
+	+	1406	0
+	+	1416	117
+	+	1402	52
+	+	1403	0
+	+	1402	64
+	+	1416	152
+	+	1416	79
+
+> ~/letou/xianlu/web/application/views/lib/header.tpl
+	"	10	0
+	^	6	77
+	.	10	0
+	+	1	0
+	+	20	0
+	+	5	66
+	+	6	96
+	+	6	15
+	+	2	26
+	+	8	0
+	+	19	0
+	+	6	76
+	+	9	0
+	+	10	0
+
+> ~/letou/xianlu/web/sta/js/view.js
+	"	3335	13
+
+> ~/letou/xianlu/web/.git/COMMIT_EDITMSG
+	"	1	11
+	^	1	17
+	.	1	11
+	+	4	19
+	+	6	0
+	+	1	11
+
+> ~/letou/xianlu/web/sta/js/view
+	"	1	0
+
+> /etc/apache2/sites-enabled/qunar
+	"	1	4
+	.	2	0
+	+	2	0
+
+> ~/letou/xianlu/web/application/config/local.config.php
+	"	2	50
+	^	2	51
+	.	2	50
+	+	3	0
+	+	2	50
+	d	2	0
+
+> ~/letou/xianlu/web/sta/js/map-2012090618202302.js
+	"	740	8
+	.	2	0
+	+	2	0
+
+> ~/ping/work-notes/2012/2012-09-10.md
+	"	33	0
+
+> ~/letou/xianlu/web/.git/rebase-merge/git-rebase-todo
+	"	2	0
+	^	2	1
+	.	2	0
+	+	8	0
+	+	2	0
+	+	7	0
+	+	4	0
+	+	6	0
+	+	3	0
+	+	2	0
+	+	3	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	9	0
+	+	2	0
+
+> ~/letou/xianlu/web/sta/js/add_event-2012090618202302.js
+	"	4438	0
+	.	2	0
+	+	2	0
+
+> ~/letou/xianlu/web/sta/js/userstatus-0.4.min.js
+	"	278	0
+	.	2	0
+	+	2	0
+
+> ~/letou/xianlu/web/sta/js/create-2012090618202302.js
+	"	1	0
+	.	2	0
+	+	2	0
+
+> /etc/hosts
+	"	1	0
+	.	24	0
+	+	4	19
+	+	3	15
+	+	11	27
+	+	14	22
+	+	15	22
+	+	13	13
+	+	26	22
+	+	26	0
+	+	26	0
+	+	17	0
+	+	26	0
+	+	12	0
+	+	25	9
+	+	7	13
+	+	26	0
+	+	7	71
+	+	12	40
+	+	18	5
+	+	19	0
+	+	23	13
+	+	22	5
+	+	24	0
+
+> ~/letou/qunar1/plan.js
+	"	1	0
+
+> ~/qunar/.htaccess
+	"	1	0
+
+> ~/qunar/README.md
+	"	1	0
+
+> http://qunarzz.com/travel/prd/scripts/travelbook/index-2012091817062202.js
+	"	1	0
+	.	2	0
+	+	2	0
+
+> ~/qunar-index.js
+	"	18845	0
+	^	8472	14
+	.	8472	13
+	+	12687	9
+	+	12689	31
+	+	12844	7
+	+	12845	49
+	+	12989	9
+	+	12990	46
+	+	13027	9
+	+	13028	33
+	+	13037	8
+	+	13038	19
+	+	13069	11
+	+	13085	43
+	+	13093	8
+	+	13094	19
+	+	13133	11
+	+	13134	34
+	+	13228	11
+	+	13229	39
+	+	13324	11
+	+	13325	36
+	+	13357	11
+	+	13358	33
+	+	13579	17
+	+	13580	32
+	+	13811	11
+	+	13812	34
+	+	14756	17
+	+	14757	31
+	+	15213	17
+	+	15214	29
+	+	15296	15
+	+	15298	24
+	+	15446	11
+	+	15447	51
+	+	15495	1
+	+	15598	23
+	+	15600	8
+	+	15495	7
+	+	15496	43
+	+	15597	17
+	+	15617	40
+	+	15715	9
+	+	15716	47
+	+	15875	9
+	+	15876	34
+	+	15881	9
+	+	15882	42
+	+	15898	9
+	+	15899	42
+	+	16007	9
+	+	16008	52
+	+	16151	9
+	+	16152	53
+	+	16243	9
+	+	16244	52
+	+	16271	9
+	+	16272	49
+	+	16349	9
+	+	16350	52
+	+	16504	9
+	+	16505	51
+	+	16613	9
+	+	16614	46
+	+	17252	9
+	+	16614	61
+	+	17253	60
+	+	17460	9
+	+	17461	60
+	+	17521	9
+	+	17522	53
+	+	17584	9
+	+	1	47
+	+	17585	42
+	+	17595	9
+	+	17585	53
+	+	17596	66
+	+	17702	9
+	+	17703	63
+	+	17782	0
+	+	17783	55
+	+	18089	9
+	+	18090	53
+	+	18215	9
+	+	18216	58
+	+	18330	9
+	+	18331	42
+	+	18558	9
+	+	18331	54
+	+	18559	53
+	+	18646	9
+	+	18647	52
+	+	18687	9
+	+	18688	55
+	+	18816	9
+	+	18817	14
+	+	18842	5
+	+	18817	0
+	+	5472	45
+	+	5475	7
+	+	8472	13
+
+> ~/letou/qunar/application/models/show_model.php
+	"	178	0
+
+> ~/letou/qunar/application/models/procity_model.php
+	"	1	0
+
+> ~/letou/qunar/application/models/plan_model.php
+	"	166	0
+
+> ~/letou/qunar/application/models/area_model.php
+	"	42	0
+
+> ~/letou/qunar/application/controllers/api.php
+	"	79	0
+
+> ~/letou/qunar/application/controllers/detail.php
+	"	124	0
+
+> ~/letou/qunar/application/controllers/travelbook.php
+	"	40	0
+
+> ~/letou/qunar/application/controllers/plan.php
+	"	1	0
+
+> ~/qunar/.git/config
+	"	5	0
+	.	6	0
+	+	6	0
+
+> ~/letou/triplogs/api/application/controllers/trail.php
+	"	22	20
+	^	22	25
+	.	22	0
+	+	5	10
+	+	7	0
+	+	48	0
+	+	33	11
+	+	31	66
+	+	33	36
+	+	43	24
+	+	32	25
+	+	33	0
+	+	43	0
+	+	47	0
+	+	44	14
+	+	43	0
+	+	37	42
+	+	36	6
+	+	35	10
+	+	33	0
+	+	43	20
+	+	41	36
+	+	42	34
+	+	43	0
+	+	45	10
+	+	46	29
+	+	30	26
+	+	48	8
+	+	22	67
+	+	22	34
+	+	25	17
+	+	18	26
+	+	20	20
+	+	26	5
+	+	27	0
+	+	28	31
+	+	30	0
+	+	7	0
+	+	16	0
+	+	8	55
+	+	41	0
+	+	39	0
+	+	8	61
+	+	15	0
+	+	11	65
+	+	13	30
+	+	45	0
+	+	22	25
+	+	14	9
+	+	22	0
+	d	22	2
+
+> ~/letou/triplogs/api/application/config/constants.php
+	"	80	8
+	^	79	50
+	.	85	0
+	+	80	29
+	+	77	27
+	+	78	15
+	+	79	49
+	+	85	0
+	d	85	0
+
+> ~/letou/triplogs/api/application/models/db_model.php
+	"	43	0
+	^	17	11
+	.	23	0
+	+	42	22
+	+	15	0
+	+	13	0
+	+	18	0
+	+	25	27
+	+	26	0
+	+	27	35
+	+	8	0
+	+	7	0
+	+	64	0
+	+	95	0
+	+	102	0
+	+	102	0
+	+	64	0
+	+	68	35
+	+	72	104
+	+	73	0
+	+	75	25
+	+	84	0
+	+	80	0
+	+	79	53
+	+	81	42
+	+	82	0
+	+	78	19
+	+	60	19
+	+	62	26
+	+	66	0
+	+	68	0
+	+	66	0
+	+	65	37
+	+	86	0
+	+	60	31
+	+	61	0
+	+	62	20
+	+	61	59
+	+	62	33
+	+	17	10
+	+	20	0
+	+	23	0
+	d	23	2
+
+> ~/letou/triplogs/api/application/config/database.php
+	"	80	37
+	^	80	38
+	.	80	37
+	+	80	37
+	d	80	0
+
+> ~/letou/triplogs/api/application/config/routes.php
+	"	80	0
+	^	71	32
+	.	71	31
+	+	70	0
+	+	73	0
+	+	80	0
+	+	77	0
+	+	75	57
+	+	79	0
+	+	78	0
+	+	79	31
+	+	71	31
+	d	79	0
+
+> ~/letou/chanyouji/web/application/controllers/note.php
+	"	2	0
+	^	72	31
+	.	72	30
+	+	5	8
+	+	6	0
+	+	41	29
+	+	59	0
+	+	59	45
+	+	59	5
+	+	59	41
+	+	59	30
+	+	59	0
+	+	59	52
+	+	42	39
+	+	43	60
+	+	45	13
+	+	43	39
+	+	55	0
+	+	59	0
+	+	46	0
+	+	58	0
+	+	57	56
+	+	79	0
+	+	79	9
+	+	60	48
+	+	79	0
+	+	61	42
+	+	62	62
+	+	6	24
+	+	10	38
+	+	30	6
+	+	29	33
+	+	38	5
+	+	38	0
+	+	37	58
+	+	38	0
+	+	39	30
+	+	40	0
+	+	25	30
+	+	11	44
+	+	12	73
+	+	15	54
+	+	25	35
+	+	19	78
+	+	18	32
+	+	19	50
+	+	20	0
+	+	16	0
+	+	17	31
+	+	25	24
+	+	26	26
+	+	80	0
+	+	60	58
+	+	80	0
+	+	79	8
+	+	80	0
+	+	60	0
+	+	37	45
+	+	43	11
+	+	57	46
+	+	51	37
+	+	53	58
+	+	54	0
+	+	78	0
+	+	78	3
+	+	78	0
+	+	78	47
+	+	67	8
+	+	78	0
+	+	69	72
+	+	67	0
+	+	78	0
+	+	76	6
+	+	67	0
+	+	77	65
+	+	69	35
+	+	67	8
+	+	69	63
+	+	75	23
+	+	64	61
+	+	67	67
+	+	65	53
+	+	65	0
+	+	66	0
+	+	67	60
+	+	69	62
+	+	67	47
+	+	68	62
+	+	67	36
+	+	72	30
+	d	72	5
+
+> ~/letou/chanyouji/web/application/controllers/base_controller.php
+	"	5	2
+	^	11	93
+	.	11	92
+	+	33	0
+	+	32	0
+	+	23	0
+	+	18	49
+	+	21	0
+	+	20	41
+	+	22	16
+	+	31	0
+	+	27	37
+	+	29	0
+	+	28	23
+	+	25	18
+	+	26	40
+	+	25	40
+	+	30	16
+	+	20	42
+	+	17	0
+	+	17	0
+	+	3	0
+	+	16	0
+	+	15	0
+	+	4	21
+	+	10	58
+	+	11	92
+	+	14	0
+	+	10	0
+	+	13	13
+	+	12	19
+	+	14	18
+	+	4	0
+	+	5	0
+	+	14	23
+	+	13	11
+	+	14	0
+	+	13	44
+	+	11	11
+	+	10	56
+	+	11	92
+	d	11	4
+
+> ~/letou/triplogs/api/application/controllers/chanyouji.php
+	"	48	0
+
+> ~/letou/magazine/web/application/controllers/magazine.php
+	"	137	0
+	^	373	40
+	.	19	0
+	+	408	0
+	+	408	0
+	+	396	24
+	+	398	0
+	+	398	0
+	+	399	52
+	+	400	7
+	+	401	0
+	+	420	0
+	+	411	0
+	+	412	0
+	+	413	0
+	+	265	0
+	+	304	23
+	+	361	23
+	+	402	15
+	+	403	12
+	+	404	0
+	+	416	0
+	+	411	19
+	+	410	28
+	+	397	0
+	+	398	19
+	+	414	0
+	+	419	0
+	+	407	0
+	+	405	11
+	+	406	19
+	+	417	11
+	+	418	19
+	+	326	22
+	+	271	0
+	+	271	0
+	+	271	0
+	+	276	14
+	+	277	26
+	+	276	0
+	+	276	0
+	+	277	0
+	+	298	30
+	+	257	0
+	+	369	126
+	+	260	0
+	+	259	29
+	+	280	20
+	+	241	20
+	+	298	5
+	+	277	0
+	+	277	0
+	+	277	13
+	+	277	17
+	+	298	4
+	+	442	0
+	+	436	0
+	+	439	13
+	+	441	19
+	+	434	19
+	+	329	13
+	+	435	0
+	+	329	42
+	+	329	16
+	+	329	50
+	+	329	17
+	+	330	0
+	+	330	0
+	+	329	0
+	+	276	0
+	+	277	0
+	+	329	0
+	+	298	3
+	+	27	0
+	+	5	0
+	+	27	0
+	+	381	0
+	+	381	0
+	+	381	0
+	+	381	0
+	+	381	0
+	+	369	0
+	+	373	39
+	+	369	0
+	+	369	0
+	+	381	0
+	+	19	0
+	+	49	0
+	+	49	0
+	+	49	0
+	+	256	0
+	+	184	0
+	+	298	0
+	+	19	0
+	d	19	2
+
+> ~/letou/magazine/web/application/models/mag_model.php
+	"	6	0
+	^	3	21
+	.	3	20
+	+	9	0
+	+	9	0
+	+	9	0
+	+	9	0
+	+	11	0
+	+	12	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	81	8
+	+	94	0
+	+	3	20
+	d	3	1
+
+> ~/letou/triplogs/api/schema/chanyouji/000-init.sql
+	"	74	21
+	^	66	9
+	.	75	0
+	+	3	0
+	+	43	18
+	+	3	0
+	+	56	0
+	+	23	55
+	+	34	62
+	+	41	47
+	+	23	24
+	+	22	0
+	+	23	0
+	+	22	55
+	+	15	21
+	+	24	28
+	+	66	8
+	+	62	0
+	+	60	0
+	+	59	32
+	+	50	0
+	+	73	36
+	+	74	91
+	+	75	0
+
+> ~/letou/triplogs/api/.git/COMMIT_EDITMSG
+	"	2	0
+	^	1	8
+	.	2	0
+	+	1	7
+	+	2	0
+
+> /bin/ls
+	"	1	0
+
+> ~/ping/work-notes/showoff.json
+	"	1	0
+
+> ~/.profile
+	"	12	0
+
+> ~/letou/chanyouji/web/test.php
+	"	1	0
+	^	4	1
+	.	4	0
+	+	13	0
+	+	13	0
+	+	1	0
+	+	3	97
+	+	13	0
+	+	13	0
+	+	3	105
+	+	13	0
+	+	13	19
+	+	3	104
+	+	13	49
+	+	3	103
+	+	13	0
+	+	12	0
+	+	3	4
+	+	8	21
+	+	9	14
+	+	13	0
+	+	8	4
+	+	9	12
+	+	10	3
+	+	11	8
+	+	10	49
+	+	3	0
+	+	2	57
+	+	3	23
+	+	6	22
+	+	7	4
+	+	6	13
+	+	5	9
+	+	4	0
+	d	4	0
+
+> ~/letou/chanyouji/web/1.txt
+	"	1782	0
+
+> ~/letou/chanyouji/web/data.cwiki
+	"	124	14
+	^	137	29
+	.	137	28
+	+	79	7
+	+	394	20
+	+	399	73
+	+	405	22
+	+	418	0
+	+	568	10
+	+	613	0
+	+	613	0
+	+	612	5
+	+	601	5
+	+	611	1
+	+	612	0
+	+	610	1
+	+	606	26
+	+	613	0
+	+	609	2
+	+	608	11
+	+	613	0
+	+	604	45
+	+	116	0
+	+	116	0
+	+	124	0
+	+	128	44
+	+	131	1
+	+	128	49
+	+	131	0
+	+	132	8
+	+	133	75
+	+	134	0
+	+	135	25
+	+	133	28
+	+	132	25
+	+	133	29
+	+	135	26
+	+	152	29
+	+	136	101
+	+	138	99
+	+	364	20
+	+	152	0
+	+	139	0
+	+	140	0
+	+	139	0
+	+	140	0
+	+	139	71
+	+	140	112
+	+	139	112
+	+	139	0
+	+	142	0
+	+	144	71
+	+	145	28
+	+	146	148
+	+	564	0
+	+	425	0
+	+	143	61
+	+	152	0
+	+	147	0
+	+	148	8
+	+	571	31
+	+	148	31
+	+	147	24
+	+	141	6
+	+	149	25
+	+	150	70
+	+	151	0
+	+	149	31
+	+	150	85
+	+	151	92
+	+	148	52
+	+	147	35
+	+	124	7
+	+	126	49
+	+	129	7
+	+	146	0
+	+	270	96
+	+	332	108
+	+	155	10
+	+	163	42
+	+	163	0
+	+	163	2
+	+	163	0
+	+	167	3
+	+	170	0
+	+	169	23
+	+	130	71
+	+	157	0
+	+	156	0
+	+	160	2
+	+	161	0
+	+	160	41
+	+	163	0
+	+	162	0
+	+	163	13
+	+	163	0
+	+	163	20
+	+	160	46
+	+	163	0
+	+	160	3
+	+	155	16
+	+	130	27
+	+	137	28
+
+> ~/letou/chanyouji/web/application/controllers/chanyouji.php
+	"	82	6
+	^	83	45
+	.	84	0
+	+	85	0
+	+	85	80
+	+	85	59
+	+	85	0
+	+	85	32
+	+	85	73
+	+	85	19
+	+	85	21
+	+	85	36
+	+	85	35
+	+	73	0
+	+	86	0
+	+	85	0
+	+	47	0
+	+	85	0
+	+	18	0
+	+	17	48
+	+	33	71
+	+	84	0
+	+	77	40
+	+	16	61
+	+	47	8
+	+	53	26
+	+	100	8
+	+	6	0
+	+	6	0
+	+	6	32
+	+	6	10
+	+	22	0
+	+	33	0
+	+	33	51
+	+	33	0
+	+	44	10
+	+	22	18
+	+	31	21
+	+	32	0
+	+	32	20
+	+	22	0
+	+	31	0
+	+	32	0
+	+	33	0
+	+	7	0
+	+	7	6
+	+	7	19
+	+	7	0
+	+	7	0
+	+	7	50
+	+	7	32
+	+	7	25
+	+	7	0
+	+	7	31
+	+	7	61
+	+	7	29
+	+	7	37
+	+	7	0
+	+	7	9
+	+	7	11
+	+	7	5
+	+	7	0
+	+	7	28
+	+	7	0
+	+	7	61
+	+	7	0
+	+	7	19
+	+	7	0
+	+	7	9
+	+	7	0
+	+	7	43
+	+	7	0
+	+	7	44
+	+	7	8
+	+	11	52
+	+	11	8
+	+	11	50
+	+	11	8
+	+	7	42
+	+	10	8
+	+	12	36
+	+	14	8
+	+	6	0
+	+	11	0
+	+	7	0
+	+	11	0
+	+	6	0
+	+	5	24
+	+	6	0
+	+	3	0
+	+	4	0
+	+	5	27
+	+	6	0
+	+	52	0
+	+	49	0
+	+	50	0
+	+	51	0
+	+	48	36
+	+	49	29
+	+	48	40
+	+	52	8
+	+	83	44
+	+	84	0
+	d	84	3
+
+> ~/letou/chanyouji/web/application/controllers/trip.php
+	"	304	15
+	^	300	16
+	.	304	0
+	+	61	0
+	+	61	73
+	+	51	105
+	+	51	125
+	+	51	150
+	+	51	170
+	+	51	201
+	+	51	223
+	+	51	247
+	+	51	249
+	+	51	280
+	+	51	367
+	+	51	369
+	+	51	0
+	+	60	104
+	+	61	0
+	+	60	0
+	+	61	0
+	+	61	36
+	+	61	0
+	+	61	75
+	+	61	0
+	+	47	0
+	+	61	0
+	+	54	0
+	+	61	0
+	+	54	0
+	+	22	0
+	+	14	7
+	+	20	6
+	+	14	0
+	+	12	5
+	+	15	19
+	+	17	21
+	+	18	15
+	+	19	13
+	+	13	31
+	+	19	19
+	+	21	14
+	+	40	59
+	+	43	0
+	+	43	0
+	+	43	0
+	+	41	101
+	+	43	0
+	+	42	23
+	+	46	0
+	+	40	11
+	+	41	25
+	+	42	22
+	+	46	41
+	+	46	69
+	+	47	0
+	+	53	75
+	+	54	34
+	+	6	0
+	+	6	12
+	+	6	0
+	+	6	24
+	+	6	0
+	+	33	60
+	+	34	0
+	+	35	0
+	+	34	12
+	+	72	3
+	+	265	10
+	+	266	0
+	+	268	21
+	+	72	9
+	+	55	124
+	+	57	57
+	+	72	0
+	+	57	73
+	+	71	22
+	+	57	73
+	+	71	3
+	+	7	50
+	+	22	8
+	+	35	0
+	+	45	32
+	+	46	0
+	+	50	0
+	+	45	13
+	+	56	35
+	+	57	0
+	+	58	0
+	+	71	2
+	+	48	81
+	+	71	3
+	+	71	30
+	+	71	0
+	+	68	27
+	+	71	0
+	+	69	5
+	+	66	15
+	+	70	23
+	+	300	51
+	+	299	64
+	+	300	15
+	+	304	0
+	d	304	2
+
+> ~/letou/chanyouji/web/application/config/constants.php
+	"	79	41
+	^	79	42
+	.	79	41
+	+	81	28
+	+	82	27
+	+	81	27
+	+	80	25
+	+	78	25
+	+	77	27
+	+	79	41
+	d	79	0
+
+> ~/letou/chanyouji/web/application/controllers/day.php
+	"	59	36
+	^	59	37
+	.	59	36
+	+	31	0
+	+	31	63
+	+	31	0
+	+	34	0
+	+	32	34
+	+	34	0
+	+	38	0
+	+	37	39
+	+	43	26
+	+	33	17
+	+	38	0
+	+	33	16
+	+	37	17
+	+	38	0
+	+	43	0
+	+	43	57
+	+	46	33
+	+	49	30
+	+	50	5
+	+	51	0
+	+	51	74
+	+	55	0
+	+	55	0
+	+	55	0
+	+	51	61
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	28
+	+	55	0
+	+	53	71
+	+	55	0
+	+	51	0
+	+	53	0
+	+	51	0
+	+	43	0
+	+	30	39
+	+	35	14
+	+	51	0
+	+	51	53
+	+	51	51
+	+	54	12
+	+	20	32
+	+	55	8
+	+	61	0
+	+	59	56
+	+	56	27
+	+	59	55
+	+	61	0
+	+	60	0
+	+	59	0
+	+	60	38
+	+	59	0
+	+	57	0
+	+	58	0
+	+	21	0
+	+	21	61
+	+	27	0
+	+	54	38
+	+	5	21
+	+	52	36
+	+	53	0
+	+	50	0
+	+	6	0
+	+	6	32
+	+	21	61
+	+	26	0
+	+	25	0
+	+	23	29
+	+	24	9
+	+	6	18
+	+	6	0
+	+	14	0
+	+	18	0
+	+	6	0
+	+	51	0
+	+	53	0
+	+	14	0
+	+	16	0
+	+	31	0
+	+	39	0
+	+	32	17
+	+	36	0
+	+	37	0
+	+	36	16
+	+	39	18
+	+	41	0
+	+	40	24
+	+	42	16
+	+	39	5
+	+	43	0
+	+	39	17
+	+	60	37
+	+	59	0
+	+	57	0
+	+	18	21
+	+	12	59
+	+	18	0
+	+	59	36
+	d	59	2
+
+> ~/letou/chanyouji/web/application/config/autoload.php
+	"	94	58
+	^	94	59
+	.	94	58
+	+	94	58
+	d	94	0
+
+> ~/letou/chanyouji/web/application/controllers/node.php
+	"	70	0
+	^	139	2
+	.	139	1
+	+	148	41
+	+	152	30
+	+	132	49
+	+	153	8
+	+	139	48
+	+	39	0
+	+	39	29
+	+	40	4
+	+	39	16
+	+	81	0
+	+	80	22
+	+	122	0
+	+	122	21
+	+	122	0
+	+	122	0
+	+	122	0
+	+	122	0
+	+	122	0
+	+	137	0
+	+	154	15
+	+	159	52
+	+	162	0
+	+	162	2
+	+	160	16
+	+	162	0
+	+	162	0
+	+	165	37
+	+	169	13
+	+	176	0
+	+	57	0
+	+	59	46
+	+	60	0
+	+	188	0
+	+	187	44
+	+	182	17
+	+	9	0
+	+	8	32
+	+	7	23
+	+	159	47
+	+	166	21
+	+	165	44
+	+	169	0
+	+	167	0
+	+	182	45
+	+	188	8
+	+	37	0
+	+	40	0
+	+	39	69
+	+	40	0
+	+	53	23
+	+	56	31
+	+	50	28
+	+	49	70
+	+	56	46
+	+	34	58
+	+	33	77
+	+	186	0
+	+	185	23
+	+	71	49
+	+	77	0
+	+	71	0
+	+	93	32
+	+	95	0
+	+	91	37
+	+	93	0
+	+	95	0
+	+	71	0
+	+	71	0
+	+	91	33
+	+	92	0
+	+	102	0
+	+	103	39
+	+	101	59
+	+	87	33
+	+	96	52
+	+	87	48
+	+	98	58
+	+	103	41
+	+	119	48
+	+	122	0
+	+	122	0
+	+	121	62
+	+	122	0
+	+	122	24
+	+	122	0
+	+	71	69
+	+	76	0
+	+	74	58
+	+	75	9
+	+	115	10
+	+	115	0
+	+	109	17
+	+	112	46
+	+	114	6
+	+	115	0
+	+	115	0
+	+	113	0
+	+	115	0
+	+	138	1
+	+	139	1
+	d	139	0
+
+> ~/letou/chanyouji/web/application/models/mq.php
+	"	1	0
+	d	1	0
+
+> ~/letou/chanyouji/web/application/models/db_model.php
+	"	284	43
+	^	52	19
+	.	53	0
+	+	55	21
+	+	57	21
+	+	58	0
+	+	38	35
+	+	48	4
+	+	265	33
+	+	266	0
+	+	307	18
+	+	56	22
+	+	56	0
+	+	47	21
+	+	42	69
+	+	47	0
+	+	76	0
+	+	81	47
+	+	151	18
+	+	86	17
+	+	32	0
+	+	9	22
+	+	10	0
+	+	22	70
+	+	24	0
+	+	23	45
+	+	25	44
+	+	31	0
+	+	29	72
+	+	28	17
+	+	29	0
+	+	30	0
+	+	73	21
+	+	139	0
+	+	131	0
+	+	223	77
+	+	141	0
+	+	173	0
+	+	173	0
+	+	173	0
+	+	173	5
+	+	173	0
+	+	168	0
+	+	160	19
+	+	165	52
+	+	166	0
+	+	161	35
+	+	165	33
+	+	167	34
+	+	172	18
+	+	173	0
+	+	159	35
+	+	160	7
+	+	166	0
+	+	164	0
+	+	163	33
+	+	165	7
+	+	166	0
+	+	165	9
+	+	170	36
+	+	159	45
+	+	168	8
+	+	169	34
+	+	173	8
+	+	161	36
+	+	165	48
+	+	294	40
+	+	291	0
+	+	290	26
+	+	284	43
+	+	283	72
+	+	317	0
+	+	316	0
+	+	315	37
+	+	317	8
+	+	316	0
+	+	201	118
+	+	214	16
+	+	214	6
+	+	216	55
+	+	218	17
+	+	223	0
+	+	224	0
+	+	223	0
+	+	220	45
+	+	221	47
+	+	222	0
+	+	223	59
+	+	229	0
+	+	226	0
+	+	228	26
+	+	227	26
+	+	226	28
+	+	214	0
+	+	203	17
+	+	212	0
+	+	213	0
+	+	214	0
+	+	213	0
+	+	202	32
+	+	49	18
+	+	52	18
+	+	53	0
+	d	53	1
+
+> ~/letou/chanyouji/web/index.php
+	"	46	4
+	.	46	0
+	+	46	0
+	d	46	0
+
+> ~/letou/chanyouji/web/application/views/photo_upload.tpl
+	"	93	0
+	^	105	7
+	.	105	0
+	+	11	0
+	+	12	0
+	+	127	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	99	20
+	+	100	79
+	+	103	10
+	+	104	0
+	+	101	7
+	+	102	0
+	+	100	0
+	+	104	53
+	+	106	0
+	+	106	95
+	+	107	29
+	+	108	0
+	+	105	0
+
+> ~/letou/chanyouji/web/application/views/trip_days.tpl
+	"	118	14
+	^	116	52
+	.	116	51
+	+	217	0
+	+	1	0
+	+	27	0
+	+	3	0
+	+	215	0
+	+	3	0
+	+	216	0
+	+	1	8
+	+	217	1
+	+	81	27
+	+	132	14
+	+	82	130
+	+	85	38
+	+	86	42
+	+	87	45
+	+	86	46
+	+	81	19
+	+	92	46
+	+	105	17
+	+	92	27
+	+	93	83
+	+	95	0
+	+	95	88
+	+	99	33
+	+	98	34
+	+	110	78
+	+	111	36
+	+	123	17
+	+	112	96
+	+	114	50
+	+	115	28
+	+	116	27
+	+	119	0
+	+	116	50
+	+	117	65
+	+	113	42
+	+	127	47
+	+	1	0
+	+	217	0
+	+	174	11
+	+	199	4
+	+	207	0
+	+	213	3
+	+	95	0
+	+	95	86
+	+	98	57
+	+	98	0
+	+	85	38
+	+	86	45
+	+	88	70
+	+	87	46
+	+	116	51
+
+> ~/letou/chanyouji/web/application/config/config.php
+	"	402	0
+	.	402	0
+	+	402	0
+	d	402	0
+
+> ~/letou/chanyouji/web/application/views/new_node.tpl
+	"	107	17
+	.	114	0
+	+	1	0
+	+	60	0
+	+	114	0
+
+> ~/letou/chanyouji/web/application/config/routes.php
+	"	76	57
+	^	76	58
+	.	76	57
+	+	87	25
+	+	87	0
+	+	83	0
+	+	84	20
+	+	87	0
+	+	83	60
+	+	86	75
+	+	84	51
+	+	85	63
+	+	87	37
+	+	81	75
+	+	83	0
+	+	82	90
+	+	82	0
+	+	82	87
+	+	78	62
+	+	86	65
+	+	87	0
+	+	83	0
+	+	83	0
+	+	84	40
+	+	85	55
+	+	84	37
+	+	83	45
+	+	86	0
+	+	83	0
+	+	84	0
+	+	73	0
+	+	78	0
+	+	83	0
+	+	75	0
+	+	83	0
+	+	78	0
+	+	77	0
+	+	78	0
+	+	70	0
+	+	83	0
+	+	79	80
+	+	80	84
+	+	74	56
+	+	76	57
+	d	76	0
+
+> ~/letou/chanyouji/web/application/views/trip2.tpl
+	"	119	21
+	^	136	15
+	.	136	14
+	+	1	8
+	+	1	9
+	+	1	0
+	+	1	0
+	+	1	11
+	+	1	0
+	+	1	85
+	+	1	9
+	+	1	23
+	+	1	8
+	+	1	2910
+	+	1	0
+	+	1	0
+	+	1	8
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	21
+	+	1	2033
+	+	1	21
+	+	301	0
+	+	1	8
+	+	302	0
+	+	1	0
+	+	78	11
+	+	78	11
+	+	81	21
+	+	177	85
+	+	224	9
+	+	233	23
+	+	276	7
+	+	299	8
+	+	298	0
+	+	297	62
+	+	297	75
+	+	297	75
+	+	298	0
+	+	136	0
+	+	135	0
+	+	146	0
+	+	145	8
+	+	137	0
+	+	137	0
+	+	146	0
+	+	136	30
+	+	136	56
+	+	136	55
+	+	137	0
+	+	136	55
+	+	137	0
+	+	15	0
+	+	94	82
+	+	295	44
+	+	41	88
+	+	98	22
+	+	136	14
+
+> ~/letou/chanyouji/web/application/views/note.tpl
+	"	35	15
+	^	32	0
+	.	30	0
+	+	104	14
+	+	28	37
+	+	28	39
+	+	49	19
+	+	28	37
+	+	54	0
+	+	54	14
+	+	54	6
+	+	74	0
+	+	73	13
+	+	85	5
+	+	59	10
+	+	61	91
+	+	64	0
+	+	63	28
+	+	63	32
+	+	64	0
+	+	63	52
+	+	59	0
+	+	113	34
+	+	1	28
+	+	3	0
+	+	1	28
+	+	22	0
+	+	21	33
+	+	60	0
+	+	59	34
+	+	88	0
+	+	86	40
+	+	1	27
+	+	54	0
+	+	55	0
+	+	89	0
+	+	92	0
+	+	97	5
+	+	92	0
+	+	87	30
+	+	87	30
+	+	86	10
+	+	105	0
+	+	104	18
+	+	113	0
+	+	111	11
+	+	115	0
+	+	113	10
+	+	1	21
+	+	1	24
+	+	3	0
+	+	1	0
+	+	50	0
+	+	49	14
+	+	48	0
+	+	28	23
+	+	28	30
+	+	47	14
+	+	28	30
+	+	49	13
+	+	50	11
+	+	28	30
+	+	47	21
+	+	48	0
+	+	47	21
+	+	56	0
+	+	55	18
+	+	59	0
+	+	58	0
+	+	86	10
+	+	87	33
+	+	88	0
+	+	87	33
+	+	111	11
+	+	113	10
+	+	14	46
+	+	114	27
+	+	126	22
+	+	27	48
+	+	27	54
+	+	28	0
+	+	27	54
+	+	26	48
+	+	26	54
+	+	27	0
+	+	26	54
+	+	37	0
+	+	41	44
+	+	45	40
+	+	29	25
+	+	46	13
+	+	50	13
+	+	52	0
+	+	51	12
+	+	29	15
+	+	30	115
+	+	30	0
+	+	37	0
+	+	30	18
+	+	31	72
+	+	33	28
+	+	31	25
+	+	30	0
+
+> ~/letou/chanyouji/web/application/views/trip.tpl
+	"	296	347
+	^	259	12
+	.	259	11
+	+	15	29
+	+	11	32
+	+	15	20
+	+	10	31
+	+	11	22
+	+	15	23
+	+	12	32
+	+	13	31
+	+	14	47
+	+	13	44
+	+	12	47
+	+	5	18
+	+	32	20
+	+	46	5
+	+	42	0
+	+	49	61
+	+	52	43
+	+	61	0
+	+	60	23
+	+	66	7
+	+	60	12
+	+	80	14
+	+	99	6
+	+	81	0
+	+	101	13
+	+	103	4
+	+	118	20
+	+	125	19
+	+	130	46
+	+	147	22
+	+	291	0
+	+	290	12
+	+	302	4
+	+	260	5
+	+	201	0
+	+	258	0
+	+	32	13
+	+	60	14
+	+	5	0
+	+	159	13
+	+	159	39
+	+	159	0
+	+	159	0
+	+	159	0
+	+	159	0
+	+	159	0
+	+	159	32
+	+	94	42
+	+	97	14
+	+	159	0
+	+	156	0
+	+	157	0
+	+	156	28
+	+	157	27
+	+	249	0
+	+	248	10
+	+	259	11
+
+> chanyouji.com/trips/233
+	"	1	0
+
+> http://chanyouji.com/trips/233
+	"	1	96
+
+> ~/letou/chanyouji/web/qunar.cwiki
+	"	1	0
+	^	6	1
+	.	7	0
+	+	5	6
+	+	1	0
+	+	6	0
+	+	1	0
+	+	7	0
+
+> ~/ping/work-notes/2012/2012-09-03.md
+	"	45	0
+	^	21	0
+	.	37	0
+	+	4	13
+	+	13	0
+	+	10	0
+	+	20	28
+	+	46	0
+	+	19	0
+	+	17	0
+	+	16	30
+	+	14	63
+	+	26	2
+	+	13	0
+	+	12	2
+	+	46	30
+	+	17	37
+	+	13	43
+	+	15	30
+	+	15	39
+	+	34	1
+	+	35	2
+	+	36	2
+	+	37	1
+	+	40	1
+	+	15	0
+	+	37	38
+	+	26	3
+	+	44	20
+	+	42	23
+	+	46	0
+	+	46	0
+	+	46	0
+	+	28	15
+	+	27	30
+	+	43	23
+	+	17	0
+	+	25	0
+	+	30	0
+	+	31	0
+	+	30	7
+	+	7	14
+	+	30	13
+	+	7	11
+	+	22	0
+	+	21	0
+	+	41	0
+	+	40	0
+	+	37	0
+
+> ~/letou/chanyouji/web/test/test.sh
+	"	24	0
+	^	3	1
+	.	4	0
+	+	25	0
+	+	1	0
+	+	25	0
+	+	8	155
+	+	12	63
+	+	8	133
+	+	9	64
+	+	10	15
+	+	12	0
+	+	11	16
+	+	12	0
+	+	11	18
+	+	12	0
+	+	4	31
+	+	3	0
+	+	6	0
+	+	14	53
+	+	14	81
+	+	14	56
+	+	25	0
+	+	14	134
+	+	3	0
+	+	4	0
+	+	3	0
+	+	7	0
+	+	13	0
+	+	16	82
+	+	4	0
+	+	16	20
+	+	17	33
+	+	16	1
+	+	17	1
+	+	3	0
+	+	17	0
+	+	17	84
+	+	18	12
+	+	20	0
+	+	19	49
+	+	20	0
+	+	21	84
+	+	22	63
+	+	25	131
+	+	25	11
+	+	25	0
+	+	25	0
+	+	22	13
+	+	25	0
+	+	23	7
+	+	23	142
+	+	23	0
+	+	3	0
+	+	4	0
+
+> /usr/share/vim/vim73/doc/change.txt
+	"	25	0
+
+> ~/.vim/bundle/vim-jsbeautify/README.markdown
+	"	79	0
+
+> ~/letou/chanyouji/web/test.sh
+	"	1	0
+	.	20	0
+	+	20	0
+
+> ~/letou/magazine/api/application/controllers/mag.php
+	"	29	0
+	^	19	1
+	.	14	0
+	+	1	44
+	+	124	0
+	+	1	38
+	+	5	1
+	+	19	0
+	+	5	0
+	+	14	0
+	d	13	4
+
+> ~/letou/magazine/api-common/helpers/MY_array_helper.php
+	"	7	2
+
+> ~/letou/magazine/api-common/helpers/array_dot_helper.php
+	"	3	0
+
+> ~/.vim/bundle/js-beautify/README.md
+	"	1	0
+
+> ~/letou/magazine/api-common/helpers/MY_date_helper.php
+	"	28	0
+	^	28	1
+	.	28	0
+	+	27	0
+	+	22	3
+	+	26	30
+	+	18	33
+	+	28	0
+	d	28	0
+
+> ~/letou/magazine/api-common/helpers/error_helper.php
+	"	20	29
+	^	20	30
+	.	20	29
+	+	20	29
+	d	20	4
+
+> ~/letou/chanyouji/web/schema/000-init.sql
+	"	3	0
+
+> ~/letou/www/chanyouji/chanyouji.htm
+	"	39	6
+	^	736	17
+	.	736	0
+	+	736	0
+
+> ~/opensource/showoff/example/one/slidesA.md
+	"	34	19
+
+> /etc/passwd
+	"	21	0
+	^	57	36
+	.	57	35
+	+	57	35
+
+> /etc/passwds
+	"	1	0
+
+> ~/opensource/showoff/example/one/slidesB.md
+	"	4	1
+
+> ~/opensource/pycon-hg-git/title/title.md
+	"	1	0
+
+> ~/ping/ssh-agent-forwarding/showoff.json
+	"	3	24
+	^	3	25
+	.	3	25
+	+	1	35
+	+	2	17
+	+	5	0
+	+	4	1
+	+	2	17
+	+	3	0
+	+	2	22
+	+	3	22
+	+	2	14
+	+	1	49
+	+	3	25
+
+> ~/ping/ssh-agent-forwarding/one/02_ssh.md
+	"	80	0
+	^	80	24
+	.	80	23
+	+	47	11
+	+	40	0
+	+	32	0
+	+	47	5
+	+	49	0
+	+	48	0
+	+	47	25
+	+	49	0
+	+	50	0
+	+	49	0
+	+	1	5
+	+	4	5
+	+	1	1
+	+	1	12
+	+	1	23
+	+	1	78
+	+	1	24
+	+	1	0
+	+	1	362
+	+	1	0
+	+	1	0
+	+	1	5
+	+	1	0
+	+	1	0
+	+	1	37
+	+	1	13
+	+	1	0
+	+	1	11
+	+	1	1
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	17
+	+	1	11
+	+	1	21
+	+	1	0
+	+	1	0
+	+	1	5
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	17
+	+	1	16
+	+	3	0
+	+	5	19
+	+	11	0
+	+	10	25
+	+	21	5
+	+	46	11
+	+	55	0
+	+	53	0
+	+	55	9
+	+	63	0
+	+	64	0
+	+	93	0
+	+	61	3
+	+	62	0
+	+	55	1
+	+	54	17
+	+	57	2
+	+	61	2
+	+	65	33
+	+	68	11
+	+	67	5
+	+	42	1
+	+	44	27
+	+	1	0
+	+	2	4
+	+	70	30
+	+	93	0
+	+	75	0
+	+	72	24
+	+	75	0
+	+	76	0
+	+	19	80
+	+	16	17
+	+	15	25
+	+	26	45
+	+	27	42
+	+	26	1
+	+	27	1
+	+	28	1
+	+	30	12
+	+	24	9
+	+	81	11
+	+	73	20
+	+	39	1
+	+	38	1
+	+	36	11
+	+	89	6
+	+	87	23
+	+	91	23
+	+	85	29
+	+	92	32
+	+	88	0
+	+	86	0
+	+	80	23
+
+> ~/ping/wpblog/ssh-agent-forwarding-guide.md
+	"	135	0
+	.	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	19	0
+	+	10	0
+	+	10	0
+
+> ~/ping/ssh-agent-forwarding/one/01_security.md
+	"	41	0
+	.	1	0
+	+	1	0
+
+> ~/ping/ssh-agent-forwarding/one/03_ssh-agent.md
+	"	55	0
+	.	56	0
+	+	2	5
+	+	17	0
+	+	2	11
+	+	8	29
+	+	10	23
+	+	11	17
+	+	5	29
+	+	13	0
+	+	12	0
+	+	13	0
+	+	14	2
+	+	14	101
+	+	14	2
+	+	14	103
+	+	27	73
+	+	18	17
+	+	30	36
+	+	32	0
+	+	31	0
+	+	32	0
+	+	35	0
+	+	47	0
+	+	39	17
+	+	40	0
+	+	30	0
+	+	29	23
+	+	34	12
+	+	34	123
+	+	32	1
+	+	36	1
+	+	39	24
+	+	41	41
+	+	42	67
+	+	43	56
+	+	47	0
+	+	41	9
+	+	42	9
+	+	43	9
+	+	41	34
+	+	44	65
+	+	46	74
+	+	48	0
+	+	59	0
+	+	38	23
+	+	35	0
+	+	58	70
+	+	57	1
+	+	58	0
+	+	56	0
+
+> ~/opensource/pycon-hg-git/showoff.json
+	"	1	0
+
+> ~/opensource/pycon-hg-git/hg-git/hg-git-plugin.md
+	"	100	0
+
+> ~/opensource/pycon-hg-git/about_me/about_me.md
+	"	33	0
+
+> ~/opensource/pycon-hg-git/hg_git_birth/birth.md
+	"	66	0
+
+> ~/ping/wpblog/using-showoff.md
+	"	13	27
+	^	13	28
+	.	13	27
+	+	11	32
+	+	6	0
+	+	2	12
+	+	4	119
+	+	8	6
+	+	19	32
+	+	25	0
+	+	17	9
+	+	19	1
+	+	21	0
+	+	22	18
+	+	21	0
+	+	24	21
+	+	11	38
+	+	13	32
+	+	15	0
+	+	14	0
+	+	11	33
+	+	15	23
+	+	13	27
+
+> ~/ping/ssh-agent-forwarding/one/01_slide.md
+	"	1	0
+
+> /usr/bin/wkhtmltopdf
+	"	2	36
+	^	2	37
+	.	2	36
+	+	1	8
+	+	2	36
+
+> /usr/bin/showoff
+	"	1	0
+
+> /usr/lib/ruby/gems/1.8/gems/showoff-0.7.0/lib/showoff.rb
+	"	1	0
+
+> ~/ping/wpblog/using-ssh-agent.md
+	"	1	0
+	^	152	91
+	.	10	0
+	+	12	8
+	+	12	18
+	+	12	23
+	+	14	53
+	+	14	106
+	+	14	106
+	+	12	12
+	+	14	105
+	+	14	106
+	+	14	106
+	+	16	0
+	+	14	106
+	+	12	34
+	+	12	34
+	+	17	0
+	+	70	0
+	+	136	0
+	+	152	55
+	+	14	0
+	+	153	0
+	+	151	0
+	+	145	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	1	0
+	+	2	0
+	+	10	0
+	+	152	32
+	+	10	0
+	+	10	0
+	+	2	11
+	+	152	18
+	+	14	46
+	+	10	0
+	+	2	0
+	+	10	0
+	+	14	48
+	+	152	20
+	+	2	0
+	+	10	0
+	+	2	0
+	+	10	0
+	+	10	0
+	+	2	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	152	30
+	+	10	0
+	+	15	0
+	+	10	0
+	+	10	0
+
+> ~/ping/wpblog/blog-with-vim-and-markdown.md
+	"	244	0
+	^	51	11
+	.	51	11
+	+	244	26
+	+	244	68
+	+	244	37
+	+	244	0
+	+	244	69
+	+	244	0
+	+	1	0
+	+	51	11
+
+> ~/ping/wpblog/manage-vim-conf-plugin-with-git-and-github.md
+	"	100	0
+
+> ~/opensource/VimRepress/plugin/vimrepress.py
+	"	472	14
+	^	472	15
+	.	472	14
+	+	471	18
+	+	472	28
+	+	473	13
+	+	642	9
+	+	471	14
+	+	472	14
+
+> ~/ping/wpblog/wpid168-vimpress_4f85a363_mkd.txt
+	"	1	0
+
+> ~/ping/wpblog/ssh-agent.md
+	"	1	29
+	^	150	91
+	.	10	0
+	+	151	208
+	+	151	89
+	+	151	0
+	+	151	0
+	+	151	0
+	+	151	0
+	+	151	8
+	+	151	0
+	+	151	0
+	+	151	0
+	+	151	0
+	+	151	0
+	+	151	0
+	+	151	0
+	+	151	0
+	+	151	0
+	+	151	0
+	+	151	0
+	+	151	0
+	+	151	181
+	+	151	0
+	+	151	1
+	+	151	0
+	+	151	1
+	+	151	0
+	+	151	0
+	+	151	33
+	+	151	0
+	+	151	0
+	+	151	54
+	+	151	1
+	+	151	0
+	+	151	1
+	+	151	0
+	+	151	94
+	+	151	21
+	+	151	0
+	+	151	29
+	+	151	5
+	+	151	5
+	+	151	5
+	+	151	4
+	+	151	24
+	+	151	27
+	+	151	0
+	+	151	0
+	+	151	0
+	+	151	6
+	+	151	8
+	+	151	21
+	+	151	22
+	+	151	20
+	+	151	0
+	+	151	32
+	+	151	110
+	+	151	54
+	+	151	118
+	+	151	0
+	+	151	0
+	+	151	0
+	+	151	0
+	+	151	0
+	+	151	0
+	+	151	32
+	+	151	0
+	+	151	11
+	+	151	35
+	+	151	0
+	+	151	34
+	+	151	0
+	+	151	0
+	+	1	0
+	+	10	0
+	+	10	0
+	+	150	32
+	+	10	0
+	+	4	35
+	+	10	0
+	+	4	26
+	+	10	0
+	+	10	0
+	+	10	0
+	+	4	28
+	+	2	7
+	+	2	0
+	+	10	0
+	+	2	0
+	+	10	0
+	+	10	0
+	+	2	8
+	+	4	34
+	+	10	0
+	+	10	0
+	+	4	34
+	+	2	0
+	+	10	0
+	+	2	11
+	+	4	34
+	+	150	30
+	+	10	0
+
+> ~/opensource/VimRepress/syntax/blogsyntax.vim
+	"	1	0
+
+> ~/.bashrc
+	"	49	0
+
+> ~/.rc/bashrc.common
+	"	41	0
+
+> ~/ping/wpblog/ssh-agent-ppt.md
+	"	10	21
+	.	2	0
+	+	2	0
+
+> ~/opensource/VimRepress/README.md
+	"	49	0
+
+> ~/opensource/VimRepress/markdown_posts_upgrade.py
+	"	4	0
+
+> ~/opensource/VimRepress/.git/COMMIT_EDITMSG
+	"	1	21
+	^	1	22
+	.	1	0
+	+	4	0
+	+	1	0
+
+> ~/.vimpressrc
+	"	4	10
+	^	4	11
+	.	4	10
+	+	4	10
+
+> ~/opensource/VimRepress/plugin/vimrepress.
+	"	1	0
+
+> ~/.vim/vimpressrc
+	"	2	0
+	^	2	37
+	.	2	0
+	+	2	0
+	+	2	20
+	+	2	0
+	+	3	0
+	+	2	0
+
+> ~/.vim/vimrc
+	"	165	18
+	^	174	36
+	.	174	36
+	+	170	0
+	+	189	4
+	+	173	32
+	+	177	0
+	+	181	0
+	+	178	0
+	+	180	76
+	+	172	2
+	+	173	0
+	+	188	0
+	+	184	0
+	+	183	7
+	+	174	36
+
+> ~/ping/wpblog/test.md
+	"	6	0
+	^	5	1
+	.	5	0
+	+	1	0
+	+	9	0
+	+	8	0
+	+	9	0
+	+	8	0
+	+	10	10
+	+	9	9
+	+	6	0
+	+	11	0
+	+	5	0
+
+> ~/.vim/bundle/VimRepress/plugin/blog.vim
+	"	796	21
+	.	738	0
+	+	738	0
+	+	746	0
+	+	753	0
+	+	754	0
+	+	746	0
+	+	738	0
+	+	736	0
+	+	736	0
+	+	737	54
+	+	736	36
+	+	738	0
+
+> ~/opensource/vimrepress.git/config
+	"	4	0
+
+> ~/opensource/vimrepress/.hg/hgrc
+	"	1	0
+
+> ~/opensource/vimrepress/.hg/branch
+	"	1	0
+
+> ~/.hgrc
+	"	3	28
+	^	3	29
+	.	3	28
+	+	3	28
+
+> /etc/apt/sources.list
+	"	1	0
+	^	1	1
+	.	2	0
+	+	190	67
+	+	179	0
+	+	194	0
+	+	2	0
+	+	79	0
+	+	76	0
+	+	77	0
+	+	13	0
+	+	11	0
+	+	2	0
+
+> /etc/apt/sources.list.back
+	"	1	0
+
+> /etc/apt/sources.list.d/chris-lea-node_js-natty.list
+	"	1	0
+
+> /usr/local/lib/python2.7/dist-packages/markdown/extensions/fenced_code.py
+	"	116	58
+	^	116	59
+	.	116	58
+	+	116	58
+
+> ~/letou/magazine/api/application/config/routes.php
+	"	122	19
+	^	121	41
+	.	121	40
+	+	121	40
+	d	121	0
+
+> ~/letou/magazine/api/application/controllers/stats.php
+	"	13	0
+	^	13	36
+	.	14	0
+	+	1	16
+	+	15	0
+	+	16	0
+	+	14	22
+	+	14	11
+	+	14	30
+	+	12	37
+	+	14	15
+	+	14	0
+	+	12	0
+	+	14	0
+	+	14	3
+	+	14	50
+	+	14	48
+	+	14	0
+	+	14	0
+	+	14	47
+	+	14	7
+	+	15	2
+	+	14	0
+	+	12	2
+	+	13	35
+	+	12	0
+	+	14	0
+	+	15	0
+	+	14	0
+	d	14	2
+
+> ~/ping/wpblog/gem.md
+	"	1	0
+
+> /etc/ssh/sshd_config
+	"	87	0
+
+> /etc/ssh/ssh_config
+	"	53	0
+
+> ~/.vim/ftplugin/confluencewiki.vim
+	"	8	13
+	^	8	14
+	.	8	13
+	+	1	0
+	+	5	0
+	+	9	0
+	+	9	0
+	+	6	68
+	+	9	0
+	+	6	7
+	+	9	0
+	+	7	16
+	+	6	41
+	+	8	13
+
+> ~/.vim/ftdetect/cwiki.vim
+	"	2	0
+
+> /usr/share/vim/vim73/doc/fold.txt
+	"	87	0
+
+> /usr/share/vim/vim73/doc/options.txt
+	"	2986	51
+
+> /usr/share/vim/vim73/doc/eval.txt
+	"	2975	42
+
+> ~/.vim/ftplugin/hdf.vim
+	"	26	0
+
+> ~/.vim/bundle/vim-coffee-script/syntax/coffee.vim
+	"	162	25
+
+> ~/.vim/.git/config
+	"	8	27
+	^	8	28
+	.	8	27
+	+	6	0
+	+	8	27
+
+> ~/.gitconfig
+	"	4	0
+
+> ~/letou/chanyouji/web/sta/assets/application.js
+	"	13599	12
+	^	10114	13
+	.	10114	12
+	+	5013	0
+	+	5013	97
+	+	15509	74
+	+	6662	0
+	+	6663	14
+	+	7476	18
+	+	16142	10
+	+	2	13
+	+	4445	18
+	+	6380	17
+	+	6292	20
+	+	2	0
+	+	10	8
+	+	4445	8
+	+	4447	22
+	+	4487	20
+	+	16143	0
+	+	1	0
+	+	4488	22
+	+	5115	20
+	+	5116	28
+	+	5780	20
+	+	5116	31
+	+	6137	19
+	+	6268	5
+	+	1	0
+	+	5870	23
+	+	6135	27
+	+	6443	23
+	+	6661	17
+	+	6443	31
+	+	7477	29
+	+	8127	17
+	+	8408	35
+	+	8229	26
+	+	8409	20
+	+	8433	17
+	+	8678	17
+	+	8434	37
+	+	10115	23
+	+	10960	27
+	+	10961	20
+	+	11142	24
+	+	11143	26
+	+	11384	42
+	+	11385	19
+	+	11541	11
+	+	11543	19
+	+	11851	11
+	+	11852	19
+	+	11961	11
+	+	11962	20
+	+	11989	24
+	+	15819	33
+	+	16088	11
+	+	15765	20
+	+	15818	15
+	+	16089	19
+	+	16100	10
+	+	15346	31
+	+	15392	20
+	+	14599	19
+	+	15345	20
+	+	14599	20
+	+	14440	36
+	+	14598	14
+	+	15394	21
+	+	15764	4
+	+	14099	38
+	+	14313	7
+	+	11990	26
+	+	13547	35
+	+	13549	15
+	+	13601	5
+	+	13607	26
+	+	14098	35
+	+	10006	23
+	+	10114	12
+
+> ~/letou/chanyouji/web/decode.php
+	"	3	0
+	.	2	0
+	+	10	0
+	+	2	113
+	+	2	5
+	+	7	15
+	+	5	33
+	+	7	5
+	+	2	0
+	+	2	49
+	+	2	39
+	+	2	31
+	+	2	12
+	+	5	39
+	+	6	43
+	+	7	19
+	+	8	12
+	+	9	16
+	+	2	13
+	+	2	5
+	+	2	14
+	+	5	37
+	+	6	41
+	+	2	0
+	+	2	0
+	d	3	0
+
+> ~/letou/chanyouji/web/application/helpers/encoding.php
+	"	7	0
+	.	2	0
+	+	8	0
+	+	2	0
+	d	2	0
+
+> ~/letou/chanyouji/web/data.txt
+	"	16	3
+	^	16	4
+	.	16	3
+	+	42	0
+	+	40	0
+	+	44	30
+	+	45	18
+	+	46	38
+	+	48	25
+	+	48	26
+	+	49	0
+	+	48	29
+	+	52	0
+	+	40	0
+	+	47	23
+	+	46	53
+	+	75	5
+	+	99	0
+	+	51	26
+	+	97	0
+	+	95	4
+	+	94	21
+	+	99	0
+	+	96	5
+	+	96	21
+	+	97	0
+	+	96	23
+	+	99	0
+	+	76	15
+	+	99	0
+	+	99	0
+	+	99	16
+	+	99	0
+	+	99	22
+	+	99	0
+	+	43	9
+	+	27	11
+	+	28	10
+	+	29	13
+	+	30	10
+	+	32	10
+	+	34	10
+	+	37	20
+	+	29	57
+	+	30	51
+	+	33	0
+	+	36	0
+	+	56	9
+	+	57	8
+	+	76	8
+	+	78	21
+	+	12	10
+	+	103	3
+	+	104	0
+	+	106	0
+	+	105	8
+	+	111	53
+	+	112	15
+	+	112	6
+	+	112	10
+	+	112	0
+	+	111	53
+	+	99	21
+	+	99	0
+	+	99	21
+	+	78	0
+	+	81	17
+	+	80	30
+	+	81	52
+	+	80	48
+	+	75	0
+	+	74	2
+	+	108	52
+	+	109	12
+	+	74	3
+	+	80	0
+	+	82	11
+	+	82	11
+	+	83	0
+	+	80	68
+	+	81	0
+	+	80	72
+	+	80	72
+	+	81	0
+	+	80	72
+	+	81	0
+	+	90	15
+	+	88	0
+	+	87	14
+	+	89	0
+	+	76	0
+	+	77	22
+	+	87	15
+	+	90	15
+	+	99	0
+	+	112	0
+	+	79	20
+	+	46	14
+	+	44	8
+	+	57	8
+	+	79	0
+	+	14	13
+	+	16	3
+
+> ~/.vim/plugin/rename.vim
+	"	1	0
+
+> /usr/share/vim/vim73/doc/cmdline.txt
+	"	778	18
+
+> /data/chanyouji/photos/233/1345777695022p175b9ju8i13b71f2h1v1kniun862.jpg
+	"	420	0
+
+> /data/chanyouji/photos/233/345777695022p175b9ju8i13b71f2h1v1kniun862.jpg
+	"	1	0
+
+> ~/letou/chanyouji/web/.htaccess
+	"	2	59
+	^	2	60
+	.	2	59
+	+	2	59
+
+> /tmp/plupload.js
+	"	705	0
+	^	1	10488
+	.	2	0
+	+	1	10449
+	+	2	0
+
+> ~/letou/magazine/sta/lib/jquery/jquery-1.7.2.min.js
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/letou/chanyouji/web/tmp/plupload/js/plupload.full.js
+	"	1973	0
+	.	3	0
+	+	3	0
+
+> ~/letou/chanyouji/web/tmp/plupload/js/plupload.js
+	"	1	0
+
+> ~/letou/chanyouji/web/sta/assets/application.
+	"	1	0
+
+> http://chanyouji2.com/trips/233
+	"	153	0
+	.	227	0
+	+	136	0
+	+	2	0
+	+	136	0
+	+	155	0
+	+	167	0
+	+	170	0
+	+	171	0
+	+	170	0
+	+	171	0
+	+	172	0
+	+	173	0
+	+	177	0
+	+	192	0
+	+	200	0
+	+	201	0
+	+	215	0
+	+	227	0
+	+	226	0
+	+	227	0
+
+> /tmp/trip1.htm
+	"	153	0
+
+> ~/.vim/bundle/vim-jsbeautify/plugin/jsbeautify.vim
+	"	48	0
+
+> ~/.vim/bundle/vim-jsbeautify/.gitmodules
+	"	1	0
+
+> ~/.vim/github-plugin-install.sh
+	"	11	0
+
+> ~/.gitignore
+	"	1	4
+	^	1	5
+	.	1	4
+	+	1	4
+
+> ~/letou/chanyouji/web/sta/js/application.js
+	"	1	0
+	.	1	0
+	+	1	135
+	+	1	22
+	+	1	306
+	+	1	456
+	+	1	476
+	+	1	0
+	+	1	73
+	+	1	68
+	+	1	84
+	+	1	0
+	+	1	0
+	+	1	6
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/letou/magazine/chanyouji/application/config/routes.php
+	"	70	38
+	^	70	46
+	.	70	45
+	+	70	45
+	d	70	0
+
+> ~/letou/magazine/chanyouji/application/controllers/chanyouji.php
+	"	483	89
+	^	484	99
+	.	484	98
+	+	491	0
+	+	490	10
+	+	490	0
+	+	11	17
+	+	490	0
+	+	490	15
+	+	490	0
+	+	490	9
+	+	490	0
+	+	490	10
+	+	490	21
+	+	490	3
+	+	490	9
+	+	490	3
+	+	490	0
+	+	490	0
+	+	490	0
+	+	490	15
+	+	490	2
+	+	490	1
+	+	490	4
+	+	490	3
+	+	490	30
+	+	490	9
+	+	490	0
+	+	11	0
+	+	12	0
+	+	11	9
+	+	12	0
+	+	11	0
+	+	12	16
+	+	471	10
+	+	11	7
+	+	488	46
+	+	489	5
+	+	488	20
+	+	488	89
+	+	488	9
+	+	478	6
+	+	477	27
+	+	476	18
+	+	477	15
+	+	479	39
+	+	485	5
+	+	483	5
+	+	488	0
+	+	487	19
+	+	484	98
+	d	484	4
+
+> ~/letou/magazine/chanyouji/application/views/trip.tpl
+	"	746	35
+	^	78	32
+	.	746	35
+	+	702	76
+	+	748	50
+	+	749	0
+	+	748	62
+	+	747	22
+	+	746	41
+	+	45	69
+	+	48	100
+	+	49	0
+	+	49	84
+	+	50	90
+	+	78	31
+	+	747	19
+	+	746	35
+
+> ~/letou/magazine/chanyouji/1.json
+	"	1	0
+
+> ~/letou/www/chanyouji/application/controllers/welcome.php
+	"	3	0
+	d	3	1
+
+> ~/letou/www/chanyouji/application/controllers/chanyouji.php
+	"	5	11
+	^	3	15
+	.	5	0
+	+	3	0
+	+	2	0
+	+	3	14
+	+	5	0
+	d	5	1
+
+> ~/letou/www/chanyouji/index.php
+	"	61	0
+
+> ~/letou/www/chanyouji/application/config/routes.php
+	"	66	0
+
+> ~/letou/www/chanyouji/.htaccess
+	"	1	0
+
+> ~/letou/www/chanyouji/310/dl.sh
+	"	1	8
+	^	28	20
+	.	28	19
+	+	36	0
+	+	1	0
+	+	36	0
+	+	24	72
+	+	4	0
+	+	36	0
+	+	36	0
+	+	36	0
+	+	4	0
+	+	36	0
+	+	3	9
+	+	4	0
+	+	36	6
+	+	26	21
+	+	32	12
+	+	31	0
+	+	33	0
+	+	32	0
+	+	30	5
+	+	26	5
+	+	26	5
+	+	26	31
+	+	36	0
+	+	35	3
+	+	26	25
+	+	30	17
+	+	3	7
+	+	26	0
+	+	29	0
+	+	30	0
+	+	28	18
+	+	29	6
+	+	30	0
+	+	34	4
+	+	28	19
+	+	3	12
+	+	28	18
+	+	27	0
+	+	28	19
+
+> ~/letou/www/chanyouji/444.htm
+	"	33	291
+	^	1	15
+	.	1	14
+	+	1	14
+
+> ~/tmp/ymldata/jingdian_info_byid/10010
+	"	1	0
+
+> ~/tmp/ymldata/ReadMe
+	"	1	0
+
+> ~/tmp/ymldata/jingdian_by_jingquid/1036
+	"	51	0
+
+> ~/tmp/ymldata/jingqu_info_byid/1031
+	"	1	0
+
+> ~/tmp/ymldata/jingdian_by_jingquid/1031
+	"	103	0
+
+> ~/tmp/ymldata/sheng_list
+	"	1	2
+
+> ~/letou/www/test.htm
+	"	12	5
+	^	12	6
+	.	12	5
+	+	16	0
+	+	9	5
+	+	7	4
+	+	9	8
+	+	10	0
+	+	7	27
+	+	10	27
+	+	11	22
+	+	13	0
+	+	5	0
+	+	4	62
+	+	9	0
+	+	8	5
+	+	13	0
+	+	12	5
+
+> ~/ping/wpblog/raid.md
+	"	1	0
+	^	32	131
+	.	34	0
+	+	55	71
+	+	1	10
+	+	3	0
+	+	2	0
+	+	4	0
+	+	5	61
+	+	8	0
+	+	9	0
+	+	11	54
+	+	13	0
+	+	12	0
+	+	13	0
+	+	5	78
+	+	11	0
+	+	14	82
+	+	13	0
+	+	16	13
+	+	18	0
+	+	17	0
+	+	55	0
+	+	36	117
+	+	37	0
+	+	42	0
+	+	40	14
+	+	41	0
+	+	44	69
+	+	46	28
+	+	39	0
+	+	1	1
+	+	5	67
+	+	6	0
+	+	16	1
+	+	34	33
+	+	36	108
+	+	38	8
+	+	48	8
+	+	49	0
+	+	52	50
+	+	50	46
+	+	54	66
+	+	53	0
+	+	53	0
+	+	26	34
+	+	24	85
+	+	38	0
+	+	48	0
+	+	34	0
+	+	30	20
+	+	34	62
+	+	32	130
+	+	34	0
+	+	32	0
+	+	34	0
+
+> /usr/share/vim/vim73/syntax/yaml.vim
+	"	186	0
+
+> ~/tools/test.yml
+	"	2	3
+	^	2	4
+	.	2	3
+	+	1	5
+	+	1	5
+	+	2	3
+
+> ~/ping/wpblog/vim.md
+	"	1	0
+	^	198	0
+	.	197	25
+	+	197	25
+
+> ~/ping/wpblog/vm.md
+	"	71	0
+
+> ~/ping/wpblog/architecture.md
+	"	1	0
+
+> ~/ping/wpblog/band-monitor.md
+	"	1	0
+
+> ~/letou/magazine/web/sta/js/main.coffee
+	"	1	4
+	^	5	24
+	.	5	24
+	+	14	4
+	+	14	30
+	+	14	59
+	+	14	0
+	+	14	0
+	+	14	0
+	+	14	54
+	+	14	15
+	+	14	21
+	+	14	21
+	+	12	12
+	+	14	0
+	+	27	0
+	+	14	0
+	+	26	0
+	+	47	26
+	+	47	63
+	+	48	23
+	+	50	0
+	+	52	38
+	+	57	25
+	+	58	15
+	+	56	29
+	+	29	16
+	+	30	26
+	+	31	31
+	+	28	0
+	+	47	0
+	+	57	37
+	+	58	34
+	+	111	18
+	+	62	32
+	+	14	26
+	+	97	26
+	+	111	0
+	+	5	28
+	+	53	22
+	+	54	26
+	+	56	9
+	+	54	22
+	+	54	33
+	+	56	33
+	+	53	0
+	+	58	39
+	+	60	11
+	+	58	0
+	+	49	30
+	+	58	35
+	+	61	25
+	+	59	67
+	+	12	0
+	+	13	15
+	+	32	16
+	+	47	0
+	+	33	0
+	+	33	2
+	+	43	0
+	+	36	22
+	+	35	16
+	+	34	25
+	+	33	7
+	+	38	42
+	+	33	0
+	+	43	41
+	+	47	0
+	+	44	56
+	+	45	17
+	+	34	0
+	+	35	0
+	+	42	0
+	+	45	0
+	+	46	2
+	+	44	20
+	+	47	0
+	+	114	0
+	+	245	22
+	+	263	0
+	+	246	0
+	+	247	37
+	+	250	0
+	+	251	11
+	+	253	25
+	+	254	34
+	+	257	55
+	+	258	13
+	+	260	0
+	+	258	0
+	+	260	0
+	+	259	0
+	+	255	0
+	+	254	0
+	+	252	0
+	+	248	0
+	+	38	17
+	+	41	0
+	+	39	30
+	+	40	43
+	+	41	0
+	+	40	44
+	+	5	24
+
+> ~/letou/www/mapdemo/map.htm
+	"	16	67
+	^	16	70
+	.	16	67
+	+	28	0
+	+	11	101
+	+	16	67
+
+> ~/letou/www/mapdemo/baidu.htm
+	"	4	63
+	^	4	64
+	.	4	63
+	+	19	0
+	+	4	63
+
+> ~/letou/www/mapdemo/test.txt
+	"	1	0
+
+> ~/letou/www/mapdemo/1.txt
+	"	1	0
+
+> ~/letou/www/mapdemo/2.txt
+	"	1	0
+
+> /usr/share/vim/vim73/doc/intro.txt
+	"	405	24
+
+> /usr/share/vim/vim73/doc/tabpage.txt
+	"	1	28
+
+> ~/it/vm/build-vm.sh
+	"	1	0
+
+> ~/it/vm/mytemplates/libvirt/libvirtxml.tmpl
+	"	33	0
+
+> ~/it/vm/mytemplates/libvirt/libvirtxml_fsimage.tmpl
+	"	1	0
+
+> ~/letou/magazine/api/application/models/check_session_model.php
+	"	13	0
+
+> ~/ping/wpblog/ios.md
+	"	18	19
+	^	20	25
+	.	20	24
+	+	5	64
+	+	7	38
+	+	12	5
+	+	3	181
+	+	14	102
+	+	16	61
+	+	18	69
+	+	20	24
+
+> ~/letou/magazine/api/application/models/mag_model.php
+	"	342	18
+	^	603	25
+	.	603	24
+	+	604	0
+	+	604	0
+	+	602	116
+	+	603	24
+	d	603	2
+
+> ~/ping/wpblog/epub.md
+	"	1	87
+	^	1	88
+	.	1	87
+	+	1	87
+
+> ~/letou/magazine/api-common/helpers/MY_url_helper.php
+	"	185	41
+	^	185	42
+	.	185	41
+	+	28	0
+	+	10	44
+	+	28	7
+	+	11	0
+	+	13	0
+	+	187	0
+	+	186	50
+	+	187	0
+	+	189	0
+	+	193	0
+	+	188	0
+	+	192	0
+	+	191	16
+	+	185	41
+	+	191	23
+	+	185	41
+	d	185	1
+
+> ~/letou/magazine/api/application/models/user_model.php
+	"	73	19
+	^	78	11
+	.	78	10
+	+	72	0
+	+	69	12
+	+	68	34
+	+	69	44
+	+	72	0
+	+	70	42
+	+	71	60
+	+	72	0
+	+	88	81
+	+	199	45
+	+	202	82
+	+	216	2
+	+	216	0
+	+	216	0
+	+	204	12
+	+	205	0
+	+	209	20
+	+	204	11
+	+	214	0
+	+	200	4
+	+	199	24
+	+	213	4
+	+	210	17
+	+	213	15
+	+	210	82
+	+	213	35
+	+	215	27
+	+	79	10
+	+	199	20
+	+	210	68
+	+	199	0
+	+	221	0
+	+	78	10
+	d	78	4
+
+> ~/letou/magazine/api/application/config/config.php
+	"	415	34
+	^	413	44
+	.	413	43
+	+	413	43
+	d	413	0
+
+> ~/letou/magazine/api/application/controllers/auth.php
+	"	1	0
+	d	1	0
+
+> ~/letou/magazine/api/application/controllers/person.php
+	"	35	10
+	^	34	65
+	.	34	64
+	+	33	50
+	+	34	64
+	d	35	3
+
+> ~/letou/magazine/api/application/core/MY_Controller.php
+	"	62	41
+	^	71	5
+	.	69	0
+	+	82	0
+	+	73	37
+	+	79	0
+	+	81	0
+	+	81	0
+	+	74	11
+	+	79	0
+	+	62	41
+	+	78	38
+	+	81	35
+	+	79	0
+	+	79	0
+	+	78	34
+	+	79	0
+	+	81	0
+	+	81	0
+	+	72	46
+	+	82	7
+	+	75	18
+	+	77	25
+	+	78	0
+	+	81	0
+	+	80	35
+	+	72	16
+	+	73	0
+	+	71	4
+	+	69	0
+	d	83	0
+
+> ~/letou/magazine/api/application/libraries/MY_Session.php
+	"	85	10
+
+> ~/letou/magazine/api/application/models/msg_model.php
+	"	101	10
+
+> ~/letou/magazine/api/application/models/ad_model.php
+	"	78	0
+	^	80	74
+	.	78	0
+	+	80	73
+	+	80	0
+	+	78	0
+	d	78	2
+
+> ~/letou/magazine/api/application/controllers/comment.php
+	"	36	2
+	^	18	46
+	.	36	0
+	+	17	10
+	+	17	0
+	+	22	41
+	+	24	0
+	+	23	60
+	+	28	41
+	+	29	56
+	+	19	20
+	+	18	41
+	+	19	19
+	+	21	0
+	+	20	41
+	+	22	21
+	+	28	25
+	+	29	46
+	+	36	22
+	+	14	13
+	+	36	0
+	+	14	0
+	+	25	0
+	+	18	45
+	+	25	0
+	+	35	0
+	+	36	0
+	d	36	2
+
+> ~/letou/magazine/api/application/config/autoload.php
+	"	94	53
+	^	94	54
+	.	94	53
+	+	94	53
+	d	94	0
+
+> ~/letou/magazine/web/application/models/comment_model.php
+	"	23	23
+	.	23	0
+	+	19	0
+	+	17	0
+	+	19	45
+	+	23	0
+	+	13	0
+	+	18	10
+	+	19	10
+	+	22	101
+	+	22	11
+	+	23	0
+	+	23	0
+	d	23	2
+
+> ~/letou/magazine/web/application/controllers/user.php
+	"	379	0
+	^	239	30
+	.	239	29
+	+	51	0
+	+	51	18
+	+	51	0
+	+	51	0
+	+	51	0
+	+	36	0
+	+	30	18
+	+	31	0
+	+	32	0
+	+	31	36
+	+	51	0
+	+	33	0
+	+	51	0
+	+	73	0
+	+	64	0
+	+	51	0
+	+	72	0
+	+	80	0
+	+	76	0
+	+	61	68
+	+	48	0
+	+	47	34
+	+	48	88
+	+	60	0
+	+	61	88
+	+	47	0
+	+	380	0
+	+	384	35
+	+	427	0
+	+	429	0
+	+	426	0
+	+	382	0
+	+	381	0
+	+	425	0
+	+	426	0
+	+	432	0
+	+	433	36
+	+	434	8
+	+	431	0
+	+	437	0
+	+	469	0
+	+	67	19
+	+	157	0
+	+	174	0
+	+	164	0
+	+	158	23
+	+	164	0
+	+	160	11
+	+	160	0
+	+	164	0
+	+	166	40
+	+	167	62
+	+	168	43
+	+	170	0
+	+	169	18
+	+	159	22
+	+	169	40
+	+	173	0
+	+	172	37
+	+	166	0
+	+	165	30
+	+	158	33
+	+	174	7
+	+	145	0
+	+	130	0
+	+	132	20
+	+	133	17
+	+	136	17
+	+	128	63
+	+	136	47
+	+	137	23
+	+	138	0
+	+	139	0
+	+	136	41
+	+	129	0
+	+	129	0
+	+	110	0
+	+	128	48
+	+	129	0
+	+	128	12
+	+	144	29
+	+	136	53
+	+	224	0
+	+	221	0
+	+	115	82
+	+	190	51
+	+	103	4
+	+	102	37
+	+	115	83
+	+	209	83
+	+	239	29
+	d	239	4
+
+> ~/letou/magazine/web/application/models/user_loved_model.php
+	"	63	7
+	.	18	19
+	+	14	16
+	+	17	16
+	+	18	19
+	+	14	17
+	+	17	17
+	+	13	0
+	+	18	19
+	d	18	4
+
+> ~/letou/magazine/web/application/views/magazine/lib/magcover.tpl
+	"	1	21
+	.	24	0
+	+	28	62
+	+	21	35
+	+	1	0
+	+	1	0
+	+	1	81
+	+	24	0
+
+> ~/letou/magazine/web/application/views/footer.tpl
+	"	11	2
+	^	13	6
+	.	13	9
+	+	14	7
+	+	13	9
+
+> ~/letou/magazine/web/application/views/share.tpl
+	"	20	15
+	^	20	17
+	.	20	15
+	+	3	87
+	+	20	15
+
+> ~/letou/magazine/web/application/views/header.tpl
+	"	77	25
+	^	59	26
+	.	59	25
+	+	16	32
+	+	16	102
+	+	2	121
+	+	1	0
+	+	2	0
+	+	12	49
+	+	12	0
+	+	16	0
+	+	16	27
+	+	32	28
+	+	16	0
+	+	17	0
+	+	12	0
+	+	16	0
+	+	16	0
+	+	32	0
+	+	16	0
+	+	16	0
+	+	32	0
+	+	16	0
+	+	16	0
+	+	32	0
+	+	16	0
+	+	31	0
+	+	32	0
+	+	31	0
+	+	28	0
+	+	16	0
+	+	15	0
+	+	16	0
+	+	30	0
+	+	16	0
+	+	74	42
+	+	74	50
+	+	74	0
+	+	64	0
+	+	65	0
+	+	58	0
+	+	56	0
+	+	73	0
+	+	73	0
+	+	74	0
+	+	74	0
+	+	57	0
+	+	72	11
+	+	64	0
+	+	57	0
+	+	64	0
+	+	65	0
+	+	64	58
+	+	59	133
+	+	60	16
+	+	59	66
+	+	57	0
+	+	73	0
+	+	74	0
+	+	21	21
+	+	74	0
+	+	90	0
+	+	58	0
+	+	74	0
+	+	24	0
+	+	59	25
+
+> ~/letou/magazine/web/application/views/magazine/down.tpl
+	"	9	6
+	.	10	0
+	+	4	59
+	+	4	7
+	+	4	7
+	+	4	272
+	+	4	126
+	+	4	0
+	+	4	302
+	+	4	0
+	+	4	0
+	+	4	7
+	+	4	74
+	+	4	0
+	+	4	27
+	+	4	8
+	+	4	0
+	+	4	22
+	+	4	22
+	+	2	0
+	+	4	0
+	+	8	0
+	+	6	0
+	+	7	0
+	+	10	0
+
+> ~/letou/magazine/web/application/views/user/signinbox.tpl
+	"	12	19
+	^	11	20
+	.	11	19
+	+	18	0
+	+	17	19
+	+	20	0
+	+	19	8
+	+	21	7
+	+	18	51
+	+	16	20
+	+	22	0
+	+	20	69
+	+	18	0
+	+	20	0
+	+	16	29
+	+	18	0
+	+	3	109
+	+	18	0
+	+	3	0
+	+	7	19
+	+	11	19
+
+> ~/letou/magazine/web/application/models/auth.php
+	"	23	22
+	^	21	26
+	.	21	25
+	+	46	0
+	+	39	82
+	+	21	25
+	d	21	2
+
+> ~/letou/magazine/web/application/config/config.php
+	"	303	30
+	^	303	31
+	.	303	30
+	+	282	43
+	+	288	38
+	+	282	97
+	+	303	30
+	d	303	0
+
+> ~/letou/magazine/web/application/controllers/search.php
+	"	16	17
+	^	15	21
+	.	15	20
+	+	15	20
+	d	15	2
+
+> ~/letou/magazine/web/application/views/magazine/index.tpl
+	"	3	17
+	.	4	0
+	+	4	0
+
+> ~/letou/magazine/web/application/views/user/signupbox.tpl
+	"	18	5
+	^	13	19
+	.	13	18
+	+	20	0
+	+	22	8
+	+	23	0
+	+	24	7
+	+	21	28
+	+	19	6
+	+	25	0
+	+	23	3
+	+	23	92
+	+	21	80
+	+	21	0
+	+	22	0
+	+	23	0
+	+	19	23
+	+	4	126
+	+	21	0
+	+	14	22
+	+	14	129
+	+	8	18
+	+	12	18
+	+	13	18
+
+> ~/letou/magazine/web/application/views/magazine/lib/main-comments.tpl
+	"	9	36
+	^	9	37
+	.	9	36
+	+	5	38
+	+	8	67
+	+	13	0
+	+	8	85
+	+	12	0
+	+	13	0
+	+	12	0
+	+	9	36
+
+> ~/tools/magtool/mail/deliver-amqp-mail.py
+	"	86	11
+	^	86	7
+	.	86	11
+	+	86	11
+
+> ~/tools/magtool/mail/sendmail.py
+	"	78	13
+
+> ~/letou/magazine/web/application/views/user/user_center_main.tpl
+	"	1	0
+	^	37	81
+	.	10	0
+	+	3	0
+	+	4	0
+	+	9	82
+	+	9	79
+	+	36	20
+	+	34	57
+	+	37	57
+	+	34	80
+	+	37	80
+	+	9	0
+	+	10	0
+
+> ~/letou/magazine/web/application/views/user/sidebar_left.tpl
+	"	10	7
+	^	10	8
+	.	10	7
+	+	24	41
+	+	15	36
+	+	56	58
+	+	38	38
+	+	51	42
+	+	38	18
+	+	51	22
+	+	56	82
+	+	57	0
+	+	57	131
+	+	57	144
+	+	57	0
+	+	55	0
+	+	58	24
+	+	57	0
+	+	57	0
+	+	57	139
+	+	57	144
+	+	57	0
+	+	57	0
+	+	19	53
+	+	18	53
+	+	20	57
+	+	18	44
+	+	20	57
+	+	19	45
+	+	20	0
+	+	19	21
+	+	20	0
+	+	52	44
+	+	39	112
+	+	46	43
+	+	29	106
+	+	31	111
+	+	2	47
+	+	30	23
+	+	3	0
+	+	8	26
+	+	10	7
+
+> ~/letou/magazine/web/application/views/magazine/lib/ad-gallery.tpl
+	"	23	23
+	^	23	24
+	.	23	23
+	+	23	23
+
+> ~/letou/magazine/web/sta/styles/main.scss
+	"	1365	0
+	.	1365	0
+	+	305	64
+	+	304	0
+	+	290	0
+	+	290	16
+	+	298	13
+	+	303	0
+	+	298	13
+	+	298	0
+	+	293	11
+	+	305	0
+	+	308	0
+	+	308	0
+	+	305	0
+	+	308	0
+	+	302	0
+	+	290	16
+	+	347	0
+	+	291	0
+	+	1302	0
+	+	347	0
+	+	290	0
+	+	1325	28
+	+	1363	7
+	+	1316	32
+	+	1323	7
+	+	3	0
+	+	4	0
+	+	287	0
+	+	7	0
+	+	14	0
+	+	7	0
+	+	287	0
+	+	20	0
+	+	286	0
+	+	24	0
+	+	20	0
+	+	69	17
+	+	3	0
+	+	14	0
+	+	73	0
+	+	287	0
+	+	287	0
+	+	287	0
+	+	287	0
+	+	287	0
+	+	76	0
+	+	287	0
+	+	287	0
+	+	287	0
+	+	287	0
+	+	287	0
+	+	287	0
+	+	288	0
+	+	288	0
+	+	287	0
+	+	287	0
+	+	288	0
+	+	287	0
+	+	287	0
+	+	288	0
+	+	288	0
+	+	288	0
+	+	288	0
+	+	287	0
+	+	109	0
+	+	110	0
+	+	109	0
+	+	1366	14
+	+	287	0
+	+	288	0
+	+	109	0
+	+	198	0
+	+	115	14
+	+	116	0
+	+	198	0
+	+	115	16
+	+	115	0
+	+	198	0
+	+	199	0
+	+	115	0
+	+	122	11
+	+	204	14
+	+	1365	0
+	+	1365	0
+	+	1365	0
+	+	1365	2
+	+	1365	0
+	+	1365	74
+	+	1365	0
+	+	1365	3
+	+	1365	0
+	+	1365	11
+	+	1365	4
+	+	1365	0
+	+	1365	6
+	+	1365	0
+	+	1365	0
+	+	1365	0
+	+	1365	0
+	+	1365	0
+
+> ~/letou/magazine/web/sta/styles/main.co
+	"	1	0
+
+> ~/letou/magazine/web/sta/js/magazine.js
+	"	165	6
+	^	176	27
+	.	165	0
+	+	70	4
+	+	70	20
+	+	70	0
+	+	69	22
+	+	65	21
+	+	63	0
+	+	62	0
+	+	63	0
+	+	61	27
+	+	57	16
+	+	70	21
+	+	53	45
+	+	61	25
+	+	53	53
+	+	61	0
+	+	57	0
+	+	70	0
+	+	53	0
+	+	48	0
+	+	55	23
+	+	48	42
+	+	70	0
+	+	70	11
+	+	70	0
+	+	50	0
+	+	70	0
+	+	70	11
+	+	202	0
+	+	201	31
+	+	200	31
+	+	198	25
+	+	199	20
+	+	203	35
+	+	200	0
+	+	125	0
+	+	125	5
+	+	125	47
+	+	73	13
+	+	25	18
+	+	46	0
+	+	45	0
+	+	20	0
+	+	20	49
+	+	44	3
+	+	43	0
+	+	40	25
+	+	41	3
+	+	37	8
+	+	20	1
+	+	20	15
+	+	20	1
+	+	20	3
+	+	20	3
+	+	41	20
+	+	25	0
+	+	35	31
+	+	42	17
+	+	25	24
+	+	35	41
+	+	45	6
+	+	20	0
+	+	70	51
+	+	70	0
+	+	70	0
+	+	70	6
+	+	125	0
+	+	123	0
+	+	122	0
+	+	118	0
+	+	119	43
+	+	120	30
+	+	70	38
+	+	125	0
+	+	156	13
+	+	153	6
+	+	126	6
+	+	109	0
+	+	21	0
+	+	70	24
+	+	24	0
+	+	70	0
+	+	126	0
+	+	165	28
+	+	177	32
+	+	165	30
+	+	177	25
+	+	177	32
+	+	168	0
+	+	165	0
+	+	173	4
+	+	178	13
+	+	162	13
+	+	176	25
+	+	177	33
+	+	176	26
+	+	178	0
+	+	177	0
+	+	173	3
+	+	162	0
+	+	165	0
+
+> ~/letou/magazine/web/sta/styles/global.css
+	"	20	43
+	^	20	44
+	.	20	43
+	+	288	0
+	+	293	75
+	+	150	0
+	+	293	0
+	+	15	100
+	+	150	0
+	+	150	0
+	+	15	58
+	+	15	215
+	+	15	0
+	+	15	0
+	+	15	1
+	+	15	8
+	+	15	109
+	+	15	83
+	+	15	10
+	+	15	95
+	+	15	0
+	+	80	212
+	+	15	0
+	+	18	28
+	+	19	40
+	+	20	21
+	+	18	29
+	+	19	44
+	+	20	24
+	+	119	0
+	+	119	84
+	+	96	107
+	+	65	0
+	+	119	84
+	+	18	49
+	+	19	63
+	+	20	43
+
+> ~/letou/magazine/web/sta/js/element.js
+	"	3	20
+	.	12	0
+	+	5	19
+	+	12	20
+	+	12	0
+
+> ~/letou/magazine/web/application/views/magazine/element.tpl
+	"	6	11
+	^	4	15
+	.	4	13
+	+	4	0
+	+	4	11
+	+	4	7
+	+	4	4
+	+	4	5
+	+	4	5
+	+	4	6
+	+	4	0
+	+	5	0
+	+	4	0
+	+	4	19
+	+	4	0
+	+	4	3
+	+	4	35
+	+	4	31
+	+	4	31
+	+	4	0
+	+	4	25
+	+	4	0
+	+	3	5
+	+	6	0
+	+	4	19
+	+	3	5
+	+	4	0
+	+	8	0
+	+	6	0
+	+	4	0
+	+	3	3
+	+	4	0
+	+	6	0
+	+	4	0
+	+	8	0
+	+	7	0
+	+	4	0
+	+	5	0
+	+	4	13
+
+> ~/letou/magazine/web/application/views/magazine/lib/elemcover.tpl
+	"	21	0
+	^	1	40
+	.	1	4
+	+	1	39
+	+	11	35
+	+	1	4
+
+> ~/letou/magazine/web/application/views/user/element.tpl
+	"	1	0
+	^	3	199
+	.	3	198
+	+	6	67
+	+	4	4
+	+	8	5
+	+	2	4
+	+	9	5
+	+	3	4
+	+	3	198
+
+> ~/ping/wpblog/mysql.md
+	"	1	0
+
+> ~/letou/magazine/CodeIgniter/system/libraries/Session.php
+	"	68	1
+
+> ~/ping/wpblog/ssl.md
+	"	15	229
+	^	16	233
+	.	15	0
+	+	1	93
+	+	2	44
+	+	3	34
+	+	7	38
+	+	8	66
+	+	10	0
+	+	10	103
+	+	10	0
+	+	9	0
+	+	11	62
+	+	17	0
+	+	13	48
+	+	13	0
+	+	17	0
+	+	16	232
+	+	15	0
+
+> ~/ping/wpblog/video-download-url-parse.md
+	"	1	0
+
+> /etc/default/pound
+	"	7	8
+	.	7	8
+	+	7	8
+
+> /etc/pound/pound.cfg
+	"	48	2
+	^	37	31
+	.	37	0
+	+	34	10
+	+	35	17
+	+	36	8
+	+	33	56
+	+	37	0
+
+> /etc/pound/server.pem
+	"	1	0
+
+> ~/test.pem
+	"	1	0
+
+> /etc/apache2/sites-available/default-ssl
+	"	58	16
+
+> /etc/ssl/certs/ssl-cert-snakeoil.pem
+	"	1	0
+
+> /etc/apache2/sites-available/default
+	"	20	0
+
+> /etc/apache2/conf.d/security
+	"	3	0
+
+> /etc/apache2/sites-enabled/000-default
+	"	1	0
+
+> ~/letou/magazine/web/application/models/api_model.php
+	"	27	0
+	.	27	0
+	+	27	0
+	+	27	0
+	+	27	0
+	+	27	20
+	+	27	40
+	+	27	43
+	+	27	0
+	d	27	0
+
+> ~/letou/magazine/web/application/views/user/set_base.tpl
+	"	55	3
+
+> ~/letou/magazine/web/application/models/login_model.php
+	"	18	28
+	^	21	22
+	.	47	19
+	+	16	0
+	+	40	51
+	+	48	33
+	+	48	0
+	+	48	0
+	+	48	17
+	+	48	18
+	+	48	0
+	+	46	0
+	+	42	52
+	+	40	94
+	+	48	54
+	+	48	0
+	+	48	0
+	+	48	0
+	+	40	0
+	+	40	0
+	+	41	0
+	+	40	0
+	+	40	91
+	+	40	46
+	+	40	38
+	+	43	30
+	+	44	40
+	+	45	35
+	+	40	0
+	+	18	26
+	+	39	0
+	+	47	29
+	+	48	0
+	+	28	0
+	+	21	49
+	+	22	0
+	+	19	23
+	+	22	3
+	+	41	0
+	+	41	42
+	+	41	7
+	+	41	0
+	+	41	0
+	+	41	49
+	+	42	30
+	+	40	40
+	+	41	0
+	+	18	28
+	+	40	27
+	+	42	21
+	+	40	36
+	+	42	42
+	+	43	0
+	+	47	21
+	+	27	22
+	+	21	21
+	+	27	20
+	+	47	19
+	d	47	2
+
+> ~/letou/magazine/web/application/libraries/MY_Session.php
+	"	126	0
+	.	126	0
+	+	126	0
+	+	125	0
+	+	124	31
+	+	126	23
+	+	126	0
+	+	126	27
+	+	121	0
+	+	126	0
+	+	126	19
+	+	126	45
+	+	54	28
+	+	48	0
+	+	52	0
+	+	52	31
+	+	48	0
+	+	54	0
+	+	126	0
+	d	126	0
+
+> ~/letou/magazine/web/application/controllers/sns.php
+	"	245	9
+	^	243	10
+	.	243	9
+	+	269	0
+	+	267	32
+	+	268	45
+	+	270	19
+	+	271	28
+	+	272	31
+	+	115	0
+	+	202	0
+	+	272	38
+	+	268	41
+	+	244	4
+	+	243	31
+	+	253	46
+	+	253	18
+	+	253	0
+	+	241	0
+	+	243	5
+	+	241	36
+	+	243	9
+	d	243	3
+
+> ~/letou/magazine/web/application/config/routes.php
+	"	97	16
+	^	92	70
+	.	92	69
+	+	93	30
+	+	98	0
+	+	94	0
+	+	92	69
+	d	92	0
+
+> ~/letou/magazine/web/application/views/magazine/comment_list.tpl
+	"	2	0
+	^	13	52
+	.	13	51
+	+	13	135
+	+	13	51
+
+> ~/letou/magazine/web/application/models/user_info_model.php
+	"	35	10
+
+> ~/letou/magazine/web/application/views/user/set_main.tpl
+	"	40	0
+	.	33	39
+	+	33	39
+
+> ~/letou/magazine/web/application/controllers/about.php
+	"	9	0
+	.	7	0
+	+	7	0
+	d	7	1
+
+> /tmp/mysql.log
+	"	172	29
+
+> ~/letou/magazine/api/.git/rebase-merge/git-rebase-todo
+	"	1	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/letou/magazine/web/.git/rebase-merge/git-rebase-todo
+	"	1	0
+	^	2	1
+	.	2	0
+	+	4	0
+	+	5	0
+	+	1	0
+	+	5	0
+	+	5	0
+	+	2	0
+	+	3	0
+	+	5	0
+	+	2	0
+
+> ~/letou/magazine/web/application/models/send_email_model.php
+	"	35	0
+
+> ~/letou/magazine/web/application/config/database.php
+	"	95	0
+
+> ~/letou/magazine/web/.git/COMMIT_EDITMSG
+	"	4	0
+	^	1	37
+	.	4	0
+	+	2	34
+	+	4	31
+	+	2	70
+	+	2	42
+	+	1	36
+	+	2	0
+	+	4	0
+
+> /etc/mysql/my.cnf
+	"	91	5
+
+> /etc/mysql/conf.d/local.cnf
+	"	3	0
+	^	2	23
+	.	3	0
+	+	2	0
+	+	1	0
+	+	2	22
+	+	3	0
+
+> ~/letou/magazine/api/application/models/get_session_model.php
+	"	7	0
+
+> ~/letou/magazine/web/application/models/love_model.php
+	"	1	3
+	.	10	0
+	+	10	0
+	d	1	0
+
+> ~/letou/magazine/web/sta/styles/reset.css
+	"	1	0
+
+> ~/.vim/bundle/vim-haml/indent/scss.vim
+	"	1	0
+
+> ~/.vim/.git/COMMIT_EDITMSG
+	"	1	17
+	^	1	18
+	.	1	17
+	+	1	0
+	+	1	17
+
+> ~/.vim/indent/css.vim
+	"	76	10
+	^	76	11
+	.	76	0
+	+	1	17
+	+	1	0
+	+	1	17
+	+	76	0
+
+> ~/letou/magazine/web/sta/js/gallery.js
+	"	11	15
+	^	10	16
+	.	10	15
+	+	10	15
+
+> ~/.vimrc
+	"	1	0
+
+> ~/letou/magazine/sta/lib/jquery/jquery.colorbox.js
+	"	607	27
+
+> ~/letou/magazine/web/sta/js/main.js
+	"	5	0
+
+> ~/tools/magtool/README.md
+	"	6	72
+	^	6	73
+	.	6	72
+	+	6	72
+
+> ~/tools/pylib/ltutil/mail.py
+	"	10	29
+	^	18	18
+	.	18	0
+	+	18	0
+
+> ~/tools/pylib/ltutil/log.py
+	"	1	0
+
+> ~/.rc/bashrc.local
+	"	4	61
+	^	4	62
+	.	4	0
+	+	4	0
+
+> ~/letou/it/deploy/deliver-amqp-mail.py
+	"	50	27
+
+> ~/letou/it/info/sendmail.py
+	"	33	1
+
+> ~/letou/magazine/web/application/views/user/magazine.tpl
+	"	2	0
+	^	4	86
+	.	4	85
+	+	4	85
+
+> ~/letou/magazine/web/application/views/user/signin.tpl
+	"	3	5
+	^	2	6
+	.	2	5
+	+	11	44
+	+	1	0
+	+	5	0
+	+	4	0
+	+	3	45
+	+	2	5
+
+> ~/letou/magazine/web/application/views/magazine/magazines.tpl
+	"	1	26
+	^	1	27
+
+> ~/letou/magazine/web/application/views/user/signup.tpl
+	"	4	25
+	^	3	26
+	.	3	25
+	+	18	30
+	+	3	25
+
+> ~/letou/magazine/web/application/views/magazine/magazine_detail.tpl
+	"	16	0
+	^	63	92
+	.	63	91
+	+	78	0
+	+	79	51
+	+	80	23
+	+	83	7
+	+	80	24
+	+	80	0
+	+	83	0
+	+	80	30
+	+	30	43
+	+	31	13
+	+	30	8
+	+	31	22
+	+	14	39
+	+	20	48
+	+	16	58
+	+	14	13
+	+	60	31
+	+	62	123
+	+	63	111
+	+	63	23
+	+	62	28
+	+	63	21
+	+	62	60
+	+	63	162
+	+	62	147
+	+	63	91
+
+> ~/letou/magazine/web/application/views/magazine/lib/comments.tpl
+	"	4	3
+	^	1	54
+	.	1	53
+	+	2	0
+	+	3	133
+	+	4	35
+	+	4	137
+	+	9	0
+	+	4	137
+	+	11	40
+	+	4	50
+	+	9	0
+	+	9	5
+	+	4	26
+	+	6	0
+	+	4	4
+	+	6	139
+	+	8	0
+	+	9	0
+	+	6	4
+	+	6	145
+	+	11	0
+	+	7	0
+	+	8	0
+	+	5	0
+	+	9	0
+	+	6	116
+	+	6	80
+	+	25	19
+	+	6	35
+	+	15	4
+	+	15	92
+	+	15	98
+	+	14	0
+	+	15	98
+	+	15	92
+	+	15	92
+	+	17	0
+	+	19	74
+	+	20	0
+	+	21	78
+	+	22	0
+	+	24	0
+	+	21	25
+	+	23	20
+	+	21	32
+	+	3	66
+	+	1	0
+	+	16	0
+	+	1	53
+
+> ~/letou/magazine/web/application/views/user/followees.tpl
+	"	6	0
+	^	12	33
+	.	12	32
+	+	6	46
+	+	13	104
+	+	8	38
+	+	9	3
+	+	11	2
+	+	12	16
+	+	14	10
+	+	4	25
+	+	12	32
+
+> ~/letou/magazine/web/application/views/search.tpl
+	"	38	55
+	^	38	56
+	.	38	55
+	+	38	55
+
+> ~/letou/magazine/web/application/models/page_model.php
+	"	5	16
+	^	5	17
+	.	5	16
+	+	4	0
+	+	5	16
+	d	5	2
+
+> ~/letou/magazine/web/application/views/user/signup
+	"	1	0
+
+> ~/letou/magazine/web/application/views/sns/login.tpl
+	"	1	0
+
+> ~/letou/magazine/web/application/views/sns/register.tpl
+	"	4	0
+
+> ~/letou/magazine/web/application/config/constants.php
+	"	79	21
+	^	79	18
+	.	79	21
+	+	76	24
+	+	77	22
+	+	78	19
+	+	79	21
+	d	79	0
+
+> ~/letou/magazine/web/application/views/magazine/lib/nav.tpl
+	"	1	0
+
+> ~/letou/magazine/web/application/views/magazine/magazine_
+	"	1	0
+
+> ~/letou/it/gerrit/gerrit-log-monitor.sh
+	"	1	0
+
+> ~/letou/it/cm/setup-android-build.sh
+	"	1	0
+
+> ~/letou/magazine/CodeIgniter/system/third_party/smarty/libs/sysplugins/smarty_internal_template.php
+	"	191	39
+
+> /usr/local/bin/rabbitmqadmin
+	"	1	0
+	^	829	0
+	.	828	10
+	+	1	21
+	+	828	10
+
+> ~/letou/magazine/api/application/controllers/apiconfig.php
+	"	68	0
+
+> /etc/redis/redis.conf
+	"	29	11
+	^	29	12
+	.	29	11
+	+	29	11
+
+> /etc/apache2/sites-enabled/in1001.com
+	"	50	42
+	^	45	63
+	.	46	65
+	+	2	0
+	+	3	19
+	+	22	14
+	+	3	0
+	+	39	0
+	+	40	17
+	+	41	23
+	+	48	29
+	+	49	26
+	+	57	33
+	+	56	32
+	+	59	0
+	+	45	64
+	+	46	0
+	+	45	22
+	+	46	50
+	+	45	77
+	+	46	65
+
+> ~/letou/magazine/api/application/models/user_comment_model.php
+	"	50	35
+	^	50	36
+	.	50	35
+	+	40	31
+	+	40	16
+	+	46	8
+	+	55	21
+	+	46	11
+	+	54	0
+	+	53	33
+	+	51	0
+	+	14	25
+	+	16	0
+	+	14	27
+	+	15	14
+	+	14	30
+	+	15	8
+	+	33	0
+	+	33	0
+	+	33	0
+	+	40	23
+	+	36	6
+	+	35	59
+	+	40	0
+	+	33	19
+	+	38	19
+	+	40	0
+	+	39	23
+	+	40	0
+	+	44	0
+	+	30	18
+	+	46	0
+	+	32	6
+	+	33	0
+	+	31	0
+	+	32	19
+	+	50	35
+	d	50	5
+
+> ~/letou/magazine/api/application/models/mag_db.php
+	"	1	0
+
+> ~/letou/magazine/api/index.php
+	"	46	0
+	.	46	0
+	+	46	0
+	d	46	0
+
+> ~/letou/magazine/web/application/config/local.config.php
+	"	2	34
+	^	2	35
+	.	2	34
+	+	3	0
+	+	2	34
+	d	2	0
+
+> ~/letou/magazine/web/application/controllers/user.php.LOCAL.21394.php
+	"	351	34
+
+> ~/letou/magazine/web/application/controllers/user.php.BASE.21394.php
+	"	98	3
+
+> ~/letou/magazine/web/application/controllers/user.php.REMOTE.21394.php
+	"	333	0
+
+> ~/letou/magazine/CodeIgniter/system/helpers/url_helper.php
+	"	574	24
+
+> ~/letou/magazine/web/sta/js/like.js
+	"	10	23
+	^	10	24
+	.	10	23
+	+	10	23
+
+> /etc/php5/conf.d/php.local.ini
+	"	4	0
+	^	4	1
+	.	4	0
+	+	7	0
+	+	9	0
+	+	9	0
+	+	7	0
+	+	10	0
+	+	5	0
+	+	4	0
+
+> /etc/apache2/sites-available/ping
+	"	16	35
+	^	16	36
+	.	16	35
+	+	2	19
+	+	3	0
+	+	7	0
+	+	20	0
+	+	15	34
+	+	16	35
+
+> /etc/apache2/sites-available/in1001.com
+	"	1	17
+	^	26	38
+	.	26	37
+	+	1	0
+	+	2	0
+	+	7	39
+	+	8	37
+	+	19	0
+	+	2	0
+	+	25	39
+	+	26	37
+
+> /etc/apache2/sites-enabled/wowpad.cn
+	"	1	0
+	^	59	41
+	.	59	40
+	+	86	0
+	+	86	0
+	+	86	0
+	+	86	0
+	+	104	0
+	+	106	0
+	+	120	0
+	+	120	0
+	+	86	0
+	+	86	0
+	+	86	0
+	+	86	0
+	+	86	0
+	+	86	0
+	+	86	0
+	+	86	0
+	+	86	0
+	+	86	0
+	+	107	0
+	+	86	0
+	+	87	0
+	+	92	0
+	+	86	0
+	+	86	0
+	+	86	0
+	+	86	0
+	+	86	0
+	+	86	0
+	+	86	22
+	+	120	0
+	+	126	0
+	+	120	0
+	+	122	0
+	+	86	0
+	+	86	0
+	+	86	0
+	+	163	24
+	+	123	30
+	+	134	13
+	+	197	0
+	+	86	0
+	+	86	0
+	+	120	0
+	+	120	0
+	+	163	0
+	+	163	0
+	+	197	0
+	+	163	0
+	+	120	0
+	+	18	0
+	+	86	0
+	+	35	0
+	+	86	0
+	+	163	0
+	+	86	0
+	+	1	0
+	+	86	0
+	+	163	0
+	+	120	0
+	+	218	0
+	+	217	0
+	+	219	15
+	+	224	36
+	+	225	34
+	+	232	30
+	+	233	31
+	+	123	0
+	+	121	13
+	+	122	14
+	+	160	0
+	+	158	0
+	+	52	0
+	+	53	0
+	+	58	42
+	+	59	40
+
+> /etc/apache2/sites-enabled/ee168.cn
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	15
+	+	1	14
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	18
+	+	1	0
+	+	1	0
+	+	1	35
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /etc/apache2/mods-enabled/deflate.conf
+	"	1	0
+
+> /etc/apache2/sites-enabled/hongyun
+	"	6	42
+	^	6	43
+	.	6	42
+	+	1	0
+	+	2	0
+	+	3	0
+	+	5	44
+	+	6	42
+
+> /var/log/mongodb/mongodb.log
+	"	128420	0
+
+> /etc/fstab
+	"	20	72
+	^	20	73
+	.	20	65
+	+	19	28
+	+	20	65
+
+> /etc/apache2/apache2.conf
+	"	219	73
+
+> /var/log/chef/client.log
+	"	32319	59
+
+> /etc/apache2/conf.d/local
+	"	1	15
+	^	3	86
+	.	3	85
+	+	3	85
+
+> ~/it/deploy/1.html
+	"	1	0
+
+> ~/it/deploy/log-analyzer.sh
+	"	3	111
+	^	3	112
+	.	3	112
+	+	4	0
+	+	1	0
+	+	4	0
+	+	3	0
+	+	4	0
+	+	3	0
+	+	4	0
+	+	3	0
+	+	3	92
+	+	3	16
+	+	3	112
+
+> /usr/bin/request-log-analyzer
+	"	19	0
+
+> /var/chef/backup/etc/php5/cli/php.ini.chef-20120110184531
+	"	226	0
+
+> /etc/php5/cli/php.ini
+	"	228	0
+
+> /etc/chef/client.rb
+	"	1	0
+
+> /etc/chef/client.pem
+	"	27	28
+	^	27	29
+	.	27	0
+	+	1	31
+	+	27	0
+
+> /etc/resolv.conf
+	"	1	21
+	^	1	22
+	.	1	21
+	+	1	21
+
+> /etc/apache2/httpd.conf
+	"	1	0
+
+> ~/it/deploy/mountfs.sh
+	"	20	18
+	^	20	19
+	.	20	18
+	+	20	18
+
+> /etc/munin/munin-node.conf
+	"	54	0
+	.	30	0
+	+	37	20
+	+	30	0
+
+> /etc/apache2/sites-available/proxy
+	"	12	49
+	^	12	50
+	.	12	49
+	+	12	60
+	+	11	49
+	+	12	49
+
+> /var/log/apache2/service.wowpad.cn-error.log
+	"	1	0
+
+> /var/log/apache2/s.wowpad.cn-error.log
+	"	1	0
+
+> /var/log/apache2/s.wowpad.cn-access.log
+	"	213170	0
+
+> /etc/apache2/sites-enabled/nipad.cn
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/wowpad.cn
+	"	1	0
+
+> ~/gitconfig
+	"	1	0
+
+> /tmp/du3.txt
+	"	2411	0
+
+> /etc/network/interfaces
+	"	10	20
+	^	10	21
+	.	10	20
+	+	8	0
+	+	14	0
+	+	16	19
+	+	10	20
+
+> ~/.gem/specs/gems.rubyforge.org%80/latest_specs.4.8
+	"	1	0
+
+> /var/log/apache2/m.ee168.cn-access.log
+	"	292883	0
+
+> /var/log/mail.log
+	"	2903	0
+
+> /etc/vsftpd.conf
+	"	1	0
+
+> /var/log/auth.log
+	"	35803	0
+
+> /var/log/fail2ban.log
+	"	1	0
+
+> /var/log/daemon.log
+	"	203	0
+
+> ~/opensource/goexperiment/cat.go
+	"	39	0
+	.	1	0
+	+	3	8
+	+	39	0
+	+	39	0
+	+	7	0
+	+	4	0
+	+	6	6
+	+	39	0
+	+	36	0
+	+	36	7
+	+	39	0
+	+	39	0
+	+	39	29
+	+	39	0
+	+	39	0
+	+	39	8
+	+	35	11
+	+	36	0
+	+	39	0
+	+	39	0
+	+	22	0
+	+	39	0
+	+	10	0
+	+	22	0
+	+	18	0
+	+	17	8
+	+	38	9
+	+	39	0
+	+	19	23
+	+	15	0
+	+	14	10
+	+	15	0
+	+	16	0
+	+	13	5
+	+	19	26
+	+	9	21
+	+	18	9
+	+	19	0
+	+	20	0
+	+	31	10
+	+	33	4
+	+	31	0
+	+	32	29
+	+	15	48
+	+	32	16
+	+	34	15
+	+	32	10
+	+	34	11
+	+	32	11
+	+	31	0
+	+	32	21
+	+	32	0
+	+	32	23
+	+	32	11
+	+	31	0
+	+	31	11
+	+	32	0
+	+	32	0
+	+	31	21
+	+	6	0
+	+	31	0
+	+	32	0
+	+	25	0
+	+	31	0
+	+	32	0
+	+	31	22
+	+	25	0
+	+	31	0
+	+	31	0
+	+	30	0
+	+	29	16
+	+	30	8
+	+	31	0
+	+	37	0
+	+	30	2
+	+	31	0
+	+	29	0
+	+	26	17
+	+	29	7
+	+	27	16
+	+	32	12
+	+	1	0
+
+> ~/opensource/goexperiment/hello.go
+	"	1	0
+
+> ~/opensource/goexperiment/prime.go
+	"	48	0
+	^	39	8
+	.	39	7
+	+	15	0
+	+	13	0
+	+	12	0
+	+	10	3
+	+	12	5
+	+	14	9
+	+	49	0
+	+	48	0
+	+	48	10
+	+	48	15
+	+	5	0
+	+	46	21
+	+	8	0
+	+	10	0
+	+	10	6
+	+	7	23
+	+	45	0
+	+	46	5
+	+	48	15
+	+	46	20
+	+	48	0
+	+	27	0
+	+	20	4
+	+	20	20
+	+	24	0
+	+	18	0
+	+	21	13
+	+	17	25
+	+	23	0
+	+	22	12
+	+	26	12
+	+	19	11
+	+	20	0
+	+	25	3
+	+	47	10
+	+	47	15
+	+	48	0
+	+	48	19
+	+	46	13
+	+	17	39
+	+	46	14
+	+	10	18
+	+	12	0
+	+	10	0
+	+	17	13
+	+	20	18
+	+	18	0
+	+	42	0
+	+	31	20
+	+	38	0
+	+	37	0
+	+	37	4
+	+	33	6
+	+	37	0
+	+	34	0
+	+	36	24
+	+	41	10
+	+	40	0
+	+	45	0
+	+	30	0
+	+	29	11
+	+	30	2
+	+	31	5
+	+	46	0
+	+	47	0
+	+	47	0
+	+	48	0
+	+	47	18
+	+	47	13
+	+	34	14
+	+	47	0
+	+	45	0
+	+	32	4
+	+	38	2
+	+	39	7
+
+> ~/opensource/goexperiment/gg.go
+	"	1	5
+	^	439	0
+	.	438	20
+	+	438	20
+
+> ~/opensource/goexperiment/.gitignore
+	"	3	2
+	^	3	3
+	.	3	2
+	+	1	2
+	+	2	4
+	+	3	2
+
+> ~/opensource/goexperiment/.git/config
+	"	8	27
+	^	8	28
+	.	8	27
+	+	6	0
+	+	8	27
+
+> ~/opensource/goscript/.git/addp-hunk-edit.diff
+	"	7	0
+	.	7	0
+	+	7	0
+
+> ~/opensource/goscript/cmd/goscript
+	"	1	0
+
+> ~/opensource/goscript/.git/COMMIT_EDITMSG
+	"	1	24
+	^	1	25
+	.	1	24
+	+	1	24
+
+> ~/opensource/goscript/.git/config
+	"	8	27
+	^	8	28
+	.	8	27
+	+	12	0
+	+	14	43
+	+	9	16
+	+	6	0
+	+	8	27
