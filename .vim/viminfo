@@ -8,17 +8,24 @@
 # hlsearch on (H) or off (h):
 ~H
 # 上个 Search 图案：
-~MSle0~/default_n
+~MSle0~/require
 
 # 上个 替换 Search 图案：
 ~MSle0&start
 
 # 最后替换的字符串
-$
+$.undefined.net
 
 # 命令行 历史记录 (从新到旧)：
+:x
 :q
+:q!
 :w
+:set nu
+:w /tmp/tmpb
+:0,.d
+:set paste
+:r /home/zs/Desktop/linuxetc/vimrc
 :set ft=html
 :qa
 :scriptnames
@@ -51,7 +58,6 @@ $
 :e application/views/trip2.tpl
 :sp application/controllers/trip.php
 :set nopaste
-:set paste
 :set ft=xml
 :e http://chanyouji.com/trips/1431
 :e http://chanyouji.com/trips/233
@@ -674,11 +680,25 @@ $
 :g/triplogs.in1001
 :%s/www.in1001.com/triplogs.in1001.com/g
 :sp /etc/apache2/sites-enabled/ping
-:q!
-:x
+:tabn:q
+:set filetype=html
+:tabn
+:tabe sta/view.html
+:tabp
+:tabe sta/js/core-view.js
+:tn
+:tabe application/controllers/detail.php
+:tabe application/views/detail.tpl
+:tabe application/controllers/travelbook.php
 
 # 查找字符串 历史记录 (从新到旧)：
+?/require
+?/setno
+?/setnu
 ? @JAVA_PACKAGE@
+?/HEAD
+?/head
+?/map
 ? .*
 ? ^\([ 	]*Last modified: \)
 ?/default_n
@@ -1480,6 +1500,15 @@ $
 ? triplogs.in1001
 ? www.in1001.com
 ?/triplog
+?/plan_intro
+?/travel.qunar.com
+?/qunar
+?/qunar.com
+?/books/detail
+?/bookMap
+?/dayinfo
+?/ping
+?/dark
 
 # 表达式 历史记录 (从新到旧)：
 
@@ -1488,48 +1517,2953 @@ $
 # 输入行 历史记录 (从新到旧)：
 
 # 寄存器:
-""0	CHAR	0
-	</div>
-"1	LINE	0
-	
+"0	LINE	0
+			<script src="/sta/js/core-view.js"></script>
+"1	BLOCK	0
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
+	"
 "2	LINE	0
-											</div>
+	raiders = {
+	    error: function(a) {
+	        throw a;
+	    },
+	    sdebug: function(b) {
+	        var a = "plan";
+	        $.ajax({
+	            url: "http://msg.log/",
+	            dataType: "jsonp",
+	            data: {
+	                cl: a,
+	                msg: b
+	            }
+	        });
+	    },
+	    _: function(a) {
+	        a.call(this, this);
+	    },
+	    namespace: function(c, f, b) {
+	        if (typeof c === "function") {
+	            f = c;
+	            c = "";
+	        }
+	        c = c.split(".");
+	        var e = this;
+	        var a;
+	        var d = ((typeof f) !== "function" || b) && f !== undefined ? f: {};
+	        while (a = c.shift()) {
+	            e = e[a] || (e[a] = c.length ? {}: d);
+	        }
+	        if (typeof f === "function" && !b) {
+	            f.call(e, this);
+	        }
+	        return e;
+	    },
+	    use: function() {
+	        return this.namespace.apply(this, arguments);
+	    },
+	    outName: function(a) {
+	        return "raiders." + a;
+	    },
+	    loadJs: function(e, a, d) {
+	        d = d || {};
+	        var f = document.getElementsByTagName("head")[0] || document.documentElement,
+	        c = document.createElement("script"),
+	        b = false;
+	        c.src = e;
+	        if (d.charset) {
+	            c.charset = d.charset;
+	        }
+	        c.onerror = c.onload = c.onreadystatechange = function() {
+	            if (!b && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")) {
+	                b = true;
+	                if (a) {
+	                    a();
+	                }
+	                c.onerror = c.onload = c.onreadystatechange = null;
+	                f.removeChild(c);
+	            }
+	        };
+	        f.insertBefore(c, f.firstChild);
+	    },
+	    loadListJs: function(b, a) {
+	        if (!b.length) {
+	            return a && a();
+	        }
+	        var c = b.shift();
+	        raiders.loadJs(c,
+	        function() {
+	            raiders.loadListJs(b, a);
+	        });
+	    },
+	    loadCss: function(a) {
+	        var c = document.getElementsByTagName("head")[0] || document.documentElement,
+	        b = document.createElement("link");
+	        b.rel = "stylesheet";
+	        b.type = "text/css";
+	        b.href = a;
+	        c.insertBefore(b, c.firstChild);
+	    }
+	}; (function(a) {
+	    var b;
+	    a.userInfo = {
+	        _netGet: function(c) {
+	            $.get("/travelbook/commons/getTempUser",
+	            function(d) {
+	                localStorage.setItem("tempUser", d);
+	                c(d);
+	            },
+	            "text");
+	        },
+	        _getCookie: function(d) {
+	            var c = document.cookie.match(new RegExp("(^| )" + d + "=([^;]*)(;|$)"));
+	            if (c != null) {
+	                return unescape(c[2]);
+	            }
+	            return null;
+	        },
+	        isLogin: function() {
+	            return !! (this._getCookie("_t") && this._getCookie("_q") && this._getCookie("_q").indexOf("G.") < 0);
+	        },
+	        _infoGet: function(c) {
+	            var d = this;
+	            if (this._info && this.checkCooKieChange()) {
+	                c(this._info);
+	            } else {
+	                $.get("/travelbook/commons/getUserInfo", {
+	                    s: (new Date).getTime()
+	                },
+	                function(e) {
+	                    d._info = e;
+	                    c(e);
+	                },
+	                "json");
+	            }
+	        },
+	        getTempID: function(c) {
+	            var d = localStorage.getItem("tempUser");
+	            if (d) {
+	                c(d);
+	            } else {
+	                this._netGet(c);
+	            }
+	        },
+	        getID: function(c) {
+	            if (this.isLogin()) {
+	                this._infoGet(function(d) {
+	                    c(d.uid);
+	                });
+	            } else {
+	                this.getTempID(c);
+	            }
+	        },
+	        getInfo: function(c) {
+	            if (this.isLogin()) {
+	                this._infoGet(function(d) {
+	                    c(d);
+	                });
+	            } else {
+	                this.getTempID(c);
+	            }
+	        },
+	        checkCooKieChange: function() {
+	            var c = this._getCookie("_q");
+	            if (c !== b) {
+	                b = c;
+	                return false;
+	            } else {
+	                return true;
+	            }
+	        },
+	        info: function(c) {
+	            this._infoGet(c);
+	        },
+	        addBook: function() {
+	            localStorage.setItem("tempBookNumber", this.getBookNum() + 1);
+	        },
+	        getBookNum: function() {
+	            if (!localStorage.getItem("tempBookNumber")) {
+	                localStorage.setItem("tempBookNumber", 0);
+	            }
+	            return parseInt(localStorage.getItem("tempBookNumber"));
+	        },
+	        userStatutsSrc: "http://qunarzz.com/js/userstatus/build/userstatus-0.4.min.js"
+	    };
+	    b = a.userInfo._getCookie("_q");
+	})(this);
+	JSON = {}; (function() {
+	    function f(n) {
+	        return n < 10 ? "0" + n: n;
+	    }
+	    if (typeof Date.prototype.toJSON !== "function") {
+	        Date.prototype.toJSON = function(key) {
+	            return isFinite(this.valueOf()) ? this.getUTCFullYear() + "-" + f(this.getUTCMonth() + 1) + "-" + f(this.getUTCDate()) + "T" + f(this.getUTCHours()) + ":" + f(this.getUTCMinutes()) + ":" + f(this.getUTCSeconds()) + "Z": null;
+	        };
+	        String.prototype.toJSON = Number.prototype.toJSON = Boolean.prototype.toJSON = function(key) {
+	            return this.valueOf();
+	        };
+	    }
+	    var cx = /[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g,
+	    escapable = /[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g,
+	    gap, indent, meta = {
+	        "\b": "\\b",
+	        "\t": "\\t",
+	        "\n": "\\n",
+	        "\f": "\\f",
+	        "\r": "\\r",
+	        '"': '\\"',
+	        "\\": "\\\\"
+	    },
+	    rep;
+	    function quote(string) {
+	        escapable.lastIndex = 0;
+	        return escapable.test(string) ? '"' + string.replace(escapable,
+	        function(a) {
+	            var c = meta[a];
+	            return typeof c === "string" ? c: "\\u" + ("0000" + a.charCodeAt(0).toString(16)).slice( - 4);
+	        }) + '"': '"' + string + '"';
+	    }
+	    function str(key, holder) {
+	        var i, k, v, length, mind = gap,
+	        partial, value = holder[key];
+	        if (value && typeof value === "object" && typeof value.toJSON === "function") {
+	            value = value.toJSON(key);
+	        }
+	        if (typeof rep === "function") {
+	            value = rep.call(holder, key, value);
+	        }
+	        switch (typeof value) {
+	        case "string":
+	            return quote(value);
+	        case "number":
+	            return isFinite(value) ? String(value) : "null";
+	        case "boolean":
+	        case "null":
+	            return String(value);
+	        case "object":
+	            if (!value) {
+	                return "null";
+	            }
+	            gap += indent;
+	            partial = [];
+	            if (Object.prototype.toString.apply(value) === "[object Array]") {
+	                length = value.length;
+	                for (i = 0; i < length; i += 1) {
+	                    partial[i] = str(i, value) || "null";
+	                }
+	                v = partial.length === 0 ? "[]": gap ? "[\n" + gap + partial.join(",\n" + gap) + "\n" + mind + "]": "[" + partial.join(",") + "]";
+	                gap = mind;
+	                return v;
+	            }
+	            if (rep && typeof rep === "object") {
+	                length = rep.length;
+	                for (i = 0; i < length; i += 1) {
+	                    if (typeof rep[i] === "string") {
+	                        k = rep[i];
+	                        v = str(k, value);
+	                        if (v) {
+	                            partial.push(quote(k) + (gap ? ": ": ":") + v);
+	                        }
+	                    }
+	                }
+	            } else {
+	                for (k in value) {
+	                    if (Object.prototype.hasOwnProperty.call(value, k)) {
+	                        v = str(k, value);
+	                        if (v) {
+	                            partial.push(quote(k) + (gap ? ": ": ":") + v);
+	                        }
+	                    }
+	                }
+	            }
+	            v = partial.length === 0 ? "{}": gap ? "{\n" + gap + partial.join(",\n" + gap) + "\n" + mind + "}": "{" + partial.join(",") + "}";
+	            gap = mind;
+	            return v;
+	        }
+	    }
+	    if (typeof JSON.stringify !== "function") {
+	        JSON.stringify = function(value, replacer, space) {
+	            var i;
+	            gap = "";
+	            indent = "";
+	            if (typeof space === "number") {
+	                for (i = 0; i < space; i += 1) {
+	                    indent += " ";
+	                }
+	            } else {
+	                if (typeof space === "string") {
+	                    indent = space;
+	                }
+	            }
+	            rep = replacer;
+	            if (replacer && typeof replacer !== "function" && (typeof replacer !== "object" || typeof replacer.length !== "number")) {
+	                throw new Error("JSON.stringify");
+	            }
+	            return str("", {
+	                "": value
+	            });
+	        };
+	    }
+	    if (typeof JSON.parse !== "function") {
+	        JSON.parse = function(text, reviver) {
+	            var j;
+	            function walk(holder, key) {
+	                var k, v, value = holder[key];
+	                if (value && typeof value === "object") {
+	                    for (k in value) {
+	                        if (Object.prototype.hasOwnProperty.call(value, k)) {
+	                            v = walk(value, k);
+	                            if (v !== undefined) {
+	                                value[k] = v;
+	                            } else {
+	                                delete value[k];
+	                            }
+	                        }
+	                    }
+	                }
+	                return reviver.call(holder, key, value);
+	            }
+	            text = String(text);
+	            cx.lastIndex = 0;
+	            if (cx.test(text)) {
+	                text = text.replace(cx,
+	                function(a) {
+	                    return "\\u" + ("0000" + a.charCodeAt(0).toString(16)).slice( - 4);
+	                });
+	            }
+	            if (/^[\],:{}\s]*$/.test(text.replace(/\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g, "@").replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g, "]").replace(/(?:^|:|,)(?:\s*\[)+/g, ""))) {
+	                j = eval("(" + text + ")");
+	                return typeof reviver === "function" ? walk({
+	                    "": j
+	                },
+	                "") : j;
+	            }
+	            throw new SyntaxError("JSON.parse");
+	        };
+	    }
+	} ());
+	if (! ("localStorage" in this)) { (function(a) {
+	        function c(d, f) {
+	            var e = 999;
+	            var g = new Date();
+	            g.setTime(g.getTime() + e * 24 * 60 * 60 * 1000);
+	            document.cookie = d + "=" + escape(f) + ";expires=" + g.toGMTString();
+	        }
+	        function b(e) {
+	            var d = document.cookie.match(new RegExp("(^| )" + e + "=([^;]*)(;|$)"));
+	            if (d != null) {
+	                return unescape(d[2]);
+	            }
+	            return null;
+	        }
+	        localStorage = {
+	            c_name: "__raiders__",
+	            _J_OJB: function(d) {
+	                if (d) {
+	                    c(this.c_name, JSON.stringify(d));
+	                } else {
+	                    return JSON.parse(b(this.c_name));
+	                }
+	                return this;
+	            },
+	            init: function() {
+	                if (!b(this.c_name)) {
+	                    c(this.c_name, "{}");
+	                }
+	                return this;
+	            },
+	            setItem: function(d, f) {
+	                var e = this._J_OJB();
+	                e[d] = f;
+	                this._J_OJB(e);
+	                return this;
+	            },
+	            getItem: function(d) {
+	                return this._J_OJB()[d];
+	            },
+	            remove: function(d) {
+	                var e = this._J_OJB();
+	                delete e[d];
+	                this._J_OJB(e);
+	                return this;
+	            }
+	        }.init();
+	    })(this);
+	}
+	R = raiders;
+	RM = R.namespace("model");
+	RH = R.namespace("helper");
+	RC = R.namespace("config");
+	RCL = R.namespace("_class");
+	RCT = R.namespace("_control");
+	RSPACE = function(b, a) {
+	    return R.namespace.apply(R, arguments);
+	};
+	MIXP = function() {
+	    return RH.mixPrototype.apply(R, arguments);
+	};
+	raiders.use("helper").HTMLEncode = function(a) {
+	    return (a || "").toString().replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\'/g, "&#39;").replace(/\"/g, "&quot;");
+	};
+	raiders.use("helper").mix = function(e, d, b) {
+	    for (var a in d) {
+	        if (b || !(a in e)) {
+	            e[a] = d[a];
+	        }
+	    }
+	    return e;
+	};
+	RSPACE("helper",
+	function() {
+	    var b = this;
+	    var a = RH.mix;
+	    var e = Array.prototype.slice;
+	    var d = Object.prototype.toString;
+	    function c(f, i) {
+	        var h = this;
+	        if (i === undefined) {
+	            return (f.callee.__super__constructor__ || 0)[0];
+	        }
+	        var g = Array.prototype.slice.call(f, i);
+	        f.callee.__super__constructor__ && f.callee.__super__constructor__.forEach(function(j) {
+	            j.apply(h, g);
+	        });
+	    }
+	    this.mixPrototype = function(g, f) {
+	        if (d.call(f) === "[object Object]") {
+	            var h = e.call(arguments, 2);
+	        } else {
+	            if (d.call(f) === "[object Function]") {
+	                var h = e.call(arguments, 1);
+	                f = {};
+	            }
+	        }
+	        if (h.length) {
+	            var i = g.prototype.constructor;
+	            h.forEach(function(m, l) {
+	                var j = function() {};
+	                j.prototype = m.prototype;
+	                var k = g.prototype;
+	                g.prototype = new j();
+	                a(g.prototype, k, true); (g.__super__constructor__ = g.__super__constructor__ || []).push(m);
+	                if (!g.prototype._super_) {
+	                    g.prototype._super_ = c;
+	                }
+	            });
+	            g.prototype.constructor = i;
+	        }
+	        a(g.prototype, f, true);
+	        return g;
+	    };
+	});
+	raiders.use("helper",
+	function() {
+	    function a() {
+	        return this._last_out_method_to_;
+	    }
+	    this.outMethod = function(d, c) {
+	        if (!c) {
+	            c = d;
+	            d = {};
+	        }
+	        for (var b in c) {
+	            if (typeof c[b] === "function" && b.charAt(0) !== "_" || b.charAt(1) === "_") {
+	                d[b] = (function(e) {
+	                    return function() {
+	                        return e.apply(c, arguments);
+	                    };
+	                })(c[b]);
+	            }
+	        }
+	        if (!c._last_out_method_to_) {
+	            c._last_out_method_to_ = d;
+	            c.outsideSelf = a;
+	        }
+	        return d;
+	    };
+	});
+	raiders.use("helper").parseDate = function(b) {
+	    var a = b.match(/^ *(\d{4})-(\d{1,2})-(\d{1,2}) *$/);
+	    if (a && a.length > 3) {
+	        return new Date(parseInt(a[1], 10), parseInt(a[2], 10) - 1, parseInt(a[3], 10));
+	    }
+	    a = b.match(/^ *(\d{4})-(\d{1,2})-(\d{1,2})[\s\u00A0]+(\d{1,2}):(\d{1,2}):(\d{1,2}) *$/);
+	    if (a && a.length > 6) {
+	        return new Date(parseInt(a[1], 10), parseInt(a[2], 10) - 1, parseInt(a[3], 10), parseInt(a[4], 10), parseInt(a[5], 10), parseInt(a[6], 10));
+	    }
+	    a = b.match(/^ *(\d{4})-(\d{1,2})-(\d{1,2})[\s\u00A0]+(\d{1,2}):(\d{1,2}):(\d{1,2})\.(\d{1,9}) *$/);
+	    if (a && a.length > 7) {
+	        return new Date(parseInt(a[1], 10), parseInt(a[2], 10) - 1, parseInt(a[3], 10), parseInt(a[4], 10), parseInt(a[5], 10), parseInt(a[6], 10), parseInt(a[7], 10));
+	    }
+	};
+	raiders.use("helper").methodize = function(b, a) {
+	    if (a) {
+	        return function() {
+	            return b.apply(null, [this[a]].concat([].slice.call(arguments)));
+	        };
+	    }
+	    return function() {
+	        return b.apply(null, [this].concat([].slice.call(arguments)));
+	    };
+	};
+	raiders.use("helper",
+	function() {
+	    this.cutString = function(b, c, a) {
+	        if (b.length <= c) {
+	            return b;
+	        }
+	        a = a || "";
+	        return b.slice(0, c - a.length) + a;
+	    };
+	    this.countStr = function(d) {
+	        var b = 0;
+	        for (var c = 0,
+	        a = d.length; c < a; c++) {
+	            if (d.charCodeAt(c) > 128) {
+	                b++;
+	            } else {
+	                b += 0.5;
+	            }
+	        }
+	        return b;
+	    };
+	    this.splitStr = function(f, d, c) {
+	        if (!f) {
+	            return "";
+	        }
+	        var g = 0,
+	        e = false;
+	        result = [];
+	        for (var b = 0,
+	        a = f.length; b < a; b++) {
+	            f.charCodeAt(b) > 127 ? g += 1 : g += 0.5;
+	            if (g > d) {
+	                e = true;
+	                break;
+	            }
+	            result.push(f.charAt(b));
+	        }
+	        return result.join("") + (e ? (typeof c !== "undefined" ? c: "...") : "");
+	    };
+	});
+	raiders.use("helper",
+	function() {
+	    var c = this.HTMLEncode;
+	    var f = this.cutString;
+	    var d = this;
+	    var e = /\{\{([\w-_\d\.]+)(?:\|(\d+))?\}\}/ig;
+	    var a = /_\((.*?)\)_/ig;
+	    var b = "";
+	    this.tmp = function(k, l, h, g, j) {
+	        j = j || b;
+	        k = k.replace(a,
+	        function(n, m) {
+	            var o = d.tmp(m, l, true, g, j);
+	            return o.rpNumber > 0 ? o.text: "";
+	        });
+	        var i = 0;
+	        k = k.replace(e,
+	        function(q, p, n) {
+	            var t, r = l,
+	            o, s, m;
+	            t = p.toString().split(".");
+	            m = t.length;
+	            while (s = r[t.shift()]) {
+	                r = s;
+	                m--;
+	            }
+	            if (m === 0) {
+	                o = r;
+	                i++;
+	            } else {
+	                o = j;
+	            }
+	            o = o.toString();
+	            if (n) {
+	                n = parseInt(n, 10);
+	                o = f(o, n, "…");
+	            }
+	            o = c(o);
+	            return o;
+	        });
+	        return h === true ? {
+	            text: k,
+	            rpNumber: i
+	        }: k;
+	    };
+	});
+	raiders.use("helper",
+	function() {
+	    this.recLog = function(a, c) {
+	        var b = new Image();
+	        b.width = 1;
+	        b.height = 1;
+	        b.src = "http://bc.qunar.com/clk?s=" + a + "&a=" + c + "&t=" + Math.random();
+	    };
+	});
+	raiders.use("helper",
+	function() {
+	    var b = 6378.137;
+	    function a(e) {
+	        return e * Math.PI / 180;
+	    }
+	    function c(e, j, d, h) {
+	        var g = a(e);
+	        var f = a(d);
+	        var k = g - f;
+	        var i = a(j) - a(h);
+	        var l = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(k / 2), 2) + Math.cos(g) * Math.cos(f) * Math.pow(Math.sin(i / 2), 2)));
+	        l = l * b;
+	        l = Math.round(l * 10000) / 10000;
+	        return l;
+	    }
+	    this.calDistance = c;
+	});
+	raiders.use("config",
+	function() {
+	    this.SID = "385";
+	    this.book_api = "/travelbook/";
+	    this.q_search_api = "http://labs.qunar.com/qproxy?engine=search_content&search_row=4&callback=?";
+	    this.train_info_api = "http://train.qunar.com/qunar/checi.jsp?format=js&callback=?";
+	});
+	raiders.use("config",
+	function() {
+	    var a = raiders.helper.parseDate;
+	    this.time_unit = {
+	        1 : {
+	            className: "morning",
+	            text: "清晨",
+	            def_sendTime: a("1970-1-1 06:30:00"),
+	            d_flag: true
+	        },
+	        2 : {
+	            className: "forenoon",
+	            text: "上午",
+	            def_sendTime: a("1970-1-1 08:30:00")
+	        },
+	        3 : {
+	            className: "midday",
+	            text: "中午",
+	            def_sendTime: a("1970-1-1 11:30:00")
+	        },
+	        4 : {
+	            className: "afternoon",
+	            text: "下午",
+	            def_sendTime: a("1970-1-1 13:30:00")
+	        },
+	        5 : {
+	            className: "night",
+	            text: "晚上",
+	            def_sendTime: a("1970-1-1 17:30:00")
+	        },
+	        6 : {
+	            className: "night_life",
+	            text: "夜晚",
+	            def_sendTime: a("1970-1-1 20:30:00"),
+	            d_flag: true
+	        }
+	    };
+	});
+	raiders.use("config",
+	function() {
+	    function a(e) {
+	        return e.name;
+	    }
+	    function c(e) {
+	        if (e.begin_city && e.end_city) {
+	            return e.begin_city + "到" + e.end_city;
+	        } else {
+	            return e.type_name;
+	        }
+	    }
+	    function b(e) {
+	        return e.name;
+	    }
+	    function d(e) {
+	        return e.location_name;
+	    }
+	    this.book_type_id = {
+	        2 : {
+	            text: "事件",
+	            name: a
+	        },
+	        3 : {
+	            text: "城市",
+	            name: d
+	        },
+	        4 : {
+	            text: "景点",
+	            name: d
+	        },
+	        5 : {
+	            text: "美食",
+	            name: d
+	        },
+	        6 : {
+	            text: "酒店",
+	            name: d
+	        },
+	        7 : {
+	            text: "娱乐",
+	            name: d
+	        },
+	        8 : {
+	            text: "购物",
+	            name: d
+	        },
+	        9 : {
+	            text: "地点",
+	            name: d
+	        },
+	        10 : {
+	            text: "地点",
+	            name: d
+	        },
+	        11 : {
+	            text: "交通",
+	            name: c
+	        },
+	        12 : {
+	            text: "火车",
+	            name: c
+	        },
+	        13 : {
+	            text: "飞机",
+	            name: c
+	        },
+	        14 : {
+	            text: "其他交通",
+	            name: c
+	        },
+	        15 : {
+	            text: "酒店",
+	            name: a
+	        },
+	        16 : {
+	            text: "景点",
+	            name: a
+	        },
+	        17 : {
+	            text: "景区",
+	            name: d
+	        },
+	        18 : {
+	            text: "美食",
+	            name: a
+	        },
+	        19 : {
+	            text: "娱乐",
+	            name: a
+	        },
+	        20 : {
+	            text: "购物",
+	            name: a
+	        },
+	        21 : {
+	            text: "城市交通",
+	            name: d
+	        },
+	        22 : {
+	            text: "公交",
+	            name: function(e) {
+	                return e.begin_location_name + "到" + e.end_location_name + "的公交";
+	            }
+	        },
+	        23 : {
+	            text: "自驾",
+	            name: function(e) {
+	                return e.begin_location_name + "到" + e.end_location_name + "的自驾";
+	            }
+	        }
+	    };
+	});
+	raiders.use("config",
+	function() {
+	    function b(d) {
+	        return d.format("yyyy-MM-dd hh:mm");
+	    }
+	    function a(d) {
+	        return d.format("hh:mm");
+	    }
+	    function c(d) {
+	        switch (d) {
+	        case "0":
+	            d = "低价型";
+	            break;
+	        case "1":
+	            d = "经济型";
+	            break;
+	        case "2":
+	            d = "二星级";
+	            break;
+	        case "3":
+	            d = "三星级";
+	            break;
+	        case "4":
+	            d = "四星级";
+	            break;
+	        case "5":
+	            d = "五星级";
+	            break;
+	        }
+	        return d;
+	    }
+	    this.get_with_type_id = {
+	        2 : [{
+	            key: "start_time",
+	            name: "开始时间",
+	            hook: a
+	        },
+	        {
+	            key: "location",
+	            name: "事件地点"
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        3 : [{
+	            key: "summary.city",
+	            name: "城市"
+	        },
+	        {
+	            key: "summary.tag",
+	            name: "标签"
+	        },
+	        {
+	            key: "summary.detail",
+	            name: "简介"
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        4 : [{
+	            key: "summary.price",
+	            name: "门票"
+	        },
+	        {
+	            key: "summary.opentime",
+	            name: "开放时间"
+	        },
+	        {
+	            key: "summary.tel",
+	            name: "电话"
+	        },
+	        {
+	            key: "summary.tag",
+	            name: "标签"
+	        },
+	        {
+	            key: "summary.addr",
+	            name: "地址"
+	        },
+	        {
+	            key: "summary.detail",
+	            name: "简介"
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        5 : [{
+	            key: "summary.style",
+	            name: "类型"
+	        },
+	        {
+	            key: "summary.price",
+	            name: "人均消费"
+	        },
+	        {
+	            key: "summary.tel",
+	            name: "电话"
+	        },
+	        {
+	            key: "summary.addr",
+	            name: "地址"
+	        },
+	        {
+	            key: "summary.special",
+	            name: "特色美食"
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        6 : [{
+	            key: "summary.price",
+	            name: "价格"
+	        },
+	        {
+	            key: "summary.stars",
+	            name: "档次",
+	            hook: c
+	        },
+	        {
+	            key: "summary.tel",
+	            name: "电话"
+	        },
+	        {
+	            key: "summary.addr",
+	            name: "地址"
+	        },
+	        {
+	            key: "summary.detail",
+	            name: "简介"
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        7 : [{
+	            key: "summary.style",
+	            name: "类型"
+	        },
+	        {
+	            key: "summary.price",
+	            name: "人均消费"
+	        },
+	        {
+	            key: "summary.tel",
+	            name: "电话"
+	        },
+	        {
+	            key: "summary.addr",
+	            name: "地址"
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        8 : [{
+	            key: "summary.style",
+	            name: "类型"
+	        },
+	        {
+	            key: "summary.price",
+	            name: "人均消费"
+	        },
+	        {
+	            key: "summary.tel",
+	            name: "电话"
+	        },
+	        {
+	            key: "summary.addr",
+	            name: "地址"
+	        },
+	        {
+	            key: "summary.special",
+	            name: "特色"
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        9 : [{
+	            key: "summary.addr",
+	            name: "地址"
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        10 : [{
+	            key: "summary.addr",
+	            name: "地址"
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        11 : [],
+	        12 : [{
+	            key: "train_number",
+	            name: "车次"
+	        },
+	        {
+	            key: "begin_city",
+	            name: "出发地"
+	        },
+	        {
+	            key: "end_city",
+	            name: "目的地"
+	        },
+	        {
+	            key: "start_time",
+	            name: "出发时间",
+	            hook: b
+	        },
+	        {
+	            key: "end_time",
+	            name: "到达时间",
+	            hook: b
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        13 : [{
+	            key: "train_number",
+	            name: "航班号"
+	        },
+	        {
+	            key: "begin_city",
+	            name: "出发地"
+	        },
+	        {
+	            key: "end_city",
+	            name: "目的地"
+	        },
+	        {
+	            key: "start_time",
+	            name: "出发时间",
+	            hook: b
+	        },
+	        {
+	            key: "end_time",
+	            name: "到达时间",
+	            hook: b
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        14 : [{
+	            key: "type_name",
+	            name: "交通方式"
+	        },
+	        {
+	            key: "begin_city",
+	            name: "出发地"
+	        },
+	        {
+	            key: "end_city",
+	            name: "目的地"
+	        },
+	        {
+	            key: "start_time",
+	            name: "出发时间",
+	            hook: b
+	        },
+	        {
+	            key: "end_time",
+	            name: "到达时间",
+	            hook: b
+	        },
+	        {
+	            key: "train_number",
+	            name: "车次/班次"
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        15 : [{
+	            key: "city_name",
+	            name: "城市"
+	        },
+	        {
+	            key: "start_time",
+	            name: "入住时间",
+	            hook: a
+	        },
+	        {
+	            key: "end_date",
+	            name: "离店日期"
+	        },
+	        {
+	            key: "end_time",
+	            name: "离店时间",
+	            hook: a
+	        },
+	        {
+	            key: "phone",
+	            name: "酒店电话"
+	        },
+	        {
+	            key: "address",
+	            name: "酒店地址"
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        16 : [{
+	            key: "city_name",
+	            name: "城市"
+	        },
+	        {
+	            key: "start_time",
+	            name: "开始时间",
+	            hook: a
+	        },
+	        {
+	            key: "visit_hours",
+	            name: "浏览时间",
+	            hook: function(d) {
+	                return d + "小时";
+	            }
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        18 : [{
+	            key: "city_name",
+	            name: "所属城市"
+	        },
+	        {
+	            key: "start_time",
+	            name: "就餐时间",
+	            hook: a
+	        },
+	        {
+	            key: "phone",
+	            name: "餐厅电话"
+	        },
+	        {
+	            key: "address",
+	            name: "餐厅地址"
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        17 : [{
+	            key: "location_name",
+	            name: "景区名称"
+	        },
+	        {
+	            key: "tag",
+	            name: "标签"
+	        },
+	        {
+	            key: "reason",
+	            name: "推荐理由"
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        19 : [{
+	            key: "city_name",
+	            name: "所属城市"
+	        },
+	        {
+	            key: "start_time",
+	            name: "娱乐时间",
+	            hook: a
+	        },
+	        {
+	            key: "phone",
+	            name: "商家电话"
+	        },
+	        {
+	            key: "address",
+	            name: "商家地址"
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        20 : [{
+	            key: "city_name",
+	            name: "所属城市"
+	        },
+	        {
+	            key: "start_time",
+	            name: "购物时间",
+	            hook: a
+	        },
+	        {
+	            key: "phone",
+	            name: "商场电话"
+	        },
+	        {
+	            key: "address",
+	            name: "商场地址"
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        21 : [{
+	            key: "location_name",
+	            name: "交通名称"
+	        },
+	        {
+	            key: "tel",
+	            name: "电话"
+	        },
+	        {
+	            key: "addr",
+	            name: "地址"
+	        },
+	        {
+	            key: "des",
+	            name: "描述"
+	        },
+	        {
+	            key: "city_name",
+	            name: "城市"
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        22 : [{
+	            key: "taxi_fare",
+	            name: "打的费用",
+	            hook: function(d) {
+	                return d + "元";
+	            }
+	        },
+	        {
+	            key: "route_plans.0.name",
+	            name: "线路"
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }],
+	        23 : [{
+	            key: "taxi_fare",
+	            name: "打的费用",
+	            hook: function(d) {
+	                return d + "元";
+	            }
+	        },
+	        {
+	            key: "memo",
+	            name: "作者的备注"
+	        }]
+	    };
+	});
+	raiders.use("by_qw",
 "3	LINE	0
-		</html>
+	 (function() {
+	    var a = raiders.use("by_qw.ArrayH");
+	    for (var b in a) {
+	        Array.prototype[b] = raiders.helper.methodize(a[b]);
+	    }
+	})();
+	raiders.use("by_qw",
+	function() {
+	    var a = {
+	        format: function(f, c) {
+	            c = c || "yyyy-MM-dd";
+	            var g = f.getFullYear().toString(),
+	            e = {
+	                M: f.getMonth() + 1,
+	                d: f.getDate(),
+	                h: f.getHours(),
+	                m: f.getMinutes(),
+	                s: f.getSeconds()
+	            };
+	            c = c.replace(/(y+)/ig,
+	            function(h, d) {
+	                return g.substr(4 - Math.min(4, d.length));
+	            });
+	            for (var b in e) {
+	                c = c.replace(new RegExp("(" + b + "+)", "g"),
+	                function(h, d) {
+	                    return (e[b] < 10 && d.length > 1) ? "0" + e[b] : e[b];
+	                });
+	            }
+	            return c;
+	        },
+	        plusDay: function(c, b) {
+	            var e = 24 * 60 * 60 * 1000;
+	            return new Date(c.getTime() + b * e);
+	        }
+	    };
+	    this.DateH = a;
+	}); (function() {
+	    var a = raiders.use("by_qw.DateH");
+	    for (var b in a) {
+	        Date.prototype[b] = raiders.helper.methodize(a[b]);
+	    }
+	})();
+	raiders.use("_class",
+	function(a) {
+	    var c = Array.prototype.slice;
+	    var b = a.helper;
+	    this.Event = a.helper.mixPrototype(function() {
+	        this._eventList = {};
+	        this._bind_self_event_();
+	    },
+	    {
+	        _getOne: function(d) {
+	            return this._eventList[d] || (this._eventList[d] = []);
+	        },
+	        bind: function(e, g, f) {
+	            if (typeof e === "object") {
+	                for (var h in e) {
+	                    this.bind(h, e[h]);
+	                }
+	            } else {
+	                if (f) {
+	                    g = b.proxy(g, f);
+	                }
+	                var d = this._getOne(e);
+	                if (d.fired) {
+	                    g.apply(f, d.args);
+	                    return this;
+	                }
+	                this._getOne(e).push(g);
+	                return this;
+	            }
+	        },
+	        unbind: function(d, e) {
+	            var f = this._getOne(d);
+	            if (e) {
+	                var g = f.indexOf(e);
+	                if (g > -1) {
+	                    f.splice(g, 1);
+	                }
+	            } else {
+	                f.length = 0;
+	            }
+	        },
+	        trigger: function(f) {
+	            var e = c.call(arguments, 1);
+	            var g = this;
+	            var d;
+	            this._getOne(f).forEach(function(h) {
+	                d = h.apply(g, e);
+	                if (d === false) {
+	                    return true;
+	                }
+	            });
+	            return d;
+	        },
+	        once: function(d, g, e) {
+	            var f = this;
+	            var h = function() {
+	                g.apply(e || f, arguments);
+	                f.unbind(d, h);
+	            };
+	            f.bind(d, h);
+	            return h;
+	        },
+	        delay: function(e, g) {
+	            var d = c.call(arguments, 2);
+	            var f = this;
+	            return setTimeout(function() {
+	                f.trigger.apply(f, e.concat(d));
+	            },
+	            g || 10);
+	        },
+	        triggerReady: function(e) {
+	            var f = this._getOne(e);
+	            var d = Array.prototype.slice.call(arguments, 1);
+	            f.forEach(function(h, g) {
+	                if (typeof h != "function") {
+	                    return null;
+	                }
+	                return h.apply(null, d);
+	            });
+	            f.fired = true;
+	            f.args = d;
+	        },
+	        _bind_literal_event_: function(d, e) {
+	            this.bind(d, e);
+	        },
+	        _bind_self_event_: function() {
+	            for (var d in this) {
+	                var e = /^_event_(.+)_$/.exec(d);
+	                if (!e) {
+	                    continue;
+	                }
+	                this._bind_literal_event_(e[1], this[d]);
+	            }
+	        }
+	    });
+	    this.Event.prototype.fire = this.Event.prototype.trigger;
+	    this.Event.prototype.on = this.Event.prototype.bind;
+	});
+	raiders.use("event",
+	function() {
+	    raiders.helper.outMethod(this, new raiders._class.Event("base class"));
+	});
+	raiders.use("",
+	function() {
+	    var a = 0;
+	    this.createID = function() {
+	        return "_cl_" + ++a;
+	    };
+	});
+	raiders.use("dialog",
+	function() {
+	    var c = this;
+	    var a = this.manager = {
+	        dialogs: {},
+	        showedDialog: null,
+	        addDiaglog: function(f) {
+	            this.dialogs[f.id] = f;
+	        },
+	        closeAll: function() {
+	            var f = this.dialogs;
+	            for (var g in f) {
+	                if (f[g] && f[g].out) {
+	                    f[g].out();
+	                } else {
+	                    delete f[g];
+	                }
+	            }
+	        },
+	        showAll: function() {},
+	        removeAll: function() {},
+	        setShowedDialog: function(f) {
+	            this.showedDialog = f;
+	        },
+	        getShowedDialog: function() {
+	            return this.showedDialog;
+	        }
+	    };
+	    var e = 0,
+	    b = "SHOW",
+	    d = "HIDE";
+	    this.create = function(f) {
+	472
+<        var n = $('<div>							<div class="js_body"></div>						 	<div class="ke-dialog-footer">						 	<span title="添加" class="ke-button-common ke-button-outer ke-dialog-yes">								<input type="button" value="确定" class="ke-button-common ke-button"></span>							<span title="取消" class="ke-button-common ke-button-outer ke-dialog-no">								<input type="button" value="取消" class="ke-button-common ke-button">							</span>							</div>						</div>');
+	        var m = n.find(".js_body"),
+	        g = n.find(".ke-dialog-yes"),
+	        k = n.find(".ke-dialog-no");
+	        var v = f.body,
+	        q = f.title,
+	        r = f.yesBtn,
+	        p = f.noBtn,
+	        u = f.closeBtn;
+	        delete f.yesBtn;
+	        delete f.noBtn;
+	        delete f.closeBtn;
+	        delete f.body;
+	        m.append(v);
+	        var s = {
+	            yes: [g, r],
+	            no: [k, p]
+	        };
+	        for (var t in s) {
+	            if (s[t][1]) {
+	                var l = s[t][1],
+	                j = s[t][0];
+	                var i = l.name;
+	                j.attr("title", i).find("input").attr("value", i);
+	                delete l.name;
+	                for (var h in l) {
+	                    if (typeof l[h] === "function") {
+	                        j.bind(h, l[h]);
+	                    }
+	                }
+	            }
+	        }
+	        if (q) {
+	            f.title = $('<div style="padding-right:10px;"><div class="ke-dialog-header">' + q + "</div></div>");
+	        }
+	        if (u && u.click) {
+	            f.closeBtn = {
+	                handler: u.click
+	            };
+	        }
+	        f.content = n;
+	        f.closeCls = "dlg_close_black";
+	        var o = new Dialog(f);
+	        o.getBoxDom().css("background-color", "#FFF");
+	        o.title = function(w) {
+	            f.title.text(w);
+	        };
+	        if (f.hideTitle) {
+	            o.getCloseBtn().hide();
+	        }
+	        o.id = e++;
+	        o.out = o.close;
+	        a.addDiaglog(o);
+	        return o;
+	    };
+	    this.popMsg = function(h, f) {
+	        var g = new Dialog({
+	            titleVisible: false,
+	            content: ['<div class="pop_msg" style="position:realtive;" ><table><tr><td>', h, '</td></tr></table><i style="position:absolute;width:16px;height:20px;right:5px;top:5px;"></i></div>'].join(""),
+	            contentStyle: {
+	                "background-color": "transparent"
+	            },
+	            borderStyle: {
+	                border: "0px"
+	            },
+	            closeCls: "hide"
+	        });
+	        g.getContent().find("i").click(function(j) {
+	            if (i) {
+	                clearTimeout(i);
+	            }
+	            g.destory();
+	        });
+	        g.show();
+	        var i = setTimeout(function() {
+	            g.destory();
+	        },
+	        1500);
+	    };
+	});
 "4	LINE	0
-			<script src="{$webhost}/sta/js/view.js"></script>
+	}); (function() {
+	    var a = raiders.use("by_qw.ArrayH");
+	    for (var b in a) {
+	        Array.prototype[b] = raiders.helper.methodize(a[b]);
+	    }
+	})();
+	raiders.use("by_qw",
+	function() {
+	    var a = {
+	        format: function(f, c) {
+	            c = c || "yyyy-MM-dd";
+	            var g = f.getFullYear().toString(),
+	            e = {
+	                M: f.getMonth() + 1,
+	                d: f.getDate(),
+	                h: f.getHours(),
+	                m: f.getMinutes(),
+	                s: f.getSeconds()
+	            };
+	            c = c.replace(/(y+)/ig,
+	            function(h, d) {
+	                return g.substr(4 - Math.min(4, d.length));
+	            });
+	            for (var b in e) {
+	                c = c.replace(new RegExp("(" + b + "+)", "g"),
+	                function(h, d) {
+	                    return (e[b] < 10 && d.length > 1) ? "0" + e[b] : e[b];
+	                });
+	            }
+	            return c;
+	        },
+	        plusDay: function(c, b) {
+	            var e = 24 * 60 * 60 * 1000;
+	            return new Date(c.getTime() + b * e);
+	        }
+	    };
+	    this.DateH = a;
+	}); (function() {
+	    var a = raiders.use("by_qw.DateH");
+	    for (var b in a) {
+	        Date.prototype[b] = raiders.helper.methodize(a[b]);
+	    }
+	})();
+	raiders.use("_class",
+	function(a) {
+	    var c = Array.prototype.slice;
+	    var b = a.helper;
+	    this.Event = a.helper.mixPrototype(function() {
+	        this._eventList = {};
+	        this._bind_self_event_();
+	    },
+	    {
+	        _getOne: function(d) {
+	            return this._eventList[d] || (this._eventList[d] = []);
+	        },
+	        bind: function(e, g, f) {
+	            if (typeof e === "object") {
+	                for (var h in e) {
+	                    this.bind(h, e[h]);
+	                }
+	            } else {
+	                if (f) {
+	                    g = b.proxy(g, f);
+	                }
+	                var d = this._getOne(e);
+	                if (d.fired) {
+	                    g.apply(f, d.args);
+	                    return this;
+	                }
+	                this._getOne(e).push(g);
+	                return this;
+	            }
+	        },
+	        unbind: function(d, e) {
+	            var f = this._getOne(d);
+	            if (e) {
+	                var g = f.indexOf(e);
+	                if (g > -1) {
+	                    f.splice(g, 1);
+	                }
+	            } else {
+	                f.length = 0;
+	            }
+	        },
+	        trigger: function(f) {
+	            var e = c.call(arguments, 1);
+	            var g = this;
+	            var d;
+	            this._getOne(f).forEach(function(h) {
+	                d = h.apply(g, e);
+	                if (d === false) {
+	                    return true;
+	                }
+	            });
+	            return d;
+	        },
+	        once: function(d, g, e) {
+	            var f = this;
+	            var h = function() {
+	                g.apply(e || f, arguments);
+	                f.unbind(d, h);
+	            };
+	            f.bind(d, h);
+	            return h;
+	        },
+	        delay: function(e, g) {
+	            var d = c.call(arguments, 2);
+	            var f = this;
+	            return setTimeout(function() {
+	                f.trigger.apply(f, e.concat(d));
+	            },
+	            g || 10);
+	        },
+	        triggerReady: function(e) {
+	            var f = this._getOne(e);
+	            var d = Array.prototype.slice.call(arguments, 1);
+	            f.forEach(function(h, g) {
+	                if (typeof h != "function") {
+	                    return null;
+	                }
+	                return h.apply(null, d);
+	            });
+	            f.fired = true;
+	            f.args = d;
+	        },
+	        _bind_literal_event_: function(d, e) {
+	            this.bind(d, e);
+	        },
+	        _bind_self_event_: function() {
+	            for (var d in this) {
+	                var e = /^_event_(.+)_$/.exec(d);
+	                if (!e) {
+	                    continue;
+	                }
+	                this._bind_literal_event_(e[1], this[d]);
+	            }
+	        }
+	    });
+	    this.Event.prototype.fire = this.Event.prototype.trigger;
+	    this.Event.prototype.on = this.Event.prototype.bind;
+	});
+	raiders.use("event",
+	function() {
+	    raiders.helper.outMethod(this, new raiders._class.Event("base class"));
+	});
+	raiders.use("",
+	function() {
+	    var a = 0;
+	    this.createID = function() {
+	        return "_cl_" + ++a;
+	    };
+	});
+	raiders.use("dialog",
+	function() {
+	    var c = this;
+	    var a = this.manager = {
+	        dialogs: {},
+	        showedDialog: null,
+	        addDiaglog: function(f) {
+	            this.dialogs[f.id] = f;
+	        },
+	        closeAll: function() {
+	            var f = this.dialogs;
+	            for (var g in f) {
+	                if (f[g] && f[g].out) {
+	                    f[g].out();
+	                } else {
+	                    delete f[g];
+	                }
+	            }
+	        },
+	        showAll: function() {},
+	        removeAll: function() {},
+	        setShowedDialog: function(f) {
+	            this.showedDialog = f;
+	        },
+	        getShowedDialog: function() {
+	            return this.showedDialog;
+	        }
+	    };
+	    var e = 0,
+	    b = "SHOW",
+	    d = "HIDE";
+	    this.create = function(f) {
+	472
+<        var n = $('<div>							<div class="js_body"></div>						 	<div class="ke-dialog-footer">						 	<span title="添加" class="ke-button-common ke-button-outer ke-dialog-yes">								<input type="button" value="确定" class="ke-button-common ke-button"></span>							<span title="取消" class="ke-button-common ke-button-outer ke-dialog-no">								<input type="button" value="取消" class="ke-button-common ke-button">							</span>							</div>						</div>');
+	        var m = n.find(".js_body"),
+	        g = n.find(".ke-dialog-yes"),
+	        k = n.find(".ke-dialog-no");
+	        var v = f.body,
+	        q = f.title,
+	        r = f.yesBtn,
+	        p = f.noBtn,
+	        u = f.closeBtn;
+	        delete f.yesBtn;
+	        delete f.noBtn;
+	        delete f.closeBtn;
+	        delete f.body;
+	        m.append(v);
+	        var s = {
+	            yes: [g, r],
+	            no: [k, p]
+	        };
+	        for (var t in s) {
+	            if (s[t][1]) {
+	                var l = s[t][1],
+	                j = s[t][0];
+	                var i = l.name;
+	                j.attr("title", i).find("input").attr("value", i);
+	                delete l.name;
+	                for (var h in l) {
+	                    if (typeof l[h] === "function") {
+	                        j.bind(h, l[h]);
+	                    }
+	                }
+	            }
+	        }
+	        if (q) {
+	            f.title = $('<div style="padding-right:10px;"><div class="ke-dialog-header">' + q + "</div></div>");
+	        }
+	        if (u && u.click) {
+	            f.closeBtn = {
+	                handler: u.click
+	            };
+	        }
+	        f.content = n;
+	        f.closeCls = "dlg_close_black";
+	        var o = new Dialog(f);
+	        o.getBoxDom().css("background-color", "#FFF");
+	        o.title = function(w) {
+	            f.title.text(w);
+	        };
+	        if (f.hideTitle) {
+	            o.getCloseBtn().hide();
+	        }
+	        o.id = e++;
+	        o.out = o.close;
+	        a.addDiaglog(o);
+	        return o;
+	    };
+	    this.popMsg = function(h, f) {
+	        var g = new Dialog({
+	            titleVisible: false,
+	            content: ['<div class="pop_msg" style="position:realtive;" ><table><tr><td>', h, '</td></tr></table><i style="position:absolute;width:16px;height:20px;right:5px;top:5px;"></i></div>'].join(""),
+	            contentStyle: {
+	                "background-color": "transparent"
+	            },
+	            borderStyle: {
+	                border: "0px"
+	            },
+	            closeCls: "hide"
+	        });
+	        g.getContent().find("i").click(function(j) {
+	            if (i) {
+	                clearTimeout(i);
+	            }
+	            g.destory();
+	        });
+	        g.show();
+	        var i = setTimeout(function() {
+	            g.destory();
+	        },
+	        1500);
+	    };
+	});
 "5	LINE	0
-			</script>
-"6	LINE	0
+	<div id="cityInfo" class="panel_info area_panel">
+		<h3 class="hd">实用信息</h3>
+		<div class="mod_rinfo">
+			<div class="mod_next" style="display: none; "></div>
+			<ul class="mod_tab clr_after"><li class="active">北京</li><li class="">上海</li></ul>
+			<div class="mod_prev" style="display: none; "></div>
+	1309
+<		</div><div id="subTabs" class="ct"><div id="citys"><ul class="tabs clr_after"><li class="active"><a href="#" class="pngfix" style="background-image:url(http://source.qunar.com/site/images/travel/plan/media/infoicon1.png)">地铁线路</a></li><li><a href="#" class="pngfix" style="background-image:url(http://source.qunar.com/site/images/travel/plan/media/infoicon2.png)">城市地图</a></li><li><a href="#" class="pngfix" style="background-image:url(http://source.qunar.com/site/images/travel/plan/media/infoicon3.png)">天气气候</a></li><li><a href="#" class="pngfix" style="background-image:url(http://source.qunar.com/site/images/travel/plan/media/infoicon5.png)">风俗文化</a></li><li><a href="#" class="pngfix" style="background-image:url(http://source.qunar.com/site/images/travel/plan/media/infoicon6.png)">必做的事</a></li><li><a href="#" class="pngfix" style="background-image:url(http://source.qunar.com/site/images/travel/plan/media/infoicon4.png)">当地交通</a></li><li><a href="#" class="pngfix" style="background-image:url(http://source.qunar.com/site/images/travel/plan/media/infoicon9.png)">注意事项</a></li><li><a href="#" class="pngfix" style="background-image:url(http://source.qunar.com/site/images/travel/plan/media/infoicon8.png)">紧急求助</a></li></ul></div>
+	271
+<		<div id="infocontent" class="area_content clr_after"><div class="content "><a class="zoom pngfix" target="_blank" href="http://source.qunar.com/site/images/zhuanti/120406/bei1.jpg"></a><img src="http://source.qunar.com/site/images/zhuanti/120406/bei1.jpg" alt=""><p>
+				-
+			</p></div>
 				</div>
+		</div>
+	</div>
+"6	LINE	0
+	
 "7	LINE	0
-					</ul>
+	"
+	" vimconfig - project of powerful ViM 6.3 configuration files
+	" 
+	" vimrc - main configuration file
+	" ____________________________________________________________
+	"
+	" Developed by Lubomir Host 'rajo' <rajo AT platon.sk>
+	" Copyright (c) 2000-2005 Platon SDG, http://platon.sk/
+	" All rights reserved.
+	"
+	" See README file for more information about this software.
+	" See COPYING file for license information.
+	"
+	" Download the latest version from
+	" http://platon.sk/projects/vimconfig/
+	"
+	
+	" Please don't hesitate to correct my english :)
+	" Send corrections to
+	"
+	"        Lubomir Host 'rajo' <rajo AT platon.sk>
+	
+	" Version: $Platon: vimconfig/vimrc,v 1.114 2007-09-28 22:36:15 rajo Exp $
+	
+	" Debian uses compressed helpfiles. We must inform vim that the main
+	" helpfiles is compressed. Other helpfiles are stated in the tags-file.
+	if !filereadable(expand("$VIMRUNTIME/doc/help.txt"))
+		if filereadable(expand("$VIMRUNTIME/doc/help.txt.gz"))
+			set helpfile=$VIMRUNTIME/doc/help.txt.gz
+		endif
+	endif
+	
+	" Settings {{{
+	" Basic settings {{{
+	" To be secure & Vi nocompatible
+	:set secure nocompatible
+	:if version < 600
+	:	echo "Please update your vim to 6.x version (version 6.3 is available, version 7.0 vill be soon!)"
+	:	finish
+	:endif
+	
+	:if version >= 600 
+	syntax enable
+	filetype on
+	filetype plugin on
+	filetype indent on
+	:endif
+	
+	function! Source(File)
+		silent! execute "source " . a:File
+	endfunction
+	
+	let VIMRC_EXTRA="~/.vim/local/vimrc"
+	let GVIMRC_EXTRA="~/.vim/local/gvimrc"
+	if executable("uname") && executable("awk")
+		let machine = system("uname -n | awk 'BEGIN {ORS=\"\"} {print; }'")
+	else
+		let machine = $HOSTNAME
+	endif
+	let machine = tolower(machine)
+	let user = $USER
+	
+	call Source(VIMRC_EXTRA.".pre")
+	call Source(VIMRC_EXTRA."-".user.".pre")
+	call Source(VIMRC_EXTRA."-".machine.".pre")
+	call Source(VIMRC_EXTRA."-".machine."-".user.".pre")
+	call Source(VIMRC_EXTRA."")
+	call Source(VIMRC_EXTRA."-".user)
+	call Source(VIMRC_EXTRA."-".machine)
+	call Source(VIMRC_EXTRA."-".machine."-".user)
+	
+	" used for searching documentation (~/.vim/doc/FEATURES.txt) etc.
+	set runtimepath+=~/.vim
+	" }}}
+	
+	" Settings for C language {{{
+	let c_gnu=1
+	let c_comment_strings=1
+	let c_space_errors=1
+	" }}}
+	
+	" History and viminfo settings {{{
+	if has("cmdline_hist") 
+		set history=10000
+	endif
+	if has("viminfo")
+		if filewritable(expand("$HOME/.vim/viminfo")) == 1 || 
+					\ filewritable(expand("$HOME/.vim/")) == 2
+			set viminfo=!,%,'5000,\"10000,:10000,/10000,n~/.vim/viminfo
+		else
+			set viminfo=
+		endif
+	endif
+	" Don't save backups of files.
+	set nobackup
+	set backupcopy=yes
+	" }}}
+	
+	" Status line settings {{{
+	":set ruler
+	" Display a status-bar.
+	set laststatus=2
+	if has("statusline")
+		set statusline=%5*%{GetID()}%0*#%{winnr()}\ %<%f\ %3*%m%1*%r%0*\ %2*%y%4*%w%0*%=[%b\ 0x%B]\ \ %8l,%10([%c%V/%{strlen(getline(line('.')))}]%)\ %P
+	endif
+	" }}}
+	
+	" Settings for Calendar plugin {{{
+	if !exists("g:calendar_diary")
+		let g:calendar_diary = "~/.vim/diary"
+	endif
+	" }}} 
+	" Settings for Explorer script {{{
+	if !exists("g:explDetailedHelp")
+		let g:explDetailedHelp=1
+	endif
+	if !exists("g:explDetailedList")
+		let g:explDetailedList=1
+	endif
+	if !exists("g:explDateFormat")
+		let g:explDateFormat="%d %b %Y %H:%M"
+	endif
+	" }}}
+	" Settings for gcc & make {{{
+	let g:cflags="-Wall -pedantic"
+	let g:c_debug_flags="-ggdb -DDEBUG"
+	let g:makeflags=""
+	" }}}
+	" Settings for AutoLastMod {{{
+	" Set this to 1 if you will automaticaly change date of modification of file.
+	let g:autolastmod=1
+	" Modification is made on line like this variable (regular expression!):
+	let g:autolastmodtext="^\\([ 	]*Last modified: \\)"
+	" }}}
+	" Settings for Tlist {{{
+	let g:Tlist_Use_Right_Window = 0
+	" }}}
+	" Settings for NERD Commenter {{{
+	" Prevent NERD Commenter from complaining about unknown file types
+	  let NERDShutUp=1
+	" }}}
+	" Haskell {{{
+	let g:haddock_browser = "firefox"
+	" }}}
+	" pathogen {{{
+	runtime bundle/vim-pathogen/autoload/pathogen.vim
+	call pathogen#infect('~/.vim/bundle')
+	" }}}
+	" vim-coffee-script {{{
+	" see https://github.com/kchmck/vim-coffee-script
+	au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
+	au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+	au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
+	" }}}
+	" hammer.vim {{{
+	" see https://github.com/robgleeson/hammer.vim
+	if has('unix')
+		let g:HammerBrowser = 'w3m'
+	end
+	map <leader>p :Hammer<CR>
+	" }}}
+	
+	" VimRepress {{{
+	" see https://github.com/vim-scripts/VimRepress
+	let VIMPRESS = [{'username':'pkufranky',
+	                \'blog_url':'http://blog.pkufranky.com/'
+	                \}]
+	map <leader>P :BlogPreview<CR>
+	" }}}
+	
+	" vim-jsbeautify {{{
+	" https://github.com/maksimr/vim-jsbeautify
+	" set path to js-beautify file
+	let s:rootDir = expand("$HOME/.vim")
+	let g:jsbeautify_file = fnameescape(s:rootDir."/bundle/js-beautify/beautify.js")
+	let g:htmlbeautify_file = fnameescape(s:rootDir."/bundle/js-beautify/beautify-html.js")
+	let g:cssbeautify_file = fnameescape(s:rootDir."/bundle/js-beautify/beautify-css.js")
+	
+	let g:jsbeautify = {'indent_size': 4, 'indent_char': '\t'}
+	let g:htmlbeautify = {'indent_size': 4, 'indent_char': ' ', 'max_char': 120, 'brace_style': 'expand', 'unformatted': ['a', 'sub', 'sup', 'b', 'i', 'u']}
+	let g:cssbeautify = {'indent_size': 4, 'indent_char': ' '}
+	
+	" for js
+	autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+	" for html
+	autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+	" for css or scss
+	autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+	" }}}
+	
+	
+	" Priority between files for file name completion (suffixes) {{{
+	" Do not give .h low priority in command-line filename completion.
+	set suffixes-=.h
+	set suffixes+=.aux
+	set suffixes+=.bbl
+	set suffixes+=.blg
+	set suffixes+=.log
+	set suffixes+=.eps
+	set suffixes+=.ps
+	set suffixes+=.pdf
+	
+	set wildignore+=*.dvi
+	set wildignore+=*.pdf
+	set wildignore+=*.o
+	set wildignore+=*.ko
+	set wildignore+=*.swp
+	set wildignore+=*.aux
+	set wildignore+=*.bbl
+	set wildignore+=*.blg
+	" }}}
+	
+	" Tip #935 hightlight space errors {{{
+	
+	" To highlight spaces at the end of a line and spaces in front of tabs you can simply add the following command to your vimrc:
+	" let <language>_space_errors=1
+	" supported languages are:
+	" ada, c, chill, csc, icon, java, lpc, mel, nqc, nroff, ora, plm, plsql and python. So if you want to highlight space errors in lpc-files you have to write:
+	" let lpc_space_errors=1
+	"
+	" If you don't want to see the errors at the end of the line set:
+	" let <language>_no_trail_space_error=1
+	" and if you only use spaces to indent and don't want to see the space errors in front of tabs set:
+	" let <language>_no_tab_space_error=1
+	let java_space_errors=1
+	let c_space_errors=1
+	let python_space_errors=1
+	" }}}
+	" Basic2 {{{
+	
+	" The cursor is kept in the same column (if possible).  This applies to the
+	" commands: CTRL-D, CTRL-U, CTRL-B, CTRL-F, "G", "H", "M", "L", , and to the
+	" commands "d", "<<" and ">>" with a linewise operator, with "%" with a count
+	" and to buffer changing commands (CTRL-^, :bnext, :bNext, etc.).  Also for an
+	" Ex command that only has a line number, e.g., ":25" or ":+".
+	set nostartofline
+	
+	" Automatically setting options in various files
+	" WARNINNG: disable modeline if you are running vim version < 6.1.265 !!
+	"           These are security problems. See http://www.guninski.com/vim1.html
+	"                                                (reported by Georgi Guninski)
+	" TODO: there is no way how to test vim patchlevel version, therefore we are
+	"       not able determine vim version < 6.1.265
+	set modeline
+	
+	" Available TAGS files
+	set tags=./TAGS,./tags,tags
+	
+	" Don't add EOF at end of file
+	set noendofline
+	
+	" Do case sensitive matching
+	set noignorecase
+	
+	set showfulltag 
+	
+	set cmdheight=2
+	set backspace=2
+	set incsearch
+	set report=0
+	set showcmd showmatch showmode
+	
+	" Set title of the window to Platon's copyright
+	" set titleold=
+	" set titlestring=ViMconfig\ (c)\ 2000-2005\ Platon\ SDG
+	" set title
+	
+	" Indent of 1 tab with size of 4 spaces
+	set tabstop=4 
+	set shiftwidth=4 
+	
+	" Need more undolevels ??
+	" (default 100, 1000 for Unix, VMS, Win32 and OS/2)
+	set undolevels=10000
+	
+	" Use an indent of 4 spaces, with no tabs. This setting is recommended by PEAR
+	" (PHP Extension and Application Repository) Conding Standarts. If you want
+	" this setting uncomment the expandtab setting below.
+	":set expandtab 
+	
+	" Settings for mouse (gvim under Xwindows)
+	set nomousefocus
+	set mousehide
+	set mousemodel=popup
+	
+	" The screen will not be redrawn while executing macros, registers
+	" and other commands that have not been typed. To force an updates use |:redraw|.
+	set lazyredraw
+	
+	" time out on mapping after one second, time out on key codes after
+	" a tenth of a second
+	set timeout timeoutlen=1000 ttimeoutlen=100
+	
+	" command completition
+	set wildchar=<Tab>
+	set wildmenu
+	set wildmode=longest:full,full
+	
+	"set clipboard=unnamed
+	
+	" Allow specified keys that move the cursor left/right to wrap to the
+	" previous/next line when the cursor is on the first/last character in the
+	" line. Allowed keys are 'h' and 'l', arrow keys are not allowed to wrap.
+	set whichwrap=h,l
+	
+	set hlsearch
+	set nonu
+	
+	set ambiwidth=double
+	
+	" Customize display {{{
+	" lastline	When included, as much as possible of the last line
+	"			in a window will be displayed.  When not included, a
+	"			last line that doesn't fit is replaced with "@" lines.
+	"uhex		Show unprintable characters hexadecimal as <xx>
+	"			instead of using ^C and ~C.
+	set display+=lastline
+	set display+=uhex
+	" }}}
+	
+	" Vim beeping go to the hell... {{{
+	" With very little patch Vim(gvim) doesn't beep! To dissable beeping patch
+	" source and set ':set noerrorbells' (default).
+	" Here is patch for version 6.0.193:
+	" Note: file src/misc1.c was modified with theses patches:
+	"       6.0.024 6.0.089 6.0.113 6.0.178 6.0.180
+	"       but patch (probably) also work!
+	" Patch:
+	"*** vim60.193/src/misc1.c.orig	Sat Feb  9 01:49:54 2002
+	"--- vim60.193/src/misc1.c	Sat Feb  9 02:17:16 2002
+	"***************
+	"*** 2721,2727 ****
+	"      void
+	"  vim_beep()
+	"  {
+	"!     if (emsg_silent == 0)
+	"      {
+	"  	if (p_vb)
+	"  	{
+	"--- 2721,2727 ----
+	"      void
+	"  vim_beep()
+	"  {
+	"!     if (emsg_silent == 0 && p_eb)
+	"      {
+	"  	if (p_vb)
+	"  	{
+	set noerrorbells
+	set visualbell
+	set t_vb=
+	" }}}
+	
+	" Set this, if you will open all windows for files specified
+	" on the commandline at vim startup.
+	if !exists("g:open_all_win")
+		let g:open_all_win=1
+	endif
+	
+	" Settings for folding long lines
+	if !exists("g:fold_long_lines")
+		let g:fold_long_lines=300
+	endif
+	"}}}
+	
+	" }}}
+	
+	" Keybord mappings {{{
+	"
+	" backspace fix
+	noremap 	
+	inoremap 	
+	cnoremap 	
+	" start of line
+	"noremap <C-A>		i<Home>
+	inoremap <C-A>		<Home>
+	cnoremap <C-A>		<Home>
+	" end of line
+	noremap <C-E>		i<End>
+	inoremap <C-E>		<End>
+	" back one word
+	inoremap <C-B>	<S-Left>
+	" forward one word
+	"inoremap <C-F>	<S-Right>
+	
+	" Switching between windows by pressing one time CTRL-X keys.
+	noremap <C-X> <C-W><C-W>
+	
+	" Tip from http://vim.sourceforge.net/tips/tip.php?tip_id=173
+	noremap <C-J> <C-W>j<C-W>_
+	noremap <C-K> <C-W>k<C-W>_
+	
+	" Make Insert-mode completion more convenient:
+	imap <C-L> <C-X><C-L>
+	
+	set remap
+	map <C-O><C-O> :split 
+	imap <C-O><C-O> <Esc>:split 
+	
+	
+	" Open new window with file ~/.vimrc (ViM configuration file)
+	map <C-O><C-K> :split ~/.vimrc<CR>
+	imap <C-O><C-K> <Esc>:split ~/.vimrc<CR>
+	" Open new window with dir ~/.vim (ViM configuration dir)
+	map <C-O><C-V> :split ~/.vim<CR>
+	imap <C-O><C-V> <Esc>:split ~/.vim<CR>
+	
+	" Safe delete line (don't add line to registers)
+	":imap <C-D> <Esc>"_ddi
+	imap <C-D> <Esc>:call SafeLineDelete()<CR>i
+	
+	" Search for the current Visual selection.
+	vmap S y/<C-R>=escape(@",'/\')<CR>
+	" replace selected text with text in register
+	vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
+	
+	nnoremap <C-S> :w<CR>
+	inoremap <C-S> <C-O>:w<CR>
+	nnoremap <SPACE> <C-F>
+	nnoremap <S-SPACE> <C-B>
+	inoremap <C-F> <C-O><C-F>
+	inoremap <C-B> <C-O><C-B>
+	inoremap <C-J> <C-O>j
+	inoremap <C-K> <C-O>k
+	"inoremap <C-H> <C-O>h
+	inoremap <C-L> <C-O>l
+	noremap <C-N> :browse e<CR>
+	
+	" Good pasting toggle {{{
+	" From  Christopher Swingley <cswingle AT iarc.uaf.edu>
+	" Whenever I want to paste something, I do:
+	" ,f
+	" i
+	" <paste>
+	" <esc>
+	" ,f
+	map ,f :set paste!<CR>:set paste?<CR>
+	" }}}
+	
+	" Mappings for folding {{{
+	" Open one foldlevel of folds in whole file
+	" Note: 'Z' works like 'z' but for all lines in file
+	noremap Zo mzggvGzo'z
+	noremap ZO zR
+	noremap Zc mzggvGzc'z
+	noremap ZC zM
+	noremap Zd mzggvGzd'z
+	noremap ZD mzggvGzD'z
+	noremap Za mzggvGza'z
+	noremap ZA mzggvGzA'z
+	noremap Zx mzggvGzx'z
+	noremap ZX mzggvGzX'z
+	" }}}
+	
+	" }}}
+	
+	" Settings for IMAP input method (IMAP plugin) {{{
+	
+	" detect iso-8859-2 encoding before latin1
+	set fileencodings=ucs-bom,utf-8,iso-8859-2,windows-1250,latin1
+	
+	" set variable "b:input_method" to change input method
+	" let b:input_method = "latin2"
+	let b:input_method = &encoding
+	
+	" you may disable actions of IMAP plugin with variable b:disable_imap
+	" 0 - enabled
+	" 1 - disabled
+	let b:disable_imap = 0
+	
+	call Source("~/.vim/plugin/imaps.vim")
+	
+	" }}}
+	
+	" New commands {{{
+	command! -nargs=0 -range Indent          <line1>,<line2>call Indent()
+	command! -nargs=0 -range FoldLongLines   <line1>,<line2>call FoldLongLines()
+	command! -nargs=0 -range UnquoteMailBody <line1>,<line2>call UnquoteMailBody()
+	command! -nargs=0 CallProg				call CallProg()
+	command! -nargs=0 OpenAllWin			call OpenAllWin()
+	command! -nargs=* ReadFileAboveCursor	call ReadFileAboveCursor(<f-args>)
+	command! -nargs=* R						call ReadFileAboveCursor(<f-args>)
+	command! -nargs=0 DiacriticsOn			call ChooseInputMethod(0)
+	command! -nargs=0 DiacriticsOff			let b:disable_imap=1
+	" cd to whatever directory the current buffer is using
+	command! CD cd %:p:h
+	" }}}
+	
+	" Functions {{{
+	" Function ChangeFoldMethod() {{{
+	" Function for changing folding method.
+	"
+	if version >= 600
+		function! ChangeFoldMethod() abort
+			let choice = confirm("Which folde method?", "&manual\n&indent\n&expr\nma&rker\n&syntax", 2)
+			if choice == 1
+				set foldmethod=manual
+			elseif choice == 2
+				set foldmethod=indent
+			elseif choice == 3
+				set foldmethod=expr
+			elseif choice == 4
+				set foldmethod=marker
+			elseif choice == 5
+				set foldmethod=syntax
+			else
+			endif
+		endfunction
+	endif
+	" ChangeFoldMethod() }}}
+	
+	" Function FoldLongLines() {{{
+	"
+	if version >= 600
+		function! FoldLongLines() range abort
+			let savelnum = line(".")
+			let lnum = a:firstline
+			let lend = a:lastline
+			if lnum == lend
+				" No visual area choosen --> whole file
+				let lnum = line(".")
+				let lend = line("$")
+				" Go to the begin of the file
+				exec "1go"
+			endif
+			while lnum <= lend
+				" Skip closed folds
+				if foldclosed(lnum) != -1
+					let lnum = foldclosedend(lnum) + 1
+					continue
+				endif
+				let dlzka = strlen(getline("."))
+				if dlzka >= g:fold_long_lines
+					" Create fold for one line
+					exec "normal zfl"
+				endif
+				let lnum = line(".")
+				" Move one line down
+				exec "normal j"
+				if lnum == lend
+					break
+				endif
+			endwhile
+			" ...and go back
+			exec "normal " . savelnum . "G"
+			redraw!
+		endfunction
+	endif
+	" FoldLongLines() }}}
+	
+	" Function AutoLastMod() {{{
+	" Provides atomatic change of date in files, if it is set via
+	" modeline variable autolastmod to appropriate value.
+	"
+	function! AutoLastMod()
+		if exists("g:autolastmod")
+			if g:autolastmod < 1
+				return 0;
+			elseif g:autolastmod == 1
+				call LastMod(g:autolastmodtext)
+			endif
+		endif
+	endfunction
+	" AutoLastMod() }}}
+	
+	" Function LastMod() {{{
+	" Automatic change date in *.html files.
+	"
+	function! LastMod(text, ...)
+		mark d
+		let line = "\\1" . strftime("%Y %b %d %X") " text of changed line
+		let find = "g/" . a:text           " regexpr to find line
+		let matx = a:text . ".*"            " ...if line was found
+		exec find
+		let curr_line = getline(".")
+		if match(curr_line, matx) == 0
+			" call setline(line("."), line)
+			call setline(line("."), substitute(getline("."), matx, line, ""))
+			exec "'d"
+		endif
+	endfunction
+	" LastMod() }}}
+	
+	" Function OpenAllWin() {{{
+	" Opens windows for all files in the command line.
+	" Variable "opened" is used for testing, if window for file was already opened
+	" or not. This is prevention for repeat window opening after ViM config file
+	" reload.
+	"
+	function! OpenAllWin()
+		" save Vim option to variable
+		let s:save_split = &splitbelow
+		set splitbelow
+	
+		let s:i = 1
+		if g:open_all_win == 1
+			while s:i < argc()
+				if bufwinnr(argv(s:i)) == -1	" buffer doesn't exists or doesn't have window
+					exec ":split " . escape(argv(s:i), ' \')
+					"echo "Current window is " . bufwinnr(s:i) 
+				endif
+				let s:i = s:i + 1
+			endwhile
+		endif
+	
+		" force first window to be maximalized. Behaviour of vim has changed after
+		" 6.2(?) release, therefore next command is not needed for vim < 6.2(?)
+		exec "normal 2\<C-w>\<C-w>1\<C-w>\<C-w>"
+	
+		" restore Vim option from variable
+		if s:save_split
+			set splitbelow
+		else
+			set nosplitbelow
+		endif
+	endfunction
+	" OpenAllWin() }}}
+	
+	" Function CallProg() {{{
+	function! CallProg() abort
+		let choice = confirm("Call:", "&make\nm&ake in cwd\n" .
+					\ "&compile\nc&ompile in cwd\n" .
+					\ "&run\nr&un in cwd")
+		if choice == 1
+			exec ":wall"
+			exec "! cd %:p:h; pwd; make " . g:makeflags
+		elseif choice == 2
+			exec ":wall"
+			exec "! cd " .
+						\ getcwd() . "; pwd; make " . g:makeflags
+		elseif choice == 3
+			:call Compile(1)
+		elseif choice == 4
+			:call Compile(0)
+		elseif choice == 5
+			exec "! cd %:p:h; pwd; ./%:t:r"
+		elseif choice == 6
+			exec "! cd " . getcwd() . "; pwd; ./%<"
+		endif
+	endfunction
+	" CallProg() }}}
+	
+	" Function Compile() {{{
+	function! Compile(do_chdir) abort
+		let cmd = ""
+		let filename = ""
+		let filename_ext = ""
+	
+		if a:do_chdir == 1
+			let cmd = "! cd %:p:h; pwd; "
+			let filename = "%:t:r"
+			let filename_ext = "%:t"
+		else
+			let cmd = "! cd " . getcwd() . "; pwd; "
+			let filename = "%<"
+			let filename_ext = "%"
+		endif
+	
+		let choice = confirm("Call:", 
+					\ "&compile\n" .
+					\ "compile and &debug\n" .
+					\ "compile and &run\n" .
+					\ "compile using first &line")
+	
+		if choice != 0
+			exec ":wall"
+		endif
+	
+		if choice == 1
+			exec cmd . "gcc " . g:cflags . 
+						\ " -o " . filename . " " . filename_ext
+		elseif choice == 2
+			exec cmd . "gcc " . g:cflags . " " . g:c_debug_flags . 
+						\ " -o " . filename . " " . filename_ext " && gdb " . filename
+		elseif choice == 3
+			exec cmd . "gcc " . g:cflags . 
+						\ " -o " . filename . " " . filename_ext " && ./" . filename
+		elseif choice == 4
+			exec cmd . "gcc " . g:cflags . 
+						\ " -o " . filename . " " . filename_ext . 
+						\ substitute(substitute(getline(2), "VIMGCC", "", "g"), "GCC", "", "g" )
+		endif
+	endfunction
+	" Compile() }}}
+	
+	" Function Indent() {{{
+	" Indents source code.
+	function! Indent() range abort
+		let savelnum = line(".")
+		let lnum = a:firstline
+		let lend = a:lastline
+		if lnum == lend
+			" No visual area choosen --> whole file
+			let lnum = line(".")
+			let lend = line("$")
+			" Go to the begin of the file
+			exec "1go"
+		endif
+		exec "normal " . lnum . "Gv" . lend . "G="
+		exec "normal " . savelnum . "G"
+	endfunction
+	" Indent() }}}
+	
+	" Function UnquoteMailBody() {{{
+	"
+	function! UnquoteMailBody() range abort
+		" Every backslash character must be escaped in function -- Nepto
+		"exec "normal :%s/^\\([ ]*>[ ]*\\)*\\(\\|[^>].*\\)$/\\2/g<CR>"
+		let savelnum = line(".")
+		let lnum = a:firstline
+		let lend = a:lastline
+		if lnum == lend
+			" No visual area choosen --> whole file
+			let lnum = line(".")
+			let lend = line("$")
+			" Go to the begin of the file
+			exec "1go"
+		endif
+		exec ":" . lnum . "," . lend . "s/^[ >]\\+//"
+		exec "normal " . savelnum . "G"
+	endfunction
+	" UnquoteMailBody() }}}
+	
+	" Function SafeLineDelete() {{{
+	"
+	function! SafeLineDelete()
+		exec "normal \"_dd"
+	endfunction
+	" SafeLineDelete() }}}
+	
+	" Function GetID() {{{
+	" - used in statusline.
+	" If you are root, function return "# " string --> it is showed at begin of
+	"                                                  statusline
+	" If you aren't root, function return empty string --> nothing is visible
+	" Check for your name ID
+	let g:get_id = $USER
+	" If you are root, set to '#', else set to ''
+	if g:get_id == "root"
+		let g:get_id = "# "
+	else
+		let g:get_id = ""
+	endif
+	function! GetID()
+		return g:get_id
+	endfunction
+	" GetID() }}}
+	
+	" Function ReadFileAboveCursor() {{{
+	"
+	function! ReadFileAboveCursor(file, ...)
+		let str = ":" . (v:lnum - 1) . "read " . a:file
+		let idx = 1
+		while idx <= a:0
+			exec "let str = str . \" \" . a:" . idx
+			let idx = idx + 1
+		endwhile
+		exec str
+	endfunction
+	" ReadFileAboveCursor() }}}
+	
+	" Function RemoveAutogroup() {{{
+	"
+	silent! function! RemoveAutogroup(group)
+	silent exec "augroup! ". a:group
+	endfunction
+	" RemoveAutogroup() }}}
+	
+	" Function SmartBS() {{{
+	"
+	" This function comes from Benji Fisher <benji AT e-mathDOTAMSDOTorg>
+	" http://vim.sourceforge.net/scripts/download.php?src_id=409
+	" (modified/patched by: Lubomir Host 'rajo' <rajo AT platon.sk>
+	"                       Srinath Avadhanula  <srinath AT fastmailDOTfm> )
+	silent function! SmartBS()
+		let init = strpart(getline("."), 0, col(".")-1)
+		if exists("g:smartBS_" . &filetype)
+			silent exec "let matchtxt = matchstr(init, g:smartBS_" . &filetype . ")"
+			echo "SmartBS(" . matchtxt . ")"
+			if matchtxt != ''
+				let bstxt = substitute(matchtxt, '.', "\<bs>", 'g')
+				return bstxt
+			else
+				return "\<bs>"
+			endif
+		else
+			return "\<bs>"
+		endif
+	endfunction
+	
+	" You can turn on smart backspacing in ftplugin by setting
+	" g:smartBS_<filetype> variable and turning on mapping
+	" inoremap <buffer> <BS> <C-R>=SmartBS()<CR>
+	"
+	" Example: TeX plugin
+	"	" set regular expresion for Smart backspacing
+	"	let g:smartBS_tex = '\(' .
+	"			\ "\\\\[\"^'=v]{\\S}"      . '\|' .
+	"			\ "\\\\[\"^'=]\\S"         . '\|' .
+	" 			\ '\\v \S'                 . '\|' .
+	"			\ "\\\\[\"^'=v]{\\\\[iI]}" . '\|' .
+	"			\ '\\v \\[iI]'             . '\|' .
+	"			\ '\\q \S'                 . '\|' .
+	" 			\ '\\-'                    .
+	"			\ '\)' . "$"
+	"
+	"	" map <BS> to function SmartBS()
+	"	inoremap <buffer> <BS> <C-R>=SmartBS()<CR>
+	
+	" }}} 
+	
+	" Function ChooseInputMethod() {{{
+	function! ChooseInputMethod(method)
+		let b:disable_imap=0
+		let g:available_methods = "&none\n&Tex-universal\n&tex-iso8859-2\n&iso8859-2\n&windows-1250\nunicode-&Html\n&UTF-8"
+	
+		if a:method == 0
+			let choice = confirm("Choose input mapping:", g:available_methods, 1)
+		else
+			let choice = a:method
+		endif
+	
+		if choice == 1
+			let b:input_method = "NONE"
+		elseif choice == 2
+			let b:input_method = "tex-universal"
+		elseif choice == 3
+			let b:input_method = "tex-iso8859-2"
+		elseif choice == 4
+			let b:input_method = "iso8859-2"
+		elseif choice == 5
+			let b:input_method = "windows-1250"
+		elseif choice == 6
+			let b:input_method = "unicode-html"
+		elseif choice == 7
+			let b:input_method = "UTF-8"
+		endif
+		
+		if choice == 1
+			let b:disable_imap = 1
+		elseif choice != 0
+			call UseDiacritics()
+		endif
+	
+	endfunction
+	"}}}
+	
+	" Function UseDiacritics() {{{
+	function! UseDiacritics()
+		let b:disable_imap = 0
+		call Source("~/.vim/modules/diacritics.vim")
+	endfunction
+	" }}}
+	
+	" }}}
+	
+	" Autocomands {{{
+	if has("autocmd")
+	
+		" Autocomands for PlatonCopyright {{{
+		augroup PlatonCopyright
+		autocmd!
+		autocmd BufLeave * set titlestring=
+		autocmd BufLeave * silent! call RemoveAutogroup("PlatonCopyright")
+		autocmd WinEnter * set titlestring=
+		autocmd WinEnter * silent! call RemoveAutogroup("PlatonCopyright")
+		autocmd BufWrite * set titlestring=
+		autocmd BufWrite * silent! call RemoveAutogroup("PlatonCopyright")
+		autocmd CmdwinEnter * set titlestring=
+		autocmd CmdwinEnter * silent! call RemoveAutogroup("PlatonCopyright")
+		augroup END
+		" }}}
+	
+	" UGLY hack - preload templatefile.vim. This is needed for loading templates
+	" for all buffers (when opening all windows for buffers)
+	call Source("~/.vim/plugin/templatefile.vim")
+	augroup TemplateSystem
+		autocmd!
+		au BufNewFile * call LoadTemplateFile()
+	augroup END
+	
+		" Autocomands for GUIEnter {{{
+		augroup GUIEnter
+		autocmd!
+		if has("gui_win32")
+			autocmd GUIEnter * simalt ~x
+		endif
+		augroup END
+		" }}}
+	
+		" Autocomands for ~/.vimrc {{{
+		augroup VimConfig
+		autocmd!
+		" Reread configuration of ViM if file ~/.vimrc is saved
+		autocmd BufWritePost ~/.vimrc	so ~/.vimrc | exec "normal zv"
+		autocmd BufWritePost vimrc   	so ~/.vimrc | exec "normal zv"
+		augroup END
+		" }}}
+	
+		" Autocommands for *.c, *.h, *.cc *.cpp {{{
+		augroup C
+		autocmd!
+		"formatovanie C-zdrojakov
+		autocmd BufEnter     *.c,*.h,*.cc,*.cpp	map  <buffer> <C-F> mfggvG$='f
+		autocmd BufEnter     *.c,*.h,*.cc,*.cpp	imap <buffer> <C-F> <Esc>mfggvG$='fi
+		autocmd BufEnter     *.c,*.h,*.cc,*.cpp	map <buffer> yii yyp3wdwi
+		autocmd BufEnter     *.c,*.h,*.cc,*.cpp	map <buffer> <C-K> :call CallProg()<CR>
+		autocmd BufRead,BufNewFile  *.c,*.h,*.cc,*.cpp	setlocal cindent
+		autocmd BufRead,BufNewFile  *.c,*.h,*.cc,*.cpp	setlocal cinoptions=>4,e0,n0,f0,{0,}0,^0,:4,=4,p4,t4,c3,+4,(2s,u1s,)20,*30,g4,h4
+		autocmd BufRead,BufNewFile  *.c,*.h,*.cc,*.cpp	setlocal cinkeys=0{,0},:,0#,!<C-F>,o,O,e
+		augroup END
+		" }}}
+	
+		" Autocommands for *.html *.cgi {{{
+		" Automatic updates date of last modification in HTML files. File must
+		" contain line "^\([<space><Tab>]*\)Last modified: ",
+		" else will be date writtend on the current " line.
+		augroup HtmlCgiPHP
+		autocmd!
+		" Appending right part of tag in HTML files.
+		autocmd BufEnter                 *.phtml	imap <buffer> QQ </><Esc>2F<lywf>f/pF<i
+		autocmd BufWritePre,FileWritePre *.phtml	call AutoLastMod()
+		autocmd BufEnter                 *.html	imap <buffer> QQ </><Esc>2F<lywf>f/pF<i
+		autocmd BufWritePre,FileWritePre *.html	call AutoLastMod()
+		autocmd BufEnter                 *.cgi	imap <buffer> QQ </><Esc>2F<lywf>f/pF<i
+		autocmd BufWritePre,FileWritePre *.cgi	call AutoLastMod()
+		autocmd BufEnter                 *.php	imap <buffer> QQ </><Esc>2F<lywf>f/pF<i
+		autocmd BufWritePre,FileWritePre *.php	call AutoLastMod()
+		autocmd BufEnter                 *.php3	imap <buffer> QQ </><Esc>2F<lywf>f/pF<i
+		autocmd BufWritePre,FileWritePre *.php3	call AutoLastMod()
+		augroup END
+		" }}}
+	
+		" Autocomands for *.tcl {{{
+		augroup Tcl
+		autocmd!
+		autocmd WinEnter            *.tcl	map <buffer> <C-K> :call CallProg()<CR>
+		autocmd BufRead,BufNewFile  *.tcl	setlocal autoindent
+		augroup END
+		" }}}
+	
+		" Autocomands for *.txt {{{
+		augroup Txt
+		autocmd BufNewFile,BufRead  *.txt   setf txt
+		augroup END
+		" }}}
+	
+		" Autocomands for *.tt2 {{{
+		augroup Tt2
+		autocmd BufNewFile,BufRead  *.tt2   setf tt2
+		augroup END
+		" }}}
+		" *.hs {{{
+		augroup hs
+		autocmd Bufenter *.hs compiler ghc
+		augroup END
+		" }}}
+	
+		" Autocomands for Makefile {{{
+		augroup Makefile
+		autocmd!
+		autocmd BufEnter            [Mm]akefile*	map <buffer> <C-K> :call CallProg()<CR>
+		augroup END
+		" }}}
+	
+		" Autocomands for GnuPG (gpg) {{{ 
+		" Transparent editing of gpg encrypted files.
+		" By Wouter Hanegraaff <wouter@blub.net>,
+		" enhanced by Lubomir Host 'rajo' <rajo AT platon.sk>
+		" 
+		augroup GnuPG
+			autocmd!
+	
+			" First make sure nothing is written to ~/.viminfo while editing
+			" an encrypted file.
+			" viminfo doesn't have local value, set global value instead
+			autocmd BufReadPre,FileReadPre		*.gpg,*.asc set viminfo=
+			" We don't want a swap file, as it writes unencrypted data to disk
+			autocmd BufReadPre,FileReadPre		*.gpg,*.asc setlocal noswapfile
+			" Switch to binary mode to read the encrypted file
+			autocmd BufReadPre,FileReadPre		*.gpg,*.asc setlocal bin
+			autocmd BufReadPre,FileReadPre		*.gpg,*.asc let ch_save = &ch | setlocal ch=2
+			autocmd BufReadPost,FileReadPost	*.gpg,*.asc '[,']!gpg --decrypt -q -a 2>/dev/null
+			" Switch to normal mode for editing
+			autocmd BufReadPost,FileReadPost	*.gpg,*.asc setlocal nobin
+			autocmd BufReadPost,FileReadPost	*.gpg,*.asc let &ch = ch_save | unlet ch_save
+			autocmd BufReadPost,FileReadPost	*.gpg,*.asc execute ":doautocmd BufReadPost " . expand("%:r")
+	
+			" Convert all text to encrypted text before writing
+			autocmd BufWritePre,FileWritePre	*.gpg,*.asc '[,']!gpg --encrypt --default-recipient-self -q -a
+			" Undo the encryption so we are back in the normal text, directly
+			" after the file has been written.
+			autocmd BufWritePost,FileWritePost	*.gpg,*.asc undo
+		augroup END
+		" }}}
+	
+	endif " if has("autocmd")
+	" }}} Autocomands
+	
+	" Colors {{{
+	set background=dark
+	hi StatusLine   term=bold,reverse cterm=bold,reverse
+	hi StatusLineNC term=reverse      cterm=reverse
+	hi User1        term=inverse,bold cterm=inverse,bold ctermfg=Red
+	hi User2        term=bold         cterm=bold         ctermfg=Yellow
+	hi User3        term=inverse,bold cterm=inverse,bold ctermfg=Blue
+	hi User4        term=inverse,bold cterm=inverse,bold ctermfg=LightBlue
+	hi User5        term=inverse,bold cterm=inverse,bold ctermfg=Red       ctermbg=Green
+	hi Folded       term=standout     cterm=bold         ctermfg=Blue      ctermbg=Black
+	hi FoldColumn   term=standout                        ctermfg=DarkBlue  ctermbg=Black 
+	hi Comment      term=bold                            ctermfg=DarkCyan
+	" Parenthesis checking
+	hi MatchParen   term=bold         cterm=bold,reverse ctermfg=DarkBlue  ctermbg=Black
+	
+	" }}}
+	
+	call Source(VIMRC_EXTRA.".post")
+	call Source(VIMRC_EXTRA."-".user.".post")
+	call Source(VIMRC_EXTRA."-".machine.".post")
+	call Source(VIMRC_EXTRA."-".machine."-".user.".post")
+	
+	if exists("g:open_all_win")
+		if g:open_all_win == 1
+			" Open all windows only if we are not running (g)vimdiff
+			if match(v:progname, "diff") < 0
+				call OpenAllWin()
+			endif
+		endif
+		" turn g:open_all_win off after opening all windows
+		" it prevents reopen windows after 2nd sourcing .vimrc
+		let g:open_all_win = 0
+	endif
+	
+	hi CursorColumn ctermbg=4
+	nmap <F11> :set cursorline!<BAR>set nocursorline?<CR>
+	nmap <F12> :set cursorcolumn!<BAR>set nocursorcolumn?<CR>
+	
+	" Modeline {{{
+	" vim:set ts=4:
+	" vim600:fdm=marker fdl=0 fdc=3
+	" }}}
+	
 "8	LINE	0
-					<ul class="sidenav">
+	
 "9	LINE	0
-					<h6>日程安排</h6>
+											</div>
 "a	CHAR	0
 	l
-"-	CHAR	0
-	</div>
+""-	CHAR	0
+	"
 
 # 全局变量:
 !VIMRC_EXTRA	STR	~/.vim/local/vimrc
 !GVIMRC_EXTRA	STR	~/.vim/local/gvimrc
 
 # 文件标记:
-'0  1  0  ~/Desktop/linuxetc/vimrc
-'1  207  17  ~/Desktop/assistant.vim
-'2  1  0  ~/Desktop/NERD_tree_2
-'3  840  0  ~/.vim/plugin/a.vim
-'4  5  0  ~/linuxetc/README
-'5  1  0  ~/linuxetc/R
-'6  145  1  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
-'7  199  9  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
-'8  57  0  /usr/share/vim/vimrc
-'9  24  0  /usr/share/vim/vimrc
+'0  1114  1  ~/linuxetc/vimrc
+'1  63  31  ~/letou/magazine/travel.qunar.com/index.php
+'2  23  0  ~/letou/magazine/travel.qunar.com/index.php
+'3  1043  5  ~/.vimrc
+'4  1  0  ~/vimrc
+'5  1209  0  ~/.vim/plugin/calendar.vim
+'6  999  2  ~/.vimrc
+'7  1  0  ~/letou/magazine/travel.qunar.com/.git/rebase-merge/git-rebase-todo
+'8  365  0  ~/letou/magazine/travel.qunar.com/application/controllers/detail.php
+'9  1  0  ~/letou/magazine/travel.qunar.com/application/controllers/detail.php
 
 # 跳转列表 (从新到旧):
+-'  1114  1  ~/linuxetc/vimrc
+-'  1061  0  ~/linuxetc/vimrc
+-'  1049  0  ~/linuxetc/vimrc
+-'  1  0  ~/linuxetc/vimrc
+-'  63  31  ~/letou/magazine/travel.qunar.com/index.php
+-'  278  0  ~/letou/magazine/travel.qunar.com/index.php
+-'  1  0  ~/letou/magazine/travel.qunar.com/index.php
+-'  271  0  ~/letou/magazine/travel.qunar.com/index.php
+-'  42  0  ~/letou/magazine/travel.qunar.com/index.php
+-'  23  0  ~/letou/magazine/travel.qunar.com/index.php
+-'  1043  5  ~/.vimrc
+-'  1  0  ~/.vimrc
+-'  1  0  ~/vimrc
+-'  1209  0  ~/.vim/plugin/calendar.vim
+-'  64  0  ~/.vim/plugin/calendar.vim
+-'  1  0  ~/.vim/plugin/calendar.vim
+-'  999  2  ~/.vimrc
+-'  26  0  ~/.vimrc
+-'  1  0  ~/letou/magazine/travel.qunar.com/.git/rebase-merge/git-rebase-todo
+-'  365  0  ~/letou/magazine/travel.qunar.com/application/controllers/detail.php
+-'  1  4  ~/letou/magazine/travel.qunar.com/application/controllers/detail.php
+-'  3  1  ~/letou/magazine/travel.qunar.com/application/controllers/detail.php
+-'  124  0  ~/letou/magazine/travel.qunar.com/application/controllers/detail.php
+-'  1531  2  ~/letou/magazine/travel.qunar.com/sta/js/dbgcoreview.js
+-'  1  10  ~/letou/magazine/travel.qunar.com/sta/js/dbgcoreview.js
+-'  1654  4  ~/letou/magazine/travel.qunar.com/sta/js/dbgcoreview.js
+-'  175  0  /tmp/tmpb
+-'  1  0  /tmp/tmpb
+-'  59  0  /tmp/tmpb
+-'  176  0  /tmp/tmpb
+-'  174  3  /tmp/tmpb
+-'  77  0  ~/letou/magazine/travel.qunar.com/sta/view
+-'  1  0  ~/letou/magazine/travel.qunar.com/sta/view
+-'  1  0  ~/letou/magazine/travel.qunar.com/sta/t.html
+-'  1  17493  /tmp/tmp
+-'  112  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  118  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  1  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  1  0  ~/linuxetc/.git/rebase-merge/git-rebase-todo
+-'  1  0  ~/linuxetc/vir
+-'  56  0  ~/linuxetc/.vim/github-plugin-install.sh
+-'  1  0  ~/linuxetc/.vim/github-plugin-install.sh
+-'  1  0  ~/linuxetc/.vim/.gitignore
 -'  1  0  ~/Desktop/linuxetc/vimrc
 -'  207  17  ~/Desktop/assistant.vim
 -'  22  17  ~/Desktop/assistant.vim
@@ -1545,95 +4479,216 @@ $
 -'  5  0  ~/linuxetc/README
 -'  1  0  ~/linuxetc/README
 -'  1  0  ~/linuxetc/R
--'  145  1  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  1  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  199  9  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  169  10  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  165  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  176  13  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  198  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  33  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  248  3  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  13  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  31  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  4  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  145  1  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  1  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  199  9  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  169  10  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  165  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  176  13  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  198  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  33  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  248  3  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  13  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  31  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  154  1  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  208  9  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  178  10  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  174  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  185  13  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  207  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  34  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  257  3  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  14  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  32  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
 -'  4  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
 -'  1  0  ~/linuxetc/R
--'  145  1  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  1  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  199  9  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  169  10  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  165  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  176  13  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  198  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  33  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  248  3  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  13  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  31  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  4  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  145  1  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  1  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  199  9  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  169  10  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  165  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  176  13  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  198  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  33  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  248  3  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  13  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  31  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  4  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
 -'  5  0  ~/linuxetc/README
 -'  1  0  ~/linuxetc/README
 -'  1  0  ~/linuxetc/R
--'  145  1  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  112  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  118  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
 -'  1  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  199  9  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  169  10  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  165  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  176  13  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  198  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  33  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  248  3  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  13  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  31  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  4  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  145  1  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  1  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  199  9  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  169  10  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  165  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  176  13  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  198  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  33  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  248  3  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  13  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  31  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  4  2  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  1  0  ~/linuxetc/R
--'  145  1  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  1  0  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  199  9  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  169  10  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  165  12  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
--'  176  13  ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+-'  1  0  ~/linuxetc/.git/rebase-merge/git-rebase-todo
+-'  1  0  ~/linuxetc/vir
+-'  56  0  ~/linuxetc/.vim/github-plugin-install.sh
+-'  1  0  ~/linuxetc/.vim/github-plugin-install.sh
+-'  1  0  ~/linuxetc/.vim/.gitignore
+-'  1  0  ~/Desktop/linuxetc/vimrc
 -'  207  17  ~/Desktop/assistant.vim
+-'  22  17  ~/Desktop/assistant.vim
+-'  1  0  ~/Desktop/assistant.vim
+-'  128  0  ~/Desktop/assistant.vim
+-'  1  0  ~/Desktop/NERD_tree_2
+-'  8  2  ~/Desktop/NERD_tree_2
+-'  1  0  ~/Desktop/NERD_tree_1
+-'  8  2  ~/Desktop/NERD_tree_1
+-'  840  0  ~/.vim/plugin/a.vim
+-'  63  31  ~/letou/magazine/travel.qunar.com/index.php
+-'  278  0  ~/letou/magazine/travel.qunar.com/index.php
+-'  1  0  ~/letou/magazine/travel.qunar.com/index.php
+-'  271  0  ~/letou/magazine/travel.qunar.com/index.php
+-'  42  0  ~/letou/magazine/travel.qunar.com/index.php
+-'  23  0  ~/letou/magazine/travel.qunar.com/index.php
+-'  1043  5  ~/.vimrc
 
 # 缓冲区列表:
-%~/Desktop/linuxetc/vimrc	1	0
+%~/linuxetc/vimrc	1114	1
 
 # 文件内的标记历史记录 (从新到旧):
+
+> ~/linuxetc/vimrc
+	"	1114	1
+	^	1067	2
+	.	1112	1
+	+	1	0
+	+	1	0
+	+	3	1
+	+	40	0
+	+	39	0
+	+	59	0
+	+	65	0
+	+	70	1
+	+	71	23
+	+	1042	12
+	+	1114	21
+	+	1060	0
+	+	1060	0
+	+	1049	0
+	+	1044	0
+	+	1066	1
+	+	1067	1
+	+	1111	1
+	+	1112	1
+
+> ~/letou/magazine/travel.qunar.com/index.php
+	"	63	31
+
+> ~/.vimrc
+	"	791	50
+	^	1000	24
+	.	1000	0
+	+	1042	13
+	+	1043	5
+	+	1000	0
+
+> ~/vimrc
+	"	1	0
+
+> ~/.vim/plugin/calendar.vim
+	"	1209	0
+
+> ~/letou/magazine/travel.qunar.com/.git/rebase-merge/git-rebase-todo
+	"	1	0
+
+> ~/letou/magazine/travel.qunar.com/application/controllers/detail.php
+	"	365	0
+	^	62	33
+	.	62	32
+	+	174	0
+	+	176	32
+	+	62	32
+	d	62	3
+
+> ~/letou/magazine/CodeIgniter/index.php
+	"	239	0
+
+> ~/linuxetc/.git/rebase-merge/git-rebase-todo
+	"	1	0
+
+> /usr/share/vim/vimrc
+	"	57	4
+	^	55	40
+	.	56	31
+	+	61	0
+	+	58	0
+	+	55	39
+	+	56	31
+
+> /usr/share/vim/vim72/vimrc
+	"	1	0
+
+> ~/letou/magazine/travel.qunar.com/sta/js/dbgcoreview.js
+	"	1531	2
+	^	1654	5
+	.	2	0
+	+	1654	4
+	+	2	0
+
+> ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
+	"	110	6
+	.	11	0
+	+	4	0
+	+	286	0
+	+	74	0
+	+	208	0
+	+	12	101
+	+	112	21
+	+	118	0
+	+	118	0
+	+	112	0
+	+	13	0
+	+	12	15
+	+	12	15
+	+	7	0
+	+	12	0
+	+	31	0
+	+	31	17513
+	+	31	0
+	+	31	0
+	+	31	0
+	+	31	0
+	+	31	0
+	+	30	0
+	+	12	89
+	+	12	0
+	+	11	0
+
+> ~/letou/magazine/travel.qunar.com/sta/view.html
+	"	159	0
+	^	10	62
+	.	37	0
+	+	12	0
+	+	38	0
+	+	11	0
+	+	10	61
+	+	37	0
+	d	1	0
+
+> ~/letou/magazine/travel.qunar.com/application/config/routes.php
+	"	76	0
+	.	76	0
+	+	77	0
+	+	76	51
+	+	76	0
+	d	76	0
+
+> ~/letou/magazine/travel.qunar.com/application/controllers/travelbook.php
+	"	25	0
+	.	26	0
+	+	26	33
+	+	26	0
+	+	26	6039
+	+	26	6
+	+	26	0
+	d	25	1
+
+> ~/letou/magazine/travel.qunar.com/sta/js/core-view.js
+	"	1	10
+
+> /tmp/tmpb
+	"	175	0
+
+> ~/letou/magazine/travel.qunar.com/sta/view
+	"	77	0
+
+> ~/letou/magazine/travel.qunar.com/sta/t.html
+	"	1	0
+
+> /tmp/tmp
+	"	1	17493
+	^	2	0
+	.	1	0
+	+	1	189
+	+	1	17513
+	+	1	0
+
+> ~/linuxetc/vir
+	"	1	0
+
+> ~/linuxetc/.vim/github-plugin-install.sh
+	"	56	0
+
+> ~/linuxetc/.vim/.gitignore
+	"	1	0
 
 > ~/Desktop/linuxetc/vimrc
 	"	1	0
@@ -1660,27 +4715,11 @@ $
 > ~/linuxetc/R
 	"	1	0
 
-> ~/letou/magazine/travel.qunar.com/application/views/detail.tpl
-	"	145	1
-	.	199	0
-	+	4	0
-	+	277	0
-	+	73	0
-	+	199	0
-
 > /var/www/test.php
 	"	16	3
 	^	1	5
 	.	1	4
 	+	1	4
-
-> /usr/share/vim/vimrc
-	"	54	0
-	.	55	0
-	+	55	0
-
-> ~/linuxetc/vimrc
-	"	1	0
 
 > ~/letou/xianlu/web/application/views/detail.tpl
 	"	33	9
@@ -7081,9 +10120,6 @@ $
 	^	10	16
 	.	10	15
 	+	10	15
-
-> ~/.vimrc
-	"	1	0
 
 > ~/letou/magazine/sta/lib/jquery/jquery.colorbox.js
 	"	607	27
