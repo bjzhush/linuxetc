@@ -1,5 +1,3 @@
-1. Bash
-/etc/bash.bashrc -> /home/zs/linuetc/bash.bashrc -> /etc/bashrc.local
-  system         ->         git managed          -> special config for currecnt machine
-
-
+1.vimrc  ln vimrc /home/zs/.vimrc
+2. .vim   ln .vim /home/zs/.vim
+3. phpman  sudo cp phpman /usr/share/vim/vim72
