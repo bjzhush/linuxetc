@@ -1,6 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/srv/letou/magazine/api'
-let g:netrw_dirhist_2='/home/zs/git/linuxetc/.vim/plugin/assistant'
-let g:netrw_dirhist_3='/home/zs/gitfiles/linuxetc/.vim/plugin/assistant'
-let g:netrw_dirhist_4='/home/zs/gitfiles/linuxetc/.vim/plugin'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/var/www/dev_ecms/Public/themes'
+let g:netrw_dirhist_2='/var/www/dev_ecms/Public'
+let g:netrw_dirhist_3='/var/www/dev_ecms'
+let g:netrw_dirhist_4='/var/www/dev_ecms/Admin'
+let g:netrw_dirhist_5='/var/www/dev_ecms/Admin/Tpl'
+let g:netrw_dirhist_6='/var/www/dev_ecms/Admin/Tpl/default'
+let g:netrw_dirhist_7='/var/www/dev_ecms/Admin/Tpl/default/New_purchase'
