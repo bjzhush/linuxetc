@@ -1111,3 +1111,5 @@ autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  nmap <F4> :w<cr>
  "" here is not comtiable
  ""nmap <C-Q> :wq<cr>
+ map <C-c> :s/^/\/\//<Enter>:noh<Enter>
+ map <C-u> :s/^\/\///<Enter>:noh<Enter>
