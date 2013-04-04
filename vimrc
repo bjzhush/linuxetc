@@ -1044,7 +1044,7 @@ nmap <F12> :set cursorcolumn!<BAR>set nocursorcolumn?<CR>
 "map <F8> :NERDTreeToggle<CR>.
 ""map <F12> :!ctags -R --c++-kinds=+p --fields=+ialS --extra=+q .<CR>
 ""}}}
-set runtimepath +=/usr/share/vim/vim72/phpman
+set runtimepath +=/usr/share/vim/vim73/phpman
 autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  ""autoload _vimrc
  autocmd! bufwritepost vimrc source %
@@ -1113,3 +1113,5 @@ autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  ""nmap <C-Q> :wq<cr>
  map <C-c> :s/^/\/\//<Enter>:noh<Enter>
  map <C-u> :s/^\/\///<Enter>:noh<Enter>
+ "" php autocomplete
+ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
