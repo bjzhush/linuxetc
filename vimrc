@@ -148,9 +148,9 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 " }}}
 " vim-coffee-script {{{
 " see https://github.com/kchmck/vim-coffee-script
-au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
-au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
-au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
+""au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
+""au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+""au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 " }}}
 " hammer.vim {{{
 " see https://github.com/robgleeson/hammer.vim
@@ -873,10 +873,10 @@ if has("autocmd")
 " UGLY hack - preload templatefile.vim. This is needed for loading templates
 " for all buffers (when opening all windows for buffers)
 call Source("~/.vim/plugin/templatefile.vim")
-augroup TemplateSystem
-	autocmd!
-	au BufNewFile * call LoadTemplateFile()
-augroup END
+""augroup TemplateSystem
+	""autocmd!
+	""au BufNewFile * call LoadTemplateFile()
+""augroup END
 
 	" Autocomands for GUIEnter {{{
 	augroup GUIEnter

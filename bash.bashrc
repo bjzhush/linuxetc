@@ -129,3 +129,6 @@ sudo pkill -9 php5-cgi
 sudo /etc/init.d/apache2 start
 sudo netstat -ntpl|grep 0.0.0.0:80
 }
+
+
+alias mlog='sudo tail -f /var/lib/mysql/query.log'
