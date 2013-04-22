@@ -1115,3 +1115,4 @@ autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  map <C-u> :s/^\/\///<Enter>:noh<Enter>
  "" php autocomplete
  autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+let php_folding = 1
