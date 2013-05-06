@@ -132,3 +132,6 @@ sudo netstat -ntpl|grep 0.0.0.0:80
 
 
 alias mlog='sudo tail -f /var/lib/mysql/query.log'
+alias gits='git status'
+alias gitd='git diff'
+alias upnote='bash /home/zs/shell/Syncgitfiles'
