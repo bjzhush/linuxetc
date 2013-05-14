@@ -1063,7 +1063,7 @@ autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  "set paste  ""粘贴时保留格式
  "" set nohls 取消高亮
  syntax enable "打开语法高亮
- "set autoindent "Vim在打开新行时保留上一行的缩进方式
+ set autoindent "Vim在打开新行时保留上一行的缩进方式
  "set cindent  "使用C语言的缩进
  set showcmd  "在Vim窗口的右下角显示一个完整的命令已经完成的部分
  set background=dark
@@ -1116,3 +1116,5 @@ autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  "" php autocomplete
  autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 let php_folding = 1
+set ts=4
+set expandtab
