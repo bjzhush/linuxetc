@@ -1,4 +1,4 @@
 1.vimrc  ln vimrc /home/zs/.vimrc
-2. .vim   ln -s .vim /home/zs/.vim
+2.ln -s  ~/linuxetc/.vim/ .vim
 3. phpman  sudo cp -r  phpman /usr/share/vim/vim72
 4. php.vim  sudo cp php.vim /usr/share/vim/vim72/ftplugin
