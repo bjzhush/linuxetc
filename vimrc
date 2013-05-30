@@ -1121,3 +1121,5 @@ set expandtab
 
 let g:indentLine_color_term = 239
 let g:indentLine_char = '|'
+" 自动切换目录为当前编辑文件所在目录
+au BufRead,BufNewFile,BufEnter * cd %:p:h
