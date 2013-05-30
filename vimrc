@@ -39,45 +39,16 @@ endif
 :	finish
 :endif
 
-:if version >= 600 
-syntax enable
-filetype on
-filetype plugin on
-filetype indent on
-:endif
 
 function! Source(File)
 	silent! execute "source " . a:File
 endfunction
 
-let VIMRC_EXTRA="~/.vim/local/vimrc"
-let GVIMRC_EXTRA="~/.vim/local/gvimrc"
-if executable("uname") && executable("awk")
-	let machine = system("uname -n | awk 'BEGIN {ORS=\"\"} {print; }'")
-else
-	let machine = $HOSTNAME
-endif
-let machine = tolower(machine)
-let user = $USER
-
-call Source(VIMRC_EXTRA.".pre")
-call Source(VIMRC_EXTRA."-".user.".pre")
-call Source(VIMRC_EXTRA."-".machine.".pre")
-call Source(VIMRC_EXTRA."-".machine."-".user.".pre")
-call Source(VIMRC_EXTRA."")
-call Source(VIMRC_EXTRA."-".user)
-call Source(VIMRC_EXTRA."-".machine)
-call Source(VIMRC_EXTRA."-".machine."-".user)
 
 " used for searching documentation (~/.vim/doc/FEATURES.txt) etc.
 set runtimepath+=~/.vim
 " }}}
 
-" Settings for C language {{{
-let c_gnu=1
-let c_comment_strings=1
-let c_space_errors=1
-" }}}
 
 " History and viminfo settings {{{
 if has("cmdline_hist") 
@@ -120,52 +91,6 @@ endif
 if !exists("g:explDateFormat")
 	let g:explDateFormat="%d %b %Y %H:%M"
 endif
-" }}}
-" Settings for gcc & make {{{
-let g:cflags="-Wall -pedantic"
-let g:c_debug_flags="-ggdb -DDEBUG"
-let g:makeflags=""
-" }}}
-" Settings for AutoLastMod {{{
-" Set this to 1 if you will automaticaly change date of modification of file.
-let g:autolastmod=1
-" Modification is made on line like this variable (regular expression!):
-let g:autolastmodtext="^\\([ 	]*Last modified: \\)"
-" }}}
-" Settings for Tlist {{{
-let g:Tlist_Use_Right_Window = 0
-" }}}
-" Settings for NERD Commenter {{{
-" Prevent NERD Commenter from complaining about unknown file types
-  let NERDShutUp=1
-" }}}
-" Haskell {{{
-let g:haddock_browser = "firefox"
-" }}}
-" pathogen {{{
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-""call pathogen#infect('~/.vim/bundle')
-" }}}
-" vim-coffee-script {{{
-" see https://github.com/kchmck/vim-coffee-script
-""au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
-""au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
-""au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
-" }}}
-" hammer.vim {{{
-" see https://github.com/robgleeson/hammer.vim
-if has('unix')
-	let g:HammerBrowser = 'w3m'
-end
-map <leader>p :Hammer<CR>
-" }}}
-
-" VimRepress {{{
-" see https://github.com/vim-scripts/VimRepress
-let VIMPRESS = [{'username':'pkufranky',
-                \'blog_url':'http://blog.pkufranky.com/'
-                \}]
-map <leader>P :BlogPreview<CR>
 " }}}
 
 " vim-jsbeautify {{{
