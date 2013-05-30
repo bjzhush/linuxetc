@@ -1048,3 +1048,23 @@ let g:indentLine_color_term = 239
 let g:indentLine_char = '|'
 " 自动切换目录为当前编辑文件所在目录
 au BufRead,BufNewFile,BufEnter * cd %:p:h
+
+""neoAutoComplete{{{
+"auto start on load
+""let g:neocomplcache_enable_at_startup = 1 
+""No auto complete when input
+let g:NeoComplCache_DisableAutoComplete = 1
+let g:SuperTabDefaultCompletionType = '<C-X><C-I>'
+let g:neocomplcache_enable_quick_match = 1
+" Use camel case completion. 
+let g:neocomplcache_enable_camel_case_completion = 1 
+" Use underbar completion. 
+let g:neocomplcache_enable_underbar_completion = 1
+let g:neocomplcache_enable_smart_case = 1
+let g:neocomplcache_enable_auto_select = 1
+""heary features
+if !exists('g:neocomplcache_omni_patterns')
+      let g:neocomplcache_omni_patterns = {}
+endif
+let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+""}}}
