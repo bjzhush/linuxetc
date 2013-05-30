@@ -1119,3 +1119,5 @@ let php_folding = 1
 set ts=4
 set expandtab
 
+let g:indentLine_color_term = 239
+let g:indentLine_char = '|'
