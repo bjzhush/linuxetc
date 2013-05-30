@@ -1,6 +1,6 @@
-1.vimrc  ln vimrc /home/zs/.vimrc
-2.链接.vim目录的办法
 首先cd到~目录，然后
+1.链接vimrc文件 ln ~/linuxetc/vimrc .vimrc
+2.链接.vim目录的办法
 ln -s  ~/linuxetc/.vim/ 
 3. phpman  sudo cp -r  phpman /usr/share/vim/vim72
 4. php.vim  sudo cp php.vim /usr/share/vim/vim72/ftplugin
