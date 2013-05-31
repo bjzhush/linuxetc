@@ -974,7 +974,7 @@ autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  ""autoload _vimrc
  autocmd! bufwritepost vimrc source %
  map <special> <F6> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/php" %<cr>
- map <special> <F5> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/python" %<cr>
+ ""map <special> <F5> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/python" %<cr>
  :inoremap ( ()<Esc>i
  :inoremap [ []<Esc>i
  :inoremap { {}<Esc>i
@@ -1049,7 +1049,7 @@ let g:indentLine_char = '|'
 " 自动切换目录为当前编辑文件所在目录
 au BufRead,BufNewFile,BufEnter * cd %:p:h
 
-""neoAutoComplete{{{
+""{{{ neoAutoComplete
 "auto start on load
 ""let g:neocomplcache_enable_at_startup = 1 
 ""No auto complete when input
@@ -1068,3 +1068,13 @@ if !exists('g:neocomplcache_omni_patterns')
 endif
 let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 ""}}}
+
+
+""{{{ PHP Document for Vim
+inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i 
+nnoremap <C-P> :call PhpDocSingle()<CR> 
+vnoremap <C-P> :call PhpDocRange()<CR>
+""}}}
+map <F2> <Esc>:EnableFastPHPFolds<Cr>
+""map <F3> <Esc>:EnablePHPFolds<Cr>
+map <F3> <Esc>:DisablePHPFolds<Cr>

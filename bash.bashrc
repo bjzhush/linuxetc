@@ -134,6 +134,8 @@ sudo netstat -ntpl|grep 0.0.0.0:80
 alias mlog='sudo tail -f /var/lib/mysql/query.log'
 alias gits='git status'
 alias gitd='git diff'
+alias gitl='git log'
+alias gita='git add'
 alias upnote='bash /home/zs/shell/Syncgitfiles'
 alias v='vim'
 #exclude svn directory when greping
