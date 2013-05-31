@@ -1078,3 +1078,13 @@ vnoremap <C-P> :call PhpDocRange()<CR>
 ""map <F3> <Esc>:EnablePHPFolds<Cr>
 map <F2> <Esc>:EnableFastPHPFolds<Cr>
 map <F3> <Esc>:DisablePHPFolds<Cr>
+
+""test
+filetype on
+filetype plugin on
+set runtimepath+=~/.vim/plugin/after
+set runtimepath+=~/.vim/plugin/after/ftplugin 
+let g:snip_set_textmate_cp=1
+
+""Task
+"" Config my snippet for php and html
