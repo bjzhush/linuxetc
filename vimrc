@@ -1075,6 +1075,6 @@ inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR> 
 vnoremap <C-P> :call PhpDocRange()<CR>
 ""}}}
-map <F2> <Esc>:EnableFastPHPFolds<Cr>
 ""map <F3> <Esc>:EnablePHPFolds<Cr>
+map <F2> <Esc>:EnableFastPHPFolds<Cr>
 map <F3> <Esc>:DisablePHPFolds<Cr>
