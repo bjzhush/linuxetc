@@ -1,5 +1,5 @@
 首先cd到~目录，然后
-1.链接vimrc文件 ln ~/linuxetc/vimrc .vimrc
+1.链接vimrc文件 ln -s ~/linuxetc/vimrc .vimrc
 2.链接.vim目录的办法
 ln -s  ~/linuxetc/.vim/ 
 3. phpman  sudo cp -r  phpman /usr/share/vim/vim72

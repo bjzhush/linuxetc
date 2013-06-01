@@ -1088,4 +1088,3 @@ let g:snip_set_textmate_cp=1
 
 ""Task
 "" Config my snippet for php and html
-""test ln 
