@@ -6,3 +6,4 @@ ln -s  ~/linuxetc/.vim/
 4. php.vim  sudo cp php.vim /usr/share/vim/vim72/ftplugin
 
 
+test
