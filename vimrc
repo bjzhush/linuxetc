@@ -973,6 +973,8 @@ set runtimepath +=/usr/share/vim/vim73/phpman
 autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  ""autoload _vimrc
  autocmd! bufwritepost vimrc source %
+ "" F5 to check php syntax of current file
+ map <special> <F5> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/php -l" %<cr>
  map <special> <F6> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/php" %<cr>
  ""map <special> <F5> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/python" %<cr>
  :inoremap ( ()<Esc>i
@@ -1078,5 +1080,13 @@ vnoremap <C-P> :call PhpDocRange()<CR>
 ""map <F3> <Esc>:EnablePHPFolds<Cr>
 map <F2> <Esc>:EnableFastPHPFolds<Cr>
 map <F3> <Esc>:DisablePHPFolds<Cr>
-au BufWinLeave * mkview
-au BufWinEnter * silent loadview
+au BufWinLeave ?* mkview
+au BufWinEnter ?* silent loadview
+
+""{{{ PHP Document for Vim
+let g:pydiction_location = '$HOME/linuxetc/dicts/zend.dict'
+let g:pydiction_menu_height = 20
+if has("autocmd")
+   autocmd FileType python set complete+=k$HOME/linuxetc/dicts/zend.dict iskeyword+=.,(
+endif " has("autocmd") 
+""}}}
