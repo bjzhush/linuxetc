@@ -58,7 +58,7 @@ endif
 
 
 " Make the Tab key do python code completion:
-inoremap <silent> <buffer> <Tab> 
+inoremap <silent> <buffer> <C-Tab> 
          \<C-R>=<SID>SetVals()<CR>
          \<C-R>=<SID>TabComplete('down')<CR>
          \<C-R>=<SID>RestoreVals()<CR>

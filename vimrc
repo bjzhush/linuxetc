@@ -1090,3 +1090,8 @@ if has("autocmd")
    autocmd FileType python set complete+=k$HOME/linuxetc/dicts/zend.dict iskeyword+=.,(
 endif " has("autocmd") 
 ""}}}
+""{{{ Config plugin supertab,这里修改了pydict插件，将其默认的Tab键改为了Shift+Tab键触发，主要是将最方便的Tab键
+""{{{ 用到使用最频繁的当前页面匹配补全上，下面两行配置supertab插件，将Tab映射为Ctrl+N键
+let g:SuperTabRetainCompletionType=2
+let g:SuperTabDefaultCompletionType="<C-N>"
+""}}}
