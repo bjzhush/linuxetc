@@ -974,8 +974,9 @@ autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  ""autoload _vimrc
  autocmd! bufwritepost vimrc source %
  "" F5 to check php syntax of current file
- map <special> <F5> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/php -l" %<cr>
+ map <special> <F5> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/php" -l %<cr>
  map <special> <F6> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/php" %<cr>
+ map <special> <F7> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/phpcs" %<cr>
  ""map <special> <F5> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/python" %<cr>
  :inoremap ( ()<Esc>i
  :inoremap [ []<Esc>i
