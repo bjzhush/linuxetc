@@ -1,2 +1,5 @@
 # Tail a log and highlight multiple keywords
-tail -f /var/log/mysql/mysql.log|grep 'update\|insert\|delete'
+#s for sliently with no error message,i for ignoring case ,w for math word only
+alias tfmc='tail -f /var/log/mysql/mysql.log|grep -siw "update\|insert\|delete"'
+alias tfms='tail -f /var/log/mysql/mysql.log|grep -siw select'
+alias tfm='tail -f /var/log/mysql/mysql.log|grep -siw "select\|update\|insert\|delete"'
