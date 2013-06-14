@@ -1096,3 +1096,9 @@ endif " has("autocmd")
 let g:SuperTabRetainCompletionType=2
 let g:SuperTabDefaultCompletionType="<C-N>"
 ""}}}
+""{{{ VIMIM config
+:let g:vimim_map='c-bslash'
+"" 海量词库 at  http://vimim.googlecode.com/svn/trunk/plugin/vimim.gbk.bsddb
+"" HomePage  http://vimim.googlecode.com/svn/vimim/vimim.html#vimimrc
+"" 默认不使用此词库，而是使用云输入法的词库
+""}}}
