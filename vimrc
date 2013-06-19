@@ -1096,3 +1096,4 @@ endif " has("autocmd")
 let g:SuperTabRetainCompletionType=2
 let g:SuperTabDefaultCompletionType="<C-N>"
 ""}}}
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS  
