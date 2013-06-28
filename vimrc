@@ -956,8 +956,6 @@ if exists("g:open_all_win")
 endif
 
 hi CursorColumn ctermbg=4
-nmap <F11> :set cursorline!<BAR>set nocursorline?<CR>
-nmap <F12> :set cursorcolumn!<BAR>set nocursorcolumn?<CR>
 
 " Modeline {{{
 " vim:set ts=4:
@@ -973,10 +971,6 @@ set runtimepath +=/usr/share/vim/vim73/phpman
 autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  ""autoload _vimrc
  autocmd! bufwritepost vimrc source %
- "" F5 to check php syntax of current file
- map <special> <F5> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/php" -l %<cr>
- map <special> <F6> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/php" %<cr>
- map <special> <F7> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/phpcs" %<cr>
  ""map <special> <F5> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/python" %<cr>
  :inoremap ( ()<Esc>i
  :inoremap [ []<Esc>i
@@ -1030,13 +1024,6 @@ autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  set scrolloff=5
  set showcmd
  ""set statusline=%F%m%r,%Y,%{&fileformat}\ \ \ ASCII=\%b,HEX=\%B\ \ \ %l,%c%V\ %p%%\ \ \ [\ %L\ lines\ in\ all\ ]
- ""新增Tab栏几相关操作配置 
- "" F8 上一个标签，F9下一个标签，F12关闭当前标签
- nnoremap <silent> <F8> :tabp<CR>
- nnoremap <silent> <F9> :tabn<CR>
- nnoremap <silent> <F12> :tabc<CR>
- """ Ctrl+W 执行 ：w 操作，保存当前文件
- nmap <F4> :w<cr>
  "" here is not comtiable
  ""nmap <C-Q> :wq<cr>
  map <C-c> :s/^/\/\//<Enter>:noh<Enter>
@@ -1078,9 +1065,6 @@ inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR> 
 vnoremap <C-P> :call PhpDocRange()<CR>
 ""}}}
-""map <F3> <Esc>:EnablePHPFolds<Cr>
-map <F2> <Esc>:EnableFastPHPFolds<Cr>
-map <F3> <Esc>:DisablePHPFolds<Cr>
 au BufWinLeave ?* mkview
 au BufWinEnter ?* silent loadview
 
@@ -1097,3 +1081,28 @@ let g:SuperTabRetainCompletionType=2
 let g:SuperTabDefaultCompletionType="<C-N>"
 ""}}}
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS  
+
+""Key mapping
+
+"" map F2 F3 to enable and disable PHPFold
+map <special> <C-H> <esc><S-:>w! %<cr><esc><S-:>! $HOME/linuxetc/showTips.sh <cr>
+map <F2> <Esc>:EnableFastPHPFolds<Cr>
+map <F3> <Esc>:DisablePHPFolds<Cr>
+"" F4 保存当前文件
+nmap <F4> :w<cr>
+"" Ctrl+F5 to check js systax with jslint
+"" F5 to check php syntax with php
+map <special> <C-F5> <esc><S-:>w! %<cr><esc><S-:>! $HOME/linuxetc/jslint.js %<cr>
+map <special> <F5> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/php" -l %<cr>
+"" F6 to run current php file
+map <special> <F6> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/php" %<cr>
+"" F7 to check php format with phpcodesniffer
+map <special> <F7> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/phpcs" %<cr>
+"" F8 previous tab，F9 next tab，F12关闭当前标签
+nnoremap <silent> <F8> :tabp<CR>
+nnoremap <silent> <F9> :tabn<CR>
+""Ctrl+F12 to enable/disable cursorLine
+nmap <C-F12> :set cursorline!<BAR>set nocursorline?<CR>
+"" F12  to  enable/disable cursorColumn 
+nmap <F12> :set cursorcolumn!<BAR>set nocursorcolumn?<CR>
+
