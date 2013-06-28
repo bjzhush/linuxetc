@@ -105,13 +105,6 @@ endif
 ""let g:htmlbeautify = {'indent_size': 4, 'indent_char': ' ', 'max_char': 120, 'brace_style': 'expand', 'unformatted': ['a', 'sub', 'sup', 'b', 'i', 'u']}
 ""let g:cssbeautify = {'indent_size': 4, 'indent_char': ' '}
 
-" for js
-""autocmd FileType javascript noremap <buffer>  <c-g> :call JsBeautify()<cr>
-" for html
-""autocmd FileType html noremap <buffer> <c-g> :call HtmlBeautify()<cr>
-" for css or scss
-""autocmd FileType css noremap <buffer> <c-g> :call CSSBeautify()<cr>
-" }}}
 
 
 " Priority between files for file name completion (suffixes) {{{
@@ -289,94 +282,6 @@ endif
 
 " }}}
 
-" Keybord mappings {{{
-"
-" backspace fix
-noremap 	
-inoremap 	
-cnoremap 	
-" start of line
-"noremap <C-A>		i<Home>
-inoremap <C-A>		<Home>
-cnoremap <C-A>		<Home>
-" end of line
-noremap <C-E>		i<End>
-inoremap <C-E>		<End>
-" back one word
-inoremap <C-B>	<S-Left>
-" forward one word
-"inoremap <c-g>	<S-Right>
-
-" Switching between windows by pressing one time CTRL-X keys.
-noremap <C-X> <C-W><C-W>
-
-" Tip from http://vim.sourceforge.net/tips/tip.php?tip_id=173
-noremap <C-J> <C-W>j<C-W>_
-noremap <C-K> <C-W>k<C-W>_
-
-" Make Insert-mode completion more convenient:
-imap <C-L> <C-X><C-L>
-
-set remap
-map <C-O><C-O> :split 
-imap <C-O><C-O> <Esc>:split 
-
-
-" Open new window with file ~/.vimrc (ViM configuration file)
-map <C-O><C-K> :split ~/.vimrc<CR>
-imap <C-O><C-K> <Esc>:split ~/.vimrc<CR>
-" Open new window with dir ~/.vim (ViM configuration dir)
-map <C-O><C-V> :split ~/.vim<CR>
-imap <C-O><C-V> <Esc>:split ~/.vim<CR>
-
-" Safe delete line (don't add line to registers)
-":imap <C-D> <Esc>"_ddi
-imap <C-D> <Esc>:call SafeLineDelete()<CR>i
-
-" Search for the current Visual selection.
-vmap S y/<C-R>=escape(@",'/\')<CR>
-" replace selected text with text in register
-vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
-
-nnoremap <C-S> :w<CR>
-inoremap <C-S> <C-O>:w<CR>
-nnoremap <SPACE> <c-g>
-nnoremap <S-SPACE> <C-B>
-inoremap <c-g> <C-O><c-g>
-inoremap <C-B> <C-O><C-B>
-inoremap <C-J> <C-O>j
-inoremap <C-K> <C-O>k
-"inoremap <C-H> <C-O>h
-inoremap <C-L> <C-O>l
-noremap <C-N> :browse e<CR>
-
-" Good pasting toggle {{{
-" From  Christopher Swingley <cswingle AT iarc.uaf.edu>
-" Whenever I want to paste something, I do:
-" ,f
-" i
-" <paste>
-" <esc>
-" ,f
-map ,f :set paste!<CR>:set paste?<CR>
-" }}}
-
-" Mappings for folding {{{
-" Open one foldlevel of folds in whole file
-" Note: 'Z' works like 'z' but for all lines in file
-noremap Zo mzggvGzo'z
-noremap ZO zR
-noremap Zc mzggvGzc'z
-noremap ZC zM
-noremap Zd mzggvGzd'z
-noremap ZD mzggvGzD'z
-noremap Za mzggvGza'z
-noremap ZA mzggvGzA'z
-noremap Zx mzggvGzx'z
-noremap ZX mzggvGzX'z
-" }}}
-
-" }}}
 
 " Settings for IMAP input method (IMAP plugin) {{{
 
@@ -1023,13 +928,7 @@ autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  set smartcase		" Do smart case matching
  set scrolloff=5
  set showcmd
- ""set statusline=%F%m%r,%Y,%{&fileformat}\ \ \ ASCII=\%b,HEX=\%B\ \ \ %l,%c%V\ %p%%\ \ \ [\ %L\ lines\ in\ all\ ]
  "" here is not comtiable
- ""nmap <C-Q> :wq<cr>
- map <C-c> :s/^/\/\//<Enter>:noh<Enter>
- map <C-u> :s/^\/\///<Enter>:noh<Enter>
- "" php autocomplete
- autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 let php_folding = 1
 set ts=4
 set expandtab
@@ -1060,35 +959,112 @@ let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 ""}}}
 
 
-""{{{ PHP Document for Vim
-inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i 
-nnoremap <C-P> :call PhpDocSingle()<CR> 
-vnoremap <C-P> :call PhpDocRange()<CR>
-""}}}
 au BufWinLeave ?* mkview
 au BufWinEnter ?* silent loadview
 
 ""{{{ PHP Document for Vim
 let g:pydiction_location = '$HOME/linuxetc/dicts/zend.dict'
 let g:pydiction_menu_height = 20
-if has("autocmd")
-   autocmd FileType python set complete+=k$HOME/linuxetc/dicts/zend.dict iskeyword+=.,(
-endif " has("autocmd") 
 ""}}}
 ""{{{ Config plugin supertab,这里修改了pydict插件，将其默认的Tab键改为了Shift+Tab键触发，主要是将最方便的Tab键
 ""{{{ 用到使用最频繁的当前页面匹配补全上，下面两行配置supertab插件，将Tab映射为Ctrl+N键
 let g:SuperTabRetainCompletionType=2
 let g:SuperTabDefaultCompletionType="<C-N>"
 ""}}}
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS  
+"" php/python/js autocomplete
+if has("autocmd")
+    autocmd FileType python set complete+=k$HOME/linuxetc/dicts/zend.dict iskeyword+=.,(
+""  autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+    autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS  
+endif " has("autocmd") 
 
-""Key mapping
+
+" Keybord mappings {{{
+"
+" backspace fix
+noremap 	
+inoremap 	
+cnoremap 	
+
+" Switching between windows by pressing one time CTRL-X keys.
+noremap <C-X> <C-W><C-W>
+
+" Tip from http://vim.sourceforge.net/tips/tip.php?tip_id=173
+noremap <C-J> <C-W>j<C-W>_
+noremap <C-K> <C-W>k<C-W>_
+
+" Make Insert-mode completion more convenient:
+imap <C-L> <C-X><C-L>
+
+
+set remap
+map <C-O><C-O> :split 
+imap <C-O><C-O> <Esc>:split 
+
+
+" Open new window with file ~/.vimrc (ViM configuration file)
+map <C-O><C-K> :split ~/.vimrc<CR>
+imap <C-O><C-K> <Esc>:split ~/.vimrc<CR>
+" Open new window with dir ~/.vim (ViM configuration dir)
+map <C-O><C-V> :split ~/.vim<CR>
+imap <C-O><C-V> <Esc>:split ~/.vim<CR>
+
+" Safe delete line (don't add line to registers)
+":imap <C-D> <Esc>"_ddi
+imap <C-D> <Esc>:call SafeLineDelete()<CR>i
+
+" Search for the current Visual selection.
+""vmap S y/<C-R>=escape(@",'/\')<CR>
+" replace selected text with text in register
+""vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
+
+nnoremap <SPACE> <c-g>
+nnoremap <S-SPACE> <C-B>
+inoremap <c-g> <C-O><c-g>
+inoremap <C-B> <C-O><C-B>
+
+
+" Mappings for folding {{{
+" Open one foldlevel of folds in whole file
+" Note: 'Z' works like 'z' but for all lines in file
+noremap Zo mzggvGzo'z
+noremap ZO zR
+noremap Zc mzggvGzc'z
+noremap ZC zM
+noremap Zd mzggvGzd'z
+noremap ZD mzggvGzD'z
+noremap Za mzggvGza'z
+noremap ZA mzggvGzA'z
+noremap Zx mzggvGzx'z
+noremap ZX mzggvGzX'z
+" }}}
+" move cursor in insert mode
+inoremap <C-J> <C-O>j
+inoremap <C-K> <C-O>k
+inoremap <C-H> <C-O>h
+inoremap <C-L> <C-O>l
+" start of line
+"noremap <C-A>		i<Home>
+inoremap <C-A>		<Home>
+cnoremap <C-A>		<Home>
+" end of line
+noremap <C-E>		i<End>
+inoremap <C-E>		<End>
+
+""{{{ PHP Document for Vim
+inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i 
+nnoremap <C-P> :call PhpDocSingle()<CR> 
+vnoremap <C-P> :call PhpDocRange()<CR>
+""}}}
+
+map <C-c> :s/^/\/\//<Enter>:noh<Enter>
+map <C-u> :s/^\/\///<Enter>:noh<Enter>
 
 "" map F2 F3 to enable and disable PHPFold
 map <special> <C-H> <esc><S-:>w! %<cr><esc><S-:>! $HOME/linuxetc/showTips.sh <cr>
 map <F2> <Esc>:EnableFastPHPFolds<Cr>
 map <F3> <Esc>:DisablePHPFolds<Cr>
-"" F4 保存当前文件
+"" F4 save file
 nmap <F4> :w<cr>
 "" Ctrl+F5 to check js systax with jslint
 "" F5 to check php syntax with php
@@ -1098,7 +1074,7 @@ map <special> <F5> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/php" -l %<cr>
 map <special> <F6> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/php" %<cr>
 "" F7 to check php format with phpcodesniffer
 map <special> <F7> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/phpcs" %<cr>
-"" F8 previous tab，F9 next tab，F12关闭当前标签
+"" F8 previous tab，F9 next tab
 nnoremap <silent> <F8> :tabp<CR>
 nnoremap <silent> <F9> :tabn<CR>
 ""Ctrl+F12 to enable/disable cursorLine
@@ -1106,3 +1082,11 @@ nmap <C-F12> :set cursorline!<BAR>set nocursorline?<CR>
 "" F12  to  enable/disable cursorColumn 
 nmap <F12> :set cursorcolumn!<BAR>set nocursorcolumn?<CR>
 
+" }}}
+
+""{{{ for indent_guide plugin 
+""Tips:default toogle key \ig has been changed to \g
+let g:indent_guides_auto_colors = 0 
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3 
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4 
+""}}}
