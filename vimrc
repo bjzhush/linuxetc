@@ -884,7 +884,6 @@ autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  :inoremap " ""<Esc>i
  set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 
- set nu ""显示行号
  set nolist "" set list 显示制表位和行尾标志$
  set wrap ""超长行显示时自动换行
  "set paste  ""粘贴时保留格式
@@ -926,7 +925,7 @@ autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  set shiftwidth=4
 
  set smartcase		" Do smart case matching
- set scrolloff=5
+ set scrolloff=0
  set showcmd
  "" here is not comtiable
 let php_folding = 1
@@ -1093,3 +1092,5 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 
 "" add json.vim for simple highlight for json file
 au! BufRead,BufNewFile *.json set filetype=json
+
+set nonu ""显示行号
