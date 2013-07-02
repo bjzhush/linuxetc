@@ -1104,3 +1104,5 @@ inoremap <UP> <NOP>
 inoremap <DOWN> <NOP>
 inoremap <LEFT> <NOP>
 inoremap <RIGHt> <NOP>
+"增加设置默认filetype为txt，以兼容README之类文件
+autocmd BufEnter * if &filetype == "" | setlocal ft=txt | endif
