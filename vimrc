@@ -1093,4 +1093,14 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 "" add json.vim for simple highlight for json file
 au! BufRead,BufNewFile *.json set filetype=json
 
-set nonu ""显示行号
+""显示行号
+set nonu 
+"禁用光标键(上下左右)
+map <UP> <NOP>
+map <DOWN> <NOP>
+map <LEFT> <NOP>
+map <RIGHT> <NOP>
+inoremap <UP> <NOP>
+inoremap <DOWN> <NOP>
+inoremap <LEFT> <NOP>
+inoremap <RIGHt> <NOP>
