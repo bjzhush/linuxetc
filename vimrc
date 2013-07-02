@@ -32,8 +32,6 @@ endif
 
 " Settings {{{
 " Basic settings {{{
-" To be secure & Vi nocompatible
-:set secure nocompatible
 :if version < 600
 :	echo "Please update your vim to 6.x version (version 6.3 is available, version 7.0 vill be soon!)"
 :	finish
@@ -191,10 +189,6 @@ set shiftwidth=4
 " (default 100, 1000 for Unix, VMS, Win32 and OS/2)
 set undolevels=10000
 
-" Use an indent of 4 spaces, with no tabs. This setting is recommended by PEAR
-" (PHP Extension and Application Repository) Conding Standarts. If you want
-" this setting uncomment the expandtab setting below.
-":set expandtab 
 
 " Settings for mouse (gvim under Xwindows)
 set nomousefocus
@@ -721,8 +715,8 @@ call Source("~/.vim/plugin/templatefile.vim")
 	augroup VimConfig
 	autocmd!
 	" Reread configuration of ViM if file ~/.vimrc is saved
-	autocmd BufWritePost ~/.vimrc	so ~/.vimrc | exec "normal zv"
-	autocmd BufWritePost vimrc   	so ~/.vimrc | exec "normal zv"
+    autocmd! bufwritepost _vimrc source % " vimrc文件修改之后自动加载。 windows。
+    autocmd! bufwritepost .vimrc source % " vimrc文件修改之后自动加载。 linux。
 	augroup END
 	" }}}
 
@@ -1059,6 +1053,8 @@ vnoremap <C-P> :call PhpDocRange()<CR>
 map <C-c> :s/^/\/\//<Enter>:noh<Enter>
 map <C-u> :s/^\/\///<Enter>:noh<Enter>
 
+nnoremap <F1> :set nonumber! number?<CR>
+map <F1> :set nonumber! number?<CR>
 "" map F2 F3 to enable and disable PHPFold
 map <special> <C-H> <esc><S-:>w! %<cr><esc><S-:>! $HOME/linuxetc/showTips.sh <cr>
 map <F2> <Esc>:EnableFastPHPFolds<Cr>
@@ -1094,7 +1090,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 au! BufRead,BufNewFile *.json set filetype=json
 
 ""显示行号
-set nonu 
+set number
 "禁用光标键(上下左右)
 map <UP> <NOP>
 map <DOWN> <NOP>
@@ -1106,3 +1102,41 @@ inoremap <LEFT> <NOP>
 inoremap <RIGHt> <NOP>
 "增加设置默认filetype为txt，以兼容README之类文件
 autocmd BufEnter * if &filetype == "" | setlocal ft=txt | endif
+set shortmess=atI       " 启动的时候不显示那个援助索马里儿童的提示
+
+""这玩意我用不习惯，感觉5j 5k这种跳转会从一定程度上打断思路，反而不如H M
+""L在屏幕上中下定位下，然后类似无意识的移动对思维的影响更小一些
+"""行号变成相对，可以用 nj  nk   进行跳转 5j   5k 上下跳5行
+""""set relativenumber
+""au FocusLost * :set number
+""au FocusGained * :set relativenumber
+""" 插入模式下用绝对行号, 普通模式下用相对
+""autocmd InsertEnter * :set number
+""autocmd InsertLeave * :set relativenumber
+""function! NumberToggle()
+""  if(&relativenumber == 1)
+""    set number
+""  else
+""    set relativenumber
+""  endif
+""endfunc
+""nnoremap <C-n> :call NumberToggle()<cr>
+" Use Unix as the standard file type
+set ffs=unix,dos,mac
+" 如遇Unicode值大于255的文本，不必等到空格再折行。
+set formatoptions+=m
+" 合并两行中文时，不在中间加空格：
+set formatoptions+=B
+"离开插入模式后自动关闭预览窗口
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+"回车即选中当前项
+inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
+"se swap之后，同物理行上线直接跳
+map j gj
+map k gk
+
+" Remap VIM 0 to first non-blank character
+map 0 ^
+nnoremap ; :
+" remap U to <C-r> for easier redo
+nnoremap U <C-r>
