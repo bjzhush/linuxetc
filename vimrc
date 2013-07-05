@@ -1136,7 +1136,7 @@ map j gj
 map k gk
 
 " Remap VIM 0 to first non-blank character
-map 0 ^
+"map 0 ^
 nnoremap ; :
 " remap U to <C-r> for easier redo
 nnoremap U <C-r>
