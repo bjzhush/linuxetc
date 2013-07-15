@@ -866,7 +866,7 @@ hi CursorColumn ctermbg=4
 "map <F8> :NERDTreeToggle<CR>.
 ""map <F12> :!ctags -R --c++-kinds=+p --fields=+ialS --extra=+q .<CR>
 ""}}}
-set runtimepath +=/usr/share/vim/vim73/phpman
+set runtimepath+=~/linuxetc/phpman
 autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  ""autoload _vimrc
  autocmd! bufwritepost vimrc source %

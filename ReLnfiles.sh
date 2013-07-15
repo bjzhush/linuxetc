@@ -16,5 +16,5 @@
 rm -f ~/.vimrc
 rm -rf ~/.vim
 cd
-ln -s ~/linuxetc/vimrc .vimrc
-ln -s ~/linuxetc/.vim/
+ln -s ~/linuxetc/vimrc ~/.vimrc
+ln -s ~/linuxetc/.vim/ ~/.vim
