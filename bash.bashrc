@@ -138,5 +138,6 @@ alias gitl='git log'
 alias gita='git add'
 alias upnote='bash /home/zs/shell/Syncgitfiles'
 alias v='vim'
+alias gsr='grep -sr'
 #exclude svn directory when greping
 export GREP_OPTIONS="--exclude-dir=\.svn"
