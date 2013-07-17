@@ -1132,8 +1132,8 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 "回车即选中当前项
 inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
 "se swap之后，同物理行上线直接跳
-map j gj
-map k gk
+""map j gj
+""map k gk
 
 " Remap VIM 0 to first non-blank character
 "map 0 ^
