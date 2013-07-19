@@ -1140,3 +1140,4 @@ inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
 nnoremap ; :
 " remap U to <C-r> for easier redo
 nnoremap U <C-r>
+cabbrev t tabe
