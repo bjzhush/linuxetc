@@ -145,7 +145,7 @@ alias gsr='grep -sr'
 #exclude svn directory when greping
 export GREP_OPTIONS="--exclude-dir=\.svn"
 #set ls format 
-alias ls='ls -l'
+alias ls='ls -l --color=auto '
 alias mkdir='mkdir -pv'
 alias mount='mount |column -t'
 alias h='history'
