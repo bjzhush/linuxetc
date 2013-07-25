@@ -106,6 +106,9 @@ fi
    alias cdc='cd ../../..'
    alias cdd='cd ../../../..'
    alias cde='cd ../../../../..'
+   alias ..='cd ..'
+   alias ...='cd ../..'
+   alias ....='cd ../../..'
 # kill process by grep name
 function gkill(){
 echo "Input a word to grep and kill"
@@ -141,3 +144,10 @@ alias v='vim'
 alias gsr='grep -sr'
 #exclude svn directory when greping
 export GREP_OPTIONS="--exclude-dir=\.svn"
+#set ls format 
+alias ls='ls -l'
+alias mkdir='mkdir -pv'
+alias mount='mount |column -t'
+alias h='history'
+alias j='jobs -l'
+alias ntpl='netstat -tulanp'
