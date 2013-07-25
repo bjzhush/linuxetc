@@ -101,14 +101,6 @@ if [ -f /etc/bashrc.local ]; then
 fi
 
 # add by zs 2012  07  12
-   alias cda='cd ..'
-   alias cdb='cd ../..'
-   alias cdc='cd ../../..'
-   alias cdd='cd ../../../..'
-   alias cde='cd ../../../../..'
-   alias ..='cd ..'
-   alias ...='cd ../..'
-   alias ....='cd ../../..'
 # kill process by grep name
 function gkill(){
 echo "Input a word to grep and kill"
@@ -133,21 +125,26 @@ sudo /etc/init.d/apache2 start
 sudo netstat -ntpl|grep 0.0.0.0:80
 }
 
+export GREP_OPTIONS="--exclude-dir=\.svn"
+alias cda='cd ..'
+alias cdb='cd ../..'
+alias cdc='cd ../../..'
+alias cdd='cd ../../../..'
+alias cde='cd ../../../../..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
+alias v='vim'
+alias h='history'
+alias j='jobs -l'
+alias ls='ls -l --color=auto '
+alias gsr='grep -sr'
 alias mlog='sudo tail -f /var/lib/mysql/query.log'
 alias gits='git status'
 alias gitd='git diff'
 alias gitl='git log'
 alias gita='git add'
-alias upnote='bash /home/zs/shell/Syncgitfiles'
-alias v='vim'
-alias gsr='grep -sr'
-#exclude svn directory when greping
-export GREP_OPTIONS="--exclude-dir=\.svn"
-#set ls format 
-alias ls='ls -l --color=auto '
+alias ntpl='netstat -tulanp'
 alias mkdir='mkdir -pv'
 alias mount='mount |column -t'
-alias h='history'
-alias j='jobs -l'
-alias ntpl='netstat -tulanp'

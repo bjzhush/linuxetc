@@ -1143,3 +1143,5 @@ nnoremap U <C-r>
 "" alias builtin command using cabbrev
 cabbrev t tabe
 cabbrev ta Tabularize
+cabbrev tad Tabularize /=
+cabbrev taj Tabularize /=>
