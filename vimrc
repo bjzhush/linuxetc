@@ -862,10 +862,33 @@ hi CursorColumn ctermbg=4
 " }}}
 
 "added by zs
-"""{{{
+
+""{{{ some anabdonment config ,maybe usable in the future
+
+""map <special> <F5> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/php" -l %<cr>
+""这玩意我用不习惯，感觉5j 5k这种跳转会从一定程度上打断思路，反而不如H M
+""L在屏幕上中下定位下，然后类似无意识的移动对思维的影响更小一些
+"""行号变成相对，可以用 nj  nk   进行跳转 5j   5k 上下跳5行
+""""set relativenumber
+""au FocusLost * :set number
+""au FocusGained * :set relativenumber
+""" 插入模式下用绝对行号, 普通模式下用相对
+""autocmd InsertEnter * :set number
+""autocmd InsertLeave * :set relativenumber
+""function! NumberToggle()
+""  if(&relativenumber == 1)
+""    set number
+""  else
+""    set relativenumber
+""  endif
+""endfunc
+""nnoremap <C-n> :call NumberToggle()<cr>
+" Use Unix as the standard file type
 "map <F8> :NERDTreeToggle<CR>.
 ""map <F12> :!ctags -R --c++-kinds=+p --fields=+ialS --extra=+q .<CR>
-""}}}
+
+"}}}some anabdonment config ,maybe usable in the future
+
 set runtimepath+=~/linuxetc/phpman
 autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  ""autoload _vimrc
@@ -1061,10 +1084,11 @@ map <F2> <Esc>:EnableFastPHPFolds<Cr>
 map <F3> <Esc>:DisablePHPFolds<Cr>
 "" F4 save file
 nmap <F4> :w<cr>
+nnoremap <F5> :set invpaste paste?<CR>
+set pastetoggle=<F5>
+set showmode
 "" Ctrl+F5 to check js systax with jslint
-"" F5 to check php syntax with php
 map <special> <C-F5> <esc><S-:>w! %<cr><esc><S-:>! $HOME/linuxetc/jslint.js %<cr>
-map <special> <F5> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/php" -l %<cr>
 "" F6 to run current php file
 map <special> <F6> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/php" %<cr>
 "" F7 to check php format with phpcodesniffer
@@ -1104,24 +1128,6 @@ inoremap <RIGHt> <NOP>
 autocmd BufEnter * if &filetype == "" | setlocal ft=txt | endif
 set shortmess=atI       " 启动的时候不显示那个援助索马里儿童的提示
 
-""这玩意我用不习惯，感觉5j 5k这种跳转会从一定程度上打断思路，反而不如H M
-""L在屏幕上中下定位下，然后类似无意识的移动对思维的影响更小一些
-"""行号变成相对，可以用 nj  nk   进行跳转 5j   5k 上下跳5行
-""""set relativenumber
-""au FocusLost * :set number
-""au FocusGained * :set relativenumber
-""" 插入模式下用绝对行号, 普通模式下用相对
-""autocmd InsertEnter * :set number
-""autocmd InsertLeave * :set relativenumber
-""function! NumberToggle()
-""  if(&relativenumber == 1)
-""    set number
-""  else
-""    set relativenumber
-""  endif
-""endfunc
-""nnoremap <C-n> :call NumberToggle()<cr>
-" Use Unix as the standard file type
 set ffs=unix,dos,mac
 " 如遇Unicode值大于255的文本，不必等到空格再折行。
 set formatoptions+=m
