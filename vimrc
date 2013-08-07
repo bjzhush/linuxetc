@@ -1156,4 +1156,4 @@ cabbrev t tabe
 cabbrev ta Tabularize
 cabbrev tad Tabularize /=
 cabbrev taj Tabularize /=>
-nmap q : q
+nmap q :q
