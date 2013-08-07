@@ -19,7 +19,7 @@ let g:loaded_assistant = "Version 1.5.1"
 
 " ================================== Conf {{{ ==================================
 "
-nmap <silent> <unique> <C-l> :call <SID>Help()<Cr>
+""nmap <silent> <unique> <C-l> :call <SID>Help()<Cr>
 "
 " Mapping for Eclipse user
 " imap <silent> <unique> <A-/> <C-x><C-u>

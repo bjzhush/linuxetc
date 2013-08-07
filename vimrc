@@ -1125,6 +1125,10 @@ inoremap <UP> <NOP>
 inoremap <DOWN> <NOP>
 inoremap <LEFT> <NOP>
 inoremap <RIGHt> <NOP>
+map <C-J> <C-W>j<C-W>_
+map <C-K> <C-W>k<C-W>_
+map <C-L> <C-W>l<C-W>_
+map <C-H> <C-W>h<C-W>_
 "增加设置默认filetype为txt，以兼容README之类文件
 autocmd BufEnter * if &filetype == "" | setlocal ft=txt | endif
 set shortmess=atI       " 启动的时候不显示那个援助索马里儿童的提示
