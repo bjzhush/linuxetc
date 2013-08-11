@@ -5,3 +5,6 @@
   然后运行一次 ReLnfiles.sh 即可
 4.bashrc 的文件，需要自己手动添加到系统的bashrc文件里面进行包含
   一个不带容错的写法是 source /path/to/linuxetc/bash.bashrc
+5.其它依赖
+    a. ctags.vimy依赖于ctags程序,需要apt-get install ctags
+
