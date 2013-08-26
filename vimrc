@@ -942,7 +942,7 @@ autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  set shiftwidth=4
 
  set smartcase		" Do smart case matching
- set scrolloff=0
+ set scrolloff=5
  set showcmd
  "" here is not comtiable
 let php_folding = 1
