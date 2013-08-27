@@ -1,72 +1,21 @@
-"
-" vimconfig - project of powerful ViM 6.3 configuration files
-" 
-" vimrc - main configuration file
-" ____________________________________________________________
-"
-" Developed by Lubomir Host 'rajo' <rajo AT platon.sk>
-" Copyright (c) 2000-2005 Platon SDG, http://platon.sk/
-" All rights reserved.
-"
-" See README file for more information about this software.
-" See COPYING file for license information.
-"
-" Download the latest version from
-" http://platon.sk/projects/vimconfig/
-"
-
-" Please don't hesitate to correct my english :)
-" Send corrections to
-"
-"        Lubomir Host 'rajo' <rajo AT platon.sk>
-
 " Version: $Platon: vimconfig/vimrc,v 1.114 2007-09-28 22:36:15 rajo Exp $
 
-" Debian uses compressed helpfiles. We must inform vim that the main
-" helpfiles is compressed. Other helpfiles are stated in the tags-file.
-if !filereadable(expand("$VIMRUNTIME/doc/help.txt"))
-	if filereadable(expand("$VIMRUNTIME/doc/help.txt.gz"))
-		set helpfile=$VIMRUNTIME/doc/help.txt.gz
-	endif
-endif
-
-" Settings {{{
-" Basic settings {{{
 :if version < 600
 :	echo "Please update your vim to 6.x version (version 6.3 is available, version 7.0 vill be soon!)"
 :	finish
 :endif
 
-
 function! Source(File)
 	silent! execute "source " . a:File
 endfunction
 
-
 " used for searching documentation (~/.vim/doc/FEATURES.txt) etc.
 set runtimepath+=~/.vim
-" }}}
 
-
-" History and viminfo settings {{{
-if has("cmdline_hist") 
-	set history=10000
-endif
-if has("viminfo")
-	if filewritable(expand("$HOME/.vim/viminfo")) == 1 || 
-				\ filewritable(expand("$HOME/.vim/")) == 2
-		set viminfo=!,%,'5000,\"10000,:10000,/10000,n~/.vim/viminfo
-	else
-		set viminfo=
-	endif
-endif
 " Don't save backups of files.
 set nobackup
-set backupcopy=yes
-" }}}
 
 " Status line settings {{{
-":set ruler
 " Display a status-bar.
 set laststatus=2
 if has("statusline")
@@ -74,11 +23,6 @@ if has("statusline")
 endif
 " }}}
 
-" Settings for Calendar plugin {{{
-if !exists("g:calendar_diary")
-	let g:calendar_diary = "~/.vim/diary"
-endif
-" }}} 
 " Settings for Explorer script {{{
 if !exists("g:explDetailedHelp")
 	let g:explDetailedHelp=1
@@ -89,16 +33,27 @@ endif
 if !exists("g:explDateFormat")
 	let g:explDateFormat="%d %b %Y %H:%M"
 endif
+" 在用vim自带的目录浏览时，忽略一些exe/二进制文件
+if !exists("g:explHideFiles")
+let g:explHideFiles='^\.,\.zip$,\.rar$,\.bmp$,\.png$,\.jpg$,\.exe$,\.gz$'
+endif
 " }}}
+
+
 
 " vim-jsbeautify {{{
 " https://github.com/maksimr/vim-jsbeautify
 " set path to js-beautify file
-""let s:rootDir = expand("$HOME/.vim")
-""let g:jsbeautify_file = fnameescape(s:rootDir."/bundle/js-beautify/beautify.js")
-""let g:htmlbeautify_file = fnameescape(s:rootDir."/bundle/js-beautify/beautify-html.js")
-""let g:cssbeautify_file = fnameescape(s:rootDir."/bundle/js-beautify/beautify-css.js")
-""
+autocmd FileType javascript noremap <buffer>  <c-a> :call JsBeautify()<cr>
+" for html
+autocmd FileType html noremap <buffer> <c-a> :call HtmlBeautify()<cr>
+" for css or scss
+autocmd FileType css noremap <buffer> <c-a> :call CSSBeautify()<cr>
+let s:rootDir = expand("$HOME/.vim")
+let g:jsbeautify_file = fnameescape(s:rootDir."/bundle/js-beautify/beautify.js")
+let g:htmlbeautify_file = fnameescape(s:rootDir."/bundle/js-beautify/beautify-html.js")
+let g:cssbeautify_file = fnameescape(s:rootDir."/bundle/js-beautify/beautify-css.js")
+
 ""let g:jsbeautify = {'indent_size': 4, 'indent_char': '\t'}
 ""let g:htmlbeautify = {'indent_size': 4, 'indent_char': ' ', 'max_char': 120, 'brace_style': 'expand', 'unformatted': ['a', 'sub', 'sup', 'b', 'i', 'u']}
 ""let g:cssbeautify = {'indent_size': 4, 'indent_char': ' '}
