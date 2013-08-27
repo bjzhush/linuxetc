@@ -62,42 +62,11 @@ let g:cssbeautify_file = fnameescape(s:rootDir."/bundle/js-beautify/beautify-css
 
 " Priority between files for file name completion (suffixes) {{{
 " Do not give .h low priority in command-line filename completion.
-set suffixes-=.h
-set suffixes+=.aux
-set suffixes+=.bbl
-set suffixes+=.blg
+set suffixes+=.php
 set suffixes+=.log
-set suffixes+=.eps
-set suffixes+=.ps
-set suffixes+=.pdf
 
-set wildignore+=*.dvi
 set wildignore+=*.pdf
-set wildignore+=*.o
-set wildignore+=*.ko
-set wildignore+=*.swp
-set wildignore+=*.aux
-set wildignore+=*.bbl
-set wildignore+=*.blg
 " }}}
-
-" Tip #935 hightlight space errors {{{
-
-" To highlight spaces at the end of a line and spaces in front of tabs you can simply add the following command to your vimrc:
-" let <language>_space_errors=1
-" supported languages are:
-" ada, c, chill, csc, icon, java, lpc, mel, nqc, nroff, ora, plm, plsql and python. So if you want to highlight space errors in lpc-giles you have to write:
-" let lpc_space_errors=1
-"
-" If you don't want to see the errors at the end of the line set:
-" let <language>_no_trail_space_error=1
-" and if you only use spaces to indent and don't want to see the space errors in front of tabs set:
-" let <language>_no_tab_space_error=1
-let java_space_errors=1
-let c_space_errors=1
-let python_space_errors=1
-" }}}
-" Basic2 {{{
 
 " The cursor is kept in the same column (if possible).  This applies to the
 " commands: CTRL-D, CTRL-U, CTRL-B, CTRL-F, "G", "H", "M", "L", , and to the
@@ -120,30 +89,15 @@ set tags=./TAGS,./tags,tags
 " Don't add EOF at end of file
 set noendofline
 
-" Do case sensitive matching
-set noignorecase
-
 set showfulltag 
-
 set cmdheight=2
 set backspace=2
-set incsearch
 set report=0
 set showcmd showmatch showmode
-
-" Set title of the window to Platon's copyright
-" set titleold=
-" set titlestring=ViMconfig\ (c)\ 2000-2005\ Platon\ SDG
-" set title
-
-" Indent of 1 tab with size of 4 spaces
-set tabstop=4 
-set shiftwidth=4 
 
 " Need more undolevels ??
 " (default 100, 1000 for Unix, VMS, Win32 and OS/2)
 set undolevels=10000
-
 
 " Settings for mouse (gvim under Xwindows)
 set nomousefocus
@@ -170,9 +124,6 @@ set wildmode=longest:full,full
 " line. Allowed keys are 'h' and 'l', arrow keys are not allowed to wrap.
 set whichwrap=h,l
 
-set hlsearch
-set nonu
-
 set ambiwidth=double
 
 " Customize display {{{
@@ -197,21 +148,6 @@ set display+=uhex
 "--- vim60.193/src/misc1.c	Sat Feb  9 02:17:16 2002
 "***************
 "*** 2721,2727 ****
-"      void
-"  vim_beep()
-"  {
-"!     if (emsg_silent == 0)
-"      {
-"  	if (p_vb)
-"  	{
-"--- 2721,2727 ----
-"      void
-"  vim_beep()
-"  {
-"!     if (emsg_silent == 0 && p_eb)
-"      {
-"  	if (p_vb)
-"  	{
 set noerrorbells
 set visualbell
 set t_vb=
@@ -228,18 +164,6 @@ if !exists("g:fold_long_lines")
 	let g:fold_long_lines=300
 endif
 "}}}
-
-" }}}
-
-
-" Settings for IMAP input method (IMAP plugin) {{{
-
-" detect iso-8859-2 encoding before latin1
-set fileencodings=ucs-bom,utf-8,iso-8859-2,windows-1250,latin1
-
-" set variable "b:input_method" to change input method
-" let b:input_method = "latin2"
-let b:input_method = &encoding
 
 " you may disable actions of IMAP plugin with variable b:disable_imap
 " 0 - enabled
