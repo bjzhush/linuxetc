@@ -7,6 +7,8 @@
   一个不带容错的写法是 source /path/to/linuxetc/bash.bashrc
 5.其它依赖
     a. ctags.vimy依赖于ctags程序,需要apt-get/yum install ctags
-    b. JsBeautify require a javascript interpreter nodejs (http://nodejs.org/) or v8 (http://code.google.com/p/v8/)
-       I chose nodejs , here (http://howtonode.org/how-to-install-nodejs) is an article to introduce how to install and test nodejs ,I use apg-get install nodejs on ubuntu to install it
+    b. JsBeautify 需要一个js解释程序，比如NodeJs或者v8, 我选择了NodeJs,
+    在ubuntu下可以使用 apt-get install nodejs来进行安装
+    NodeJs: http://nodejs.org
+    V8    : http://code.google.com/p/v8/
 
