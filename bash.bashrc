@@ -152,3 +152,5 @@ alias ntpl='netstat -ntpl'
 alias mkdir='mkdir -pv'
 alias mount='mount |column -t'
 alias www='cd /var/www'
+# gpcs short for exclude some bad result of phpCodeSniffer 
+alias gpcs='grep -v "No space found\|must\|license\|packet\|author tag\|packet\|@link\|comment"'
