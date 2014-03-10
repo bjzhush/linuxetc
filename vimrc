@@ -1035,4 +1035,3 @@ cabbrev ta Tabularize
 cabbrev tad Tabularize /=
 cabbrev taj Tabularize /=>
 nmap q :q
-nmap w :w<cr>
