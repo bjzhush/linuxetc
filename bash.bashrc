@@ -135,6 +135,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
+alias s='sudo '
 alias v='vim'
 alias h='history'
 alias j='jobs -l'
