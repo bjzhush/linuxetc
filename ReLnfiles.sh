@@ -16,7 +16,9 @@
 rm -f ~/.vimrc
 rm -rf ~/.vim
 rm -rf ~/.gitconfig
+rm -rf ~/.gitignore
 cd
 ln -s ~/linuxetc/vimrc ~/.vimrc
 ln -s ~/linuxetc/.vim/ ~/.vim
 ln -s ~/linuxetc/.gitconfig ~/.gitconfig
+ln -s ~/linuxetc/.gitignore ~/.gitignore
