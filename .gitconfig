@@ -1,0 +1,14 @@
+[color]
+	diff = true
+	ui = auto
+[user]
+	name = bjzhush
+	email = bjzhush@gmail.com
+[core]
+	editor = vim
+	excludesfile = /home/zs/.gitexcludes
+[alias]
+    st = status
+    ci = commit 
+    co = checkout
+

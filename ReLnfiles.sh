@@ -15,6 +15,8 @@
 
 rm -f ~/.vimrc
 rm -rf ~/.vim
+rm -rf ~/.gitconfig
 cd
 ln -s ~/linuxetc/vimrc ~/.vimrc
 ln -s ~/linuxetc/.vim/ ~/.vim
+ln -s ~/linuxetc/.gitconfig ~/.gitconfig
