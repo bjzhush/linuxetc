@@ -163,6 +163,7 @@ alias gpcs='grep -v "No space found\|must\|license\|packet\|author tag\|packet\|
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 # add commandlinefu 
-cmdfu(){ curl "http://www.commandlinefu.com/commands/matching/$@/$(echo -n $@ | openssl base64)/plaintext" |grep $@; } 
+cmdfu(){ curl "http://www.commandlinefu.com/commands/matching/$@/$(echo -n $@ | openssl base64)/plaintext"; } 
+alias cf='cmdfu'
 
 HISTIGNORE='&:exit:ls'
