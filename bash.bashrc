@@ -145,14 +145,17 @@ alias gsr='grep -srn'
 alias nau='nautilus .'
 alias gsrl='grep -srnl'
 alias mlog='sudo tail -f /var/lib/mysql/query.log'
-alias gits='git status'
-alias gitd='git diff'
-alias gitl='git log'
-alias gita='git add'
+alias gts='git status'
+alias gtd='git diff'
+alias gtl='git log'
+alias gta='git add'
 alias ntpl='netstat -ntpl'
 alias mkdir='mkdir -pv'
 alias mount='mount |column -t'
 alias www='cd /var/www'
+function gtc() {
+    git commit -am"$@";
+}
 # gpcs short for exclude some bad result of phpCodeSniffer 
 alias gpcs='grep -v "No space found\|must\|license\|packet\|author tag\|packet\|@link\|comment"'
 # from pkufranky
