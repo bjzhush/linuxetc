@@ -6,7 +6,7 @@
 	email = bjzhush@gmail.com
 [core]
 	editor = vim
-	excludesfile = /home/zs/.gitexcludes
+	excludesfile = /home/zs/.gitignore
 [alias]
     st = status
     ci = commit 
