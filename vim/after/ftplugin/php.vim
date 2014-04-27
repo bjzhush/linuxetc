@@ -1,1 +1,1 @@
-Snippet prevd echo "<pre>"; var_dump( );<Esc>
+Snippet pre echo "<pre>"; var_dump(<{}>);<Esc>
