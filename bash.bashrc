@@ -169,4 +169,4 @@ alias cf='cmdfu'
 HISTIGNORE='&:exit:ls'
 #set -o vi
 alias sv='set -o vi'
-alias se='set -o ve'
+alias se='set -o emacs'
