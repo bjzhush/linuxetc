@@ -167,4 +167,6 @@ cmdfu(){ curl "http://www.commandlinefu.com/commands/matching/$@/$(echo -n $@ | 
 alias cf='cmdfu'
 
 HISTIGNORE='&:exit:ls'
-set -o vi
+#set -o vi
+alias sv='set -o vi'
+alias se='set -o ve'
