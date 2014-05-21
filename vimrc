@@ -788,7 +788,6 @@ autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
  set autoindent "Vim在打开新行时保留上一行的缩进方式
  "set cindent  "使用C语言的缩进
  set showcmd  "在Vim窗口的右下角显示一个完整的命令已经完成的部分
- set background=dark
 
 
  ""search options start
