@@ -970,8 +970,8 @@ map <special> <C-F5> <esc><S-:>w! %<cr><esc><S-:>! $HOME/linuxetc/jslint.js %<cr
 "" F6 to run current php file
 map <special> <F6> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/php" %<cr>
 map <special> <C-F6> <esc> :TlistToggle<cr>
-"" F7 to check php format with phpcodesniffer
-map <special> <F7> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/phpcs" %<cr>
+"" F7 to check php format with python
+map <special> <F7> <esc><S-:>w! %<cr><esc><S-:>!"/usr/bin/python" %<cr>
 "" F8 previous tab，F9 next tab
 nnoremap <silent> <F8> :tabp<CR>
 nnoremap <silent> <F9> :tabn<CR>
