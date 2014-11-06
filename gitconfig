@@ -7,7 +7,7 @@
 [core]
 	editor = vim
 	excludesfile = /home/zs/.gitignore
-    filemode = false
+	filemode = false
 [alias]
     st = status
     ci = commit 
