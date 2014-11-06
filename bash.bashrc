@@ -170,3 +170,4 @@ HISTIGNORE='&:exit:ls'
 #set -o vi
 alias sv='set -o vi'
 alias se='set -o emacs'
+alias tailf='tail -f'
