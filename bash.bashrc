@@ -171,3 +171,13 @@ HISTIGNORE='&:exit:ls'
 alias sv='set -o vi'
 alias se='set -o emacs'
 alias tailf='tail -f'
+
+# tmux config
+# new session with name zstmux
+alias tmzs = 'tmux new -s zstmux'
+
+# attach it to background
+# Ctrl+c  D
+
+# goback to the session
+alias gotmzs = 'tmux attach -t zstmux'
