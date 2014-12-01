@@ -181,3 +181,5 @@ alias tmc='tmux new -s zstmux'
 
 # goback to the session
 alias tmg='tmux attach -t zstmux'
+
+alias tmp='cd /tmp'
