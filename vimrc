@@ -857,17 +857,17 @@ au BufWinLeave ?* mkview
 au BufWinEnter ?* silent loadview
 
 ""{{{ PHP Document for Vim
-let g:pydiction_location = '$HOME/linuxetc/dicts/zend.dict'
+let g:pydiction_location = '$HOME/linuxetc/dicts/php.dict'
 let g:pydiction_menu_height = 20
 ""}}}
 ""{{{ Config plugin supertab,这里修改了pydict插件，将其默认的Tab键改为了Shift+Tab键触发，主要是将最方便的Tab键
 ""{{{ 用到使用最频繁的当前页面匹配补全上，下面两行配置supertab插件，将Tab映射为Ctrl+N键
 let g:SuperTabRetainCompletionType=2
-let g:SuperTabDefaultCompletionType="<C-N>"
+let g:SuperTabDefaultCompletionType="<C-M>"
 ""}}}
 "" php/python/js autocomplete
 if has("autocmd")
-    autocmd FileType python set complete+=k$HOME/linuxetc/dicts/zend.dict iskeyword+=.,(
+    autocmd FileType php set complete+=k$HOME/linuxetc/dicts/php.dict iskeyword+=.,(
 ""  autocmd FileType php set omnifunc=phpcomplete#CompletePHP
     autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS  
 endif " has("autocmd") 
