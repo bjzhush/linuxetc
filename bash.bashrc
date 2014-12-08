@@ -135,7 +135,8 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-alias s='sudo '
+alias s='sudo -H '
+alias sudo='sudo -H'
 alias v='vim'
 alias h='history'
 alias j='jobs -l'
@@ -183,3 +184,6 @@ alias tmc='tmux new -s zstmux'
 alias tmg='tmux attach -t zstmux'
 
 alias tmp='cd /tmp'
+
+#custom my own shell prompt color
+export PS1="\e[0;32m$(echo $PS1)\e[m"
