@@ -187,3 +187,8 @@ alias tmp='cd /tmp'
 
 #custom my own shell prompt color
 export PS1="\e[0;32m$(echo $PS1)\e[m"
+
+# alias for python
+alias py='python'
+alias py2='python2'
+alias py3='python3'
