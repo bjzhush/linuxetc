@@ -1041,3 +1041,27 @@ if v:version >= 703
     set undolevels=1000 "maximum number of changes that can be undone
     set undoreload=10000 "maximum number lines to save for undo on a buffer
 endif
+
+" Vundle{{{
+    set nocompatible              " be iMproved
+    "filetype off                  " required!
+
+    set rtp+=~/.vim/bundle/vundle/
+    call vundle#rc()
+
+    Bundle 'gmarik/vundle'
+    " My bundles {{{
+        Bundle 'scrooloose/syntastic'
+        "python
+        Bundle 'hynek/vim-python-pep8-indent'
+    " }}}
+
+" }}}
+
+"语法检查{{{
+    let g:syntastic_check_on_open = 1 
+    let g:syntastic_auto_loc_list = 1 
+    let g:syntastic_loc_list_height = 5 
+    let g:syntastic_enable_highlighting = 0 
+    let g:syntastic_check_on_wq = 1
+"}}}
