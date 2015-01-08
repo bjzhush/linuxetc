@@ -1,5 +1,8 @@
 " My awesome PHP syntax checking stuff:
-autocmd BufNewFile,BufRead,BufWritePost *.php,*.phtml execute 'call PHPsynCHK()'
+" 2015年01月08日17:05:23 ,by zs
+" comment line below ,switch php syntax from current to syntastic
+" uncomment line below to enable it again !
+""autocmd BufNewFile,BufRead,BufWritePost *.php,*.phtml execute 'call PHPsynCHK()'
 set makeprg=php\ -l\ %
 set errorformat=%m\ in\ %f\ on\ line\ %l
 

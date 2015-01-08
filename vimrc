@@ -1043,7 +1043,6 @@ if v:version >= 703
 endif
 
 " Vundle{{{
-    set nocompatible              " be iMproved
     "filetype off                  " required!
 
     set rtp+=~/.vim/bundle/vundle/
