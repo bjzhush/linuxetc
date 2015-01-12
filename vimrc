@@ -1064,3 +1064,6 @@ endif
     let g:syntastic_enable_highlighting = 0 
     let g:syntastic_check_on_wq = 1
 "}}}
+
+cabbrev sudow w !sudo tee % > /dev/null
+
