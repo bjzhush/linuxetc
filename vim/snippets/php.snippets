@@ -158,3 +158,9 @@ snippet thm
 	$this->${1:function}(${2://param});
 snippet thp
 	$this->${1:property};
+snippet try
+	try {
+		${1://tryCode}
+	} catch (Exception $e) {
+		echo 'Caught exception: ',  $e->getMessage(), "\n";
+	}
