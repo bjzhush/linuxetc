@@ -13,3 +13,5 @@
     ci = commit 
     co = checkout
 
+[push]
+	default = matching
