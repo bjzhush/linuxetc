@@ -1035,7 +1035,7 @@ cabbrev tad Tabularize /=
 cabbrev taj Tabularize /=>
 nmap q :q
 silent !mkdir /tmp/vimUndo > /dev/null 2>&1
-let $VIMTEMP = '/tmp/vimUndo/'
+let $VIMTEMP = '$HOME/.vim/view/'
 if v:version >= 703
     set undofile
     set undodir=$VIMTEMP
