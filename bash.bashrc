@@ -187,7 +187,7 @@ alias tmg='tmux attach -t zstmux'
 alias tmp='cd /tmp'
 
 #custom my own shell prompt color
-export PS1="\e[0;32m$(echo $PS1)\e[m"
+export PS1="\[\e[0;32m\]$(echo $PS1)\[\e[m\]" 
 
 # alias for python
 alias py='python'
