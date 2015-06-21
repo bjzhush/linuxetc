@@ -193,5 +193,5 @@ export PS1="\[\e[0;32m\]$(echo $PS1)\[\e[m\]"
 alias py='python'
 alias py2='python2'
 alias py3='python3'
-
 alias his='history'
+alias composer='proxychains composer'
