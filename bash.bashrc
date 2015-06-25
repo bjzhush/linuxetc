@@ -194,6 +194,10 @@ alias py='python'
 alias py2='python2'
 alias py3='python3'
 alias his='history'
+<<<<<<< HEAD
 alias composer='proxychains composer'
 alias cps='proxychains composer'
 alias mao='oneko -fg red -tofocus'
+=======
+alias mao='oneko -fg red -tofocus &'
+>>>>>>> set mao background
