@@ -197,3 +197,10 @@ alias his='history'
 alias proxycomposer='proxychains composer'
 alias cps='proxychains composer'
 alias mao='oneko -fg red -tofocus &'
+
+function perf {
+  echo "Direct:"
+  curl -o /dev/null  -s -w "%{time_total}\n" "$1"
+  echo "Proxy:"
+  curl --socks5-hostname 127.0.0.1:1080 -o /dev/null  -s -w "%{time_total}\n" "$1"
+}
