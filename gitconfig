@@ -17,3 +17,5 @@
 	default = matching
 [http]
 	sslverify = false
+[credential]
+	helper = store
