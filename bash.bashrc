@@ -197,6 +197,7 @@ alias his='history'
 alias proxycomposer='proxychains composer'
 alias cps='proxychains composer'
 alias mao='oneko -fg red -tofocus &'
+alias wgets='aria2c -x 16'
 
 function perf {
   echo "Direct:"

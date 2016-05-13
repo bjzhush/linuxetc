@@ -19,3 +19,5 @@
 	sslverify = false
 [credential]
 	helper = store
+[file]
+	mode = false
