@@ -146,11 +146,6 @@ alias gsr='grep -srn'
 alias nau='nautilus .'
 alias gsrl='grep -srnl'
 alias mlog="s tail -f /data/mysql/zsLinux.log |grep 'update\|UPDATE\|insert\|INSERT\|delete\|DELETE'"
-alias gits='git status'
-alias gitd='git diff'
-alias gitl='git log'
-alias gita='git add'
-alias gitauthor='git log|grep Author|sort -rn|uniq -c|sort -n'
 alias ntpl='netstat -ntpl'
 alias mkdir='mkdir -pv'
 alias mount='mount |column -t'
@@ -205,3 +200,10 @@ function perf {
   echo "Proxy:"
   curl --socks5-hostname 127.0.0.1:1080 -o /dev/null  -s -w "%{time_total}\n" "$1"
 }
+
+#git 
+alias g='git'
+source /usr/share/bash-completion/completions/git
+complete -o default -o nospace -F _git g
+alias gitauthor='git log|grep Author|sort -rn|uniq -c|sort -n'
+
