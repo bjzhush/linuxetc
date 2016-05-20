@@ -21,6 +21,7 @@ rm -rf ~/.tmux.conf
 
 cd
 ln -s ~/linuxetc/vimrc ~/.vimrc
+ln -s ~/linuxetc/vimrc ~/.ideavimrc
 ln -s ~/linuxetc/vim/ ~/.vim
 ln -s ~/linuxetc/gitconfig ~/.gitconfig
 ln -s ~/linuxetc/gitignore ~/.gitignore
