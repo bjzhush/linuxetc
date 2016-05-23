@@ -206,4 +206,8 @@ alias g='git'
 source /usr/share/bash-completion/completions/git
 complete -o default -o nospace -F _git g
 alias gitauthor='git log|grep Author|sort -rn|uniq -c|sort -n'
+alias gita='git add'
+alias gits='git status'
+alias gitd='git diff'
+alias gitl='git log'
 
