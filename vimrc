@@ -978,7 +978,8 @@ nnoremap <silent> <F9> :tabn<CR>
 ""Ctrl+F12 to enable/disable cursorLine
 nmap <C-F12> :set cursorline!<BAR>set nocursorline?<CR>
 "" F12  to  enable/disable cursorColumn 
-nmap <F12> :set cursorcolumn!<BAR>set nocursorcolumn?<CR>
+""nmap <F12> :set cursorcolumn!<BAR>set nocursorcolumn?<CR>
+nnoremap <F12> :GundoToggle<CR>
 
 " }}}
 
