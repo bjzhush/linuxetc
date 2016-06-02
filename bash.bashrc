@@ -149,7 +149,6 @@ alias mlog="s tail -f /data/mysql/zsLinux.log |grep 'update\|UPDATE\|insert\|INS
 alias ntpl='netstat -ntpl'
 alias mkdir='mkdir -pv'
 alias mount='mount |column -t'
-alias www='cd /var/www'
 function gtc() {
     git commit -am"$@";
 }
