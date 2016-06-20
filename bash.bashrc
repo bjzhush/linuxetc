@@ -199,6 +199,9 @@ function perf {
   echo "Proxy:"
   curl --socks5-hostname 127.0.0.1:1080 -o /dev/null  -s -w "%{time_total}\n" "$1"
 }
+function p {
+    netstat -an|grep 'tcp\|udp'|awk '{print $4}'|cut -d : -f 2|sed '/^$/d'|sort|uniq -c|awk '$1 > 2{print $0}'
+}
 
 #git 
 alias g='git'
@@ -209,4 +212,3 @@ alias gita='git add'
 alias gits='git status'
 alias gitd='git diff'
 alias gitl='git log'
-
