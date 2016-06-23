@@ -205,7 +205,9 @@ function p {
 
 #git 
 alias g='git'
-source /usr/share/bash-completion/completions/git
+if [ -f /usr/share/bash-completion/completions/git ]; then
+    source /usr/share/bash-completion/completions/git
+fi
 complete -o default -o nospace -F _git g
 alias gitauthor='git log|grep Author|sort -rn|uniq -c|sort -n'
 alias gita='git add'
