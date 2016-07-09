@@ -1069,3 +1069,4 @@ endif
 
 cabbrev sudow w !sudo tee % > /dev/null
 cabbrev json %!python -m json.tool
+set relativenumber
