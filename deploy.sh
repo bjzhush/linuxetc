@@ -13,6 +13,14 @@
 # Create this file for re ln  linux config files from under git to real use
 #
 
+sudo apt-get install -y proxychains
+sudo apt-get install -y git
+sudo apt-get install -y zsh
+sudo apt-get install -y ctags
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/bjzhush/oh-my-zsh/master/tools/install.sh)"
+sudo -H sh -c "$(curl -fsSL https://raw.githubusercontent.com/bjzhush/oh-my-zsh/master/tools/install.sh)"
+
 rm -f ~/.vimrc
 rm -f ~/.ideavimrc
 rm -rf ~/.vim

@@ -1,14 +1,2 @@
-1.将git工程clone到你的～目录，即只需执行一个不带参数的cd后进行clone操作
-2.clone完成后，只需运行一次bash ReLnfiles.sh 即可完成Vim配置
-3.如需配置root用户的vim配置文件，只需su到root用户后，
-  ln -s linuxetc /path/to/real/linuxetc
-  然后运行一次 ReLnfiles.sh 即可
-4.bashrc 的文件，需要自己手动添加到系统的bashrc文件里面进行包含
-  一个不带容错的写法是 source /path/to/linuxetc/bash.bashrc
-5.其它依赖
-    a. ctags.vimy依赖于ctags程序,需要apt-get/yum install ctags
-    b. JsBeautify 需要一个js解释程序，比如NodeJs或者v8, 我选择了NodeJs,
-    在ubuntu下可以使用 apt-get install nodejs来进行安装
-    NodeJs: http://nodejs.org
-    V8    : http://code.google.com/p/v8/
-
+1.将git工程clone到你的～目录
+2.  bash deploy.sh
