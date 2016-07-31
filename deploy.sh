@@ -31,13 +31,13 @@ rm -rf ~/.tmux.conf
 rm -rf ~/.zshrc
 
 cd
-ln -s ~/linuxetc/vimrc ~/.vimrc
-ln -s ~/linuxetc/vimrc ~/.ideavimrc
-ln -s ~/linuxetc/vim/ ~/.vim
-ln -s ~/linuxetc/gitconfig ~/.gitconfig
-ln -s ~/linuxetc/gitignore ~/.gitignore
-ln -s ~/linuxetc/tmux.conf ~/.tmux.conf
-ln -s ~/linuxetc/zshrc ~/.zshrc
+ln -s /home/zs/linuxetc/vimrc ~/.vimrc
+ln -s /home/zs/linuxetc/vimrc ~/.ideavimrc
+ln -s /home/zs/linuxetc/vim/ ~/.vim
+ln -s /home/zs/linuxetc/gitconfig ~/.gitconfig
+ln -s /home/zs/linuxetc/gitignore ~/.gitignore
+ln -s /home/zs/linuxetc/tmux.conf ~/.tmux.conf
+ln -s /home/zs/linuxetc/zshrc ~/.zshrc
 
 #sudo
 sudo rm -f  /root/.vimrc
