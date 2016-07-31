@@ -14,6 +14,7 @@
 #
 
 rm -f ~/.vimrc
+rm -f ~/.ideavimrc
 rm -rf ~/.vim
 rm -rf ~/.gitconfig
 rm -rf ~/.gitignore
@@ -32,7 +33,7 @@ sudo rm -f  /root/.vimrc
 sudo rm -rf /root/.vim
 sudo rm -rf /root/.gitconfig
 sudo rm -rf /root/.gitignore
-sudo rm -rf /root/.gitignore
+sudo rm -rf /root/.tmux.conf
 
 sudo ln -s ~/linuxetc/vimrc /root/.vimrc
 sudo ln -s ~/linuxetc/vim/ /root/.vim
