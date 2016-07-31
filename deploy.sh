@@ -27,6 +27,8 @@ rm -rf ~/.vim
 rm -rf ~/.gitconfig
 rm -rf ~/.gitignore
 rm -rf ~/.tmux.conf
+rm -rf ~/.tmux.conf
+rm -rf ~/.zshrc
 
 cd
 ln -s ~/linuxetc/vimrc ~/.vimrc
@@ -35,6 +37,7 @@ ln -s ~/linuxetc/vim/ ~/.vim
 ln -s ~/linuxetc/gitconfig ~/.gitconfig
 ln -s ~/linuxetc/gitignore ~/.gitignore
 ln -s ~/linuxetc/tmux.conf ~/.tmux.conf
+ln -s ~/linuxetc/zshrc ~/.zshrc
 
 #sudo
 sudo rm -f  /root/.vimrc
@@ -42,11 +45,13 @@ sudo rm -rf /root/.vim
 sudo rm -rf /root/.gitconfig
 sudo rm -rf /root/.gitignore
 sudo rm -rf /root/.tmux.conf
+sudo rm -rf /root/.zshrc
 
-sudo ln -s ~/linuxetc/vimrc /root/.vimrc
-sudo ln -s ~/linuxetc/vim/ /root/.vim
-sudo ln -s ~/linuxetc/gitconfig /root/.gitconfig
-sudo ln -s ~/linuxetc/gitignore /root/.gitignore
-sudo ln -s ~/linuxetc/tmux.conf /root/.tmux.conf
+sudo ln -s /home/zs/linuxetc/vimrc /root/.vimrc
+sudo ln -s /home/zs/linuxetc/vim/ /root/.vim
+sudo ln -s /home/zs/linuxetc/gitconfig /root/.gitconfig
+sudo ln -s /home/zs/linuxetc/gitignore /root/.gitignore
+sudo ln -s /home/zs/linuxetc/tmux.conf /root/.tmux.conf
+sudo ln -s /home/zs/linuxetc/zshrc /root/.zshrc
 
 echo "All Done"
