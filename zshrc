@@ -6,7 +6,6 @@
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -85,3 +84,4 @@ source $ZSH/oh-my-zsh.sh
 
 # by zs
 . /home/zs/linuxetc/alias.bashrc
+. /etc/alias.local
