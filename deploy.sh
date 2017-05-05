@@ -17,6 +17,7 @@ sudo apt-get install -y proxychains
 sudo apt-get install -y git
 sudo apt-get install -y zsh
 sudo apt-get install -y ctags
+sudo apt-get install silversearcher-ag
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/bjzhush/oh-my-zsh/master/tools/install.sh)"
 sudo -H sh -c "$(curl -fsSL https://raw.githubusercontent.com/bjzhush/oh-my-zsh/master/tools/install.sh)"
@@ -53,5 +54,8 @@ sudo ln -s /home/zs/linuxetc/gitconfig /root/.gitconfig
 sudo ln -s /home/zs/linuxetc/gitignore /root/.gitignore
 sudo ln -s /home/zs/linuxetc/tmux.conf /root/.tmux.conf
 sudo ln -s /home/zs/linuxetc/zshrc /root/.zshrc
+
+sudo apt-get install python-pip
+sudo pip install mycli
 
 echo "All Done"
