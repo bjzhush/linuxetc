@@ -185,3 +185,5 @@ VERSION=v12.22.1
 DISTRO=linux-x64
 export PATH=/usr/local/src/nodejs/node-v12.22.1-linux-x64/bin:$PATH
 alias idea='nohup bash /usr/local/src/idea-IU-203.7717.56/bin/idea.sh 2>&1 &'
+alias python='python3'
+alias py='python3'
